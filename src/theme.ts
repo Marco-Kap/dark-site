@@ -3,7 +3,6 @@ import { red } from "@mui/material/colors";
 
 // Create a theme instance.
 const theme = createTheme({
-  
   palette: {
     primary: {
       main: "#fa1a2c",
@@ -18,8 +17,8 @@ const theme = createTheme({
       main: red.A400,
     },
   },
-  
 
+  spacing: [0, 2, 3, 5, 8, 10, 30],
   typography: {
     fontFamily: "arial",
   },
