@@ -10,10 +10,13 @@ import Paper from "@mui/material/Paper";
 import Img from "../components/Img";
 
 export default function Home() {
+  const src = "/../public/images/team.jpg";
+  const alt = "image description";
+  console.log(src);
   return (
     <Container sx={{ padding: 5 }} maxWidth="lg">
       <Navbar />
-      <Img scr={"/apotheken-ueberschrift.png"} />
+      <Img source={src} alt={alt} fill />
       <Box
         sx={{
           px: 4,
@@ -22,8 +25,7 @@ export default function Home() {
           flexDirection: "column",
           justifyContent: "center",
           alignItems: "center",
-        }}
-      >
+        }}>
         <Paper>
           <Typography variant="h4" component="h1" gutterBottom>
             Material UI - Next.js example in TypeScript
