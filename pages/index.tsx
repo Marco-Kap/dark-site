@@ -12,11 +12,12 @@ import Img from "../components/Img";
 export default function Home() {
   const src = "/../public/images/team.jpg";
   const alt = "image description";
-  console.log(src);
+  console.log("!!!!!!!!!!!!!!!" + src);
+
   return (
     <Container sx={{ padding: 5 }} maxWidth="lg">
       <Navbar />
-      <Img source={src} alt={alt} fill />
+      <Img source={src} alt={alt} />
       <Box
         sx={{
           px: 4,
