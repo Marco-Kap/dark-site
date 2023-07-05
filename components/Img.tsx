@@ -1,7 +1,6 @@
 import react from "react";
 import Image from "next/image";
 import { Box, Container } from "@mui/material";
-import mountains from "../public/images/team.jpg";
 
 //@ts-expect-error
 export default function Img({ source, alt }) {
