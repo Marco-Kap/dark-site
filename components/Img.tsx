@@ -1,11 +1,15 @@
 import react from "react";
 import Image from "next/image";
-import { Box, Container } from "@mui/material";
+import { Box, Card, Container, Fade } from "@mui/material";
+
+//const [shown, setshown] = useState(false);
 
 //@ts-expect-error
 export default function Img({ source, alt }) {
   return (
-    <Box style={{ display: "flex", flexDirection: "column" }}>
+    <>
+      <Card>noöjoöj</Card>
+
       <Image
         alt={alt}
         // Importing an image will
@@ -20,6 +24,6 @@ export default function Img({ source, alt }) {
           height: "auto",
         }}
       />
-    </Box>
+    </>
   );
 }
