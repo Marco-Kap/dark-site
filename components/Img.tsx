@@ -8,7 +8,7 @@ import { Box, Card, Container, Fade } from "@mui/material";
 export default function Img({ source, alt }) {
   return (
     <>
-      <Card>noöjoöj</Card>
+      <Card></Card>
 
       <Image
         alt={alt}

@@ -1,20 +1,19 @@
 import react from "react";
+import { Container, Row, Col } from "react-bootstrap";
 
 export default function Logo() {
   return (
     <svg
       version="1.0"
       xmlns="http://www.w3.org/2000/svg"
-      width="18.5000000pt"
-      height="14.8000000pt"
+      width="21.5000000pt"
+      height="16.8000000pt"
       viewBox="0 0 185.000000 148.000000"
-      preserveAspectRatio="xMidYMid meet"
-    >
+      preserveAspectRatio="xMidYMid meet">
       <g
         transform="translate(0.000000,148.000000) scale(0.100000,-0.100000)"
         fill="#000000"
-        stroke="none"
-      >
+        stroke="none">
         <path
           d="M740 1332 l-255 -87 -5 -225 -5 -225 -102 -3 -103 -3 0 -154 0 -154
 103 -3 102 -3 3 -49 c5 -72 -2 -82 -37 -57 -16 12 -36 21 -44 21 -22 0 -322

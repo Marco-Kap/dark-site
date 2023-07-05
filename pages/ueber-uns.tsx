@@ -3,7 +3,7 @@ import Img from "../components/Img";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Card } from "react-bootstrap";
 
-export default function Home() {
+export default function ueberuns() {
   const src = "/../public/images/team.jpg";
   const alt = "image description";
 
@@ -20,17 +20,6 @@ export default function Home() {
         retro fit synth etsy 3 wolf moon gluten-free iceland selvage kale chips
         shabby chic fingerstache. Adaptogen sriracha freegan yr keytar fashion
         axe.
-      </Card>
-      <Card>
-        Snackwave semiotics edison bulb glossier salvia lo-fi, food truck ennui.
-        Vibecession pour-over microdosing iceland artisan gatekeep. Roof party
-        master cleanse ennui, hammock bicycle rights authentic austin praxis
-        JOMO Brooklyn craft beer post-ironic farm-to-table. Solarpunk palo santo
-        tilde celiac asymmetrical vaporware pork belly, poke lumbersexual. YOLO
-        four dollar toast before they sold out, VHS venmo JOMO dreamcatcher
-        neutra lumbersexual iPhone hammock selfies paleo. Locavore vinyl banh mi
-        truffaut readymade marxism, kombucha blue bottle copper mug fit
-        sustainable selvage neutral milk hotel big mood.
       </Card>
     </>
   );
