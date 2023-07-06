@@ -1,25 +1,30 @@
-import react from "react";
+import react, { useEffect, useState } from "react";
 import Image from "next/image";
-import { Box, Container } from "@mui/material";
+import {Container, Fade} from "react-bootstrap"
 
 //@ts-expect-error
 export default function Img({ source, alt }) {
+  const [shown, setShown] = useState(false) ;
+   
+    useEffect() {}
+  
   return (
-    <Box style={{ display: "flex", flexDirection: "column" }}>
-      <Image
-        alt={alt}
-        // Importing an image will
-        // automatically set the width and height
-        src={source}
-        sizes="100vw"
-        width={100}
-        height={300}
-        // Make the image display full width
-        style={{
-          width: "100%",
-          height: "auto",
-        }}
-      />
-    </Box>
+    <Container>
+    <Fade in={shown}><div></div></Fade>
+    <Image
+      alt={alt}
+      // Importing an image will
+      // automatically set the width and height
+      src={source}
+      sizes="100vw"
+      width={50}
+      height={30}
+      // Make the image display full width
+      style={{
+        width: "100%",
+        height: "auto",
+      }}
+    /></Container>
+    
   );
 }
