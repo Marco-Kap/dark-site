@@ -1,5 +1,5 @@
 import BSNav from "../components/BSNav";
-import Img from "../components/Img";
+import Banner from "../components/Banner";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Card } from "react-bootstrap";
 
@@ -10,7 +10,7 @@ export default function kontakt() {
   return (
     <>
       <BSNav />
-      <Img source={src} alt={alt} />
+      <Banner source={src} alt={alt} />
       <Card className="mx-4">
         Affogato everyday carry gastropub portland snackwave pinterest
         chartreuse +1 biodiesel farm-to-table crucifix yuccie food truck.

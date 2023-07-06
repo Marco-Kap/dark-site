@@ -1,5 +1,6 @@
 import { Card as BSCard } from "react-bootstrap";
 
-export default function Card() {
-  <BSCard></BSCard>;
+//@ts-expect-error
+export default function Card({ children }) {
+  <BSCard className={"m-2"}>{children}</BSCard>;
 }

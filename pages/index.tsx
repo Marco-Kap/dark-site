@@ -1,5 +1,5 @@
 import BSNav from "../components/BSNav";
-import Img from "../components/Img";
+import Img from "../components/Banner";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Card, Container } from "react-bootstrap";
 

@@ -1,5 +1,5 @@
 import BSNav from "../components/BSNav";
-import Img from "../components/Img";
+import Banner from "../components/Banner";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Card } from "react-bootstrap";
 
@@ -10,7 +10,7 @@ export default function ueberuns() {
   return (
     <>
       <BSNav />
-      <Img source={src} alt={alt} />
+      <Banner source={src} alt={alt} />
       <Card>
         Biodiesel solarpunk scenester snackwave pug stumptown thundercats cronut
         narwhal try-hard. Vexillologist +1 jean shorts truffaut, shabby chic

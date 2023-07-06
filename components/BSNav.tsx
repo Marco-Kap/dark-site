@@ -9,7 +9,7 @@ export default function BSNav() {
   return (
     <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary">
       <Container>
-        <Navbar.Brand href="#home">
+        <Navbar.Brand href="/">
           <Logo />
           Ahorn-Apotheke
         </Navbar.Brand>

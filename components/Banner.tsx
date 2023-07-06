@@ -4,10 +4,9 @@ import Image from "next/image";
 //const [shown, setshown] = useState(false);
 
 //@ts-expect-error
-export default function Img({ source, alt }) {
+export default function Banner({ source, alt }) {
   return (
     <>
-    
       <Image
         alt={alt}
         // Importing an image will
