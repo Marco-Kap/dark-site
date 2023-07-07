@@ -1,7 +1,6 @@
-import react from "react";
+import react, { useState, useEffect } from "react";
 import Image from "next/image";
-
-//const [shown, setshown] = useState(false);
+import { Container } from "react-bootstrap";
 
 //@ts-expect-error
 export default function Banner({ source, alt }) {

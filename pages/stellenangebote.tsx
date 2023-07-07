@@ -21,7 +21,7 @@ export default function stellenangebote() {
         <Card.Body>
           <Row>
             <Col>
-              <Accordion style={{ margin: "2em" }} defaultActiveKey="0" flush>
+              <Accordion style={{ margin: "2em" }} defaultActiveKey="0">
                 <Accordion.Item eventKey="0">
                   <Accordion.Header>Apotheker/in im Praktikum</Accordion.Header>
                   <Accordion.Body>
@@ -110,6 +110,9 @@ export default function stellenangebote() {
                   </Accordion.Body>
                 </Accordion.Item>
               </Accordion>
+            </Col>
+            <Col>
+              {" "}
               <Image
                 alt={alt}
                 // Importing an image will
@@ -120,13 +123,27 @@ export default function stellenangebote() {
                 height={300}
                 // Make the image display full width
                 style={{
+                  paddingTop: "2em",
                   width: "100%",
                   height: "auto",
                 }}
               />
+              <Card className="text-center">
+                Ahorn-Apotheke
+                <br />
+                Bahnhofstraße 7<br /> 34497 Korbach
+                <br />
+                Deutschland
+                <br />
+                Email:
+                <a href="mailto:email@ahornapo.de?subject=Bewerbung">
+                  email@ahornapo.de
+                </a>
+              </Card>
             </Col>
           </Row>
         </Card.Body>
+        <h3 className="text-center">Was wir bieten</h3>
       </Container>
     </>
   );
