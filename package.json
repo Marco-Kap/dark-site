@@ -24,6 +24,7 @@
     "npm": "^9.7.2",
     "react": "latest",
     "react-bootstrap": "^2.8.0",
+    "react-calendar": "^4.3.0",
     "react-dom": "latest",
     "semver": "^7.5.2"
   },

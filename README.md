@@ -1,24 +1,22 @@
-# Material UI - Next.js example in TypeScript
+# Readme
 
-## How to use
+## Wie man diese Seite einsetzt
 
-Download the example [or clone the repo](https://github.com/mui/material-ui):
+Diese Seite basiert auf Next.js. 
 
 <!-- #default-branch-switch -->
 
 ```sh
-curl https://codeload.github.com/mui/material-ui/tar.gz/master | tar -xz --strip=2  material-ui-master/examples/material-next-ts
+git clone [repository]
 cd material-next-ts
 ```
-
-Install it and run:
+Um den Entwicklungsserver zu starten geh in das lokale Verzeichnis gib 
 
 ```sh
-npm install
 npm run dev
 ```
+in die Cmd ein.
 
-or:
 
 <!-- #default-branch-switch -->
 

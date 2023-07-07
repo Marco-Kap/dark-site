@@ -15,11 +15,17 @@ export default function BSNav() {
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="me-auto">
-            <Nav.Link href="/verlosung">Verlosung</Nav.Link>
-            <Nav.Link href="/stellenangebote">Stellenangebote</Nav.Link>
+          <Nav variant="tabs" defaultActiveKey="/" className="me-auto">
+            <Nav.Link eventKey={"verlosung"} href="/verlosung">
+              Verlosung
+            </Nav.Link>
+            <Nav.Link eventKey={"stellenangebote"} href="/stellenangebote">
+              Stellenangebote
+            </Nav.Link>
             <NavDropdown title="Leistungen" id="collasible-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Leistungen</NavDropdown.Item>
+              <NavDropdown.Item eventKey={"leistungen"} href="#action/3.1">
+                Leistungen
+              </NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2"></NavDropdown.Item>
               <NavDropdown.Item href="#action/3.3">Notdienst</NavDropdown.Item>
               <NavDropdown.Divider />
@@ -27,9 +33,8 @@ export default function BSNav() {
             </NavDropdown>
           </Nav>
           <Nav>
-            <Nav.Link href="/verlosung">Verlosung</Nav.Link>
-            <Nav.Link eventKey={2} href="#memes">
-              Dank memes
+            <Nav.Link eventKey={"kalender"} href="/kalender">
+              Kalender
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>
