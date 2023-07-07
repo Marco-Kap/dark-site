@@ -150,7 +150,7 @@ export default function stellenangebote() {
           <Card.Header>Was wir bieten</Card.Header>
           <Card.Body>
             {" "}
-            <ul style={{ listStyle: "disc" }} class="rounded">
+            <ul style={{ listStyle: "disc" }} className="rounded">
               <li>
                 <p>
                   Ein angenehmes Arbeitsumfeld: In unserer Apotheke legen wir
