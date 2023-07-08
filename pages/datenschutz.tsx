@@ -1,9 +1,9 @@
 import BSNav from "../components/BSNav";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Card } from "react-bootstrap";
+import Footer from "../components/Footer";
 
 export default function datenschutz() {
-
   return (
     <>
       <BSNav />
@@ -17,6 +17,7 @@ export default function datenschutz() {
         tousled roof party narwhal YOLO. Dummy text? More like dummy thicc text,
         amirite?
       </Card>
+      <Footer />
     </>
   );
 }

@@ -1,6 +1,3 @@
-import react from "react";
-import { Container, Row, Col } from "react-bootstrap";
-
 export default function Logo() {
   return (
     <svg
@@ -11,8 +8,8 @@ export default function Logo() {
       viewBox="0 0 185.000000 148.000000"
       preserveAspectRatio="xMidYMid meet">
       <g
-        transform="translate(0.000000,148.000000) scale(0.100000,-0.100000)"
-        fill="#000000"
+        transform="translate(0.000000,137.000000) scale(0.100000,-0.100000)"
+        fill="red"
         stroke="none">
         <path
           d="M740 1332 l-255 -87 -5 -225 -5 -225 -102 -3 -103 -3 0 -154 0 -154

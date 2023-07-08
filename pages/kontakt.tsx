@@ -2,6 +2,7 @@ import BSNav from "../components/BSNav";
 import Banner from "../components/Banner";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Card } from "react-bootstrap";
+import Footer from "../components/Footer";
 
 export default function kontakt() {
   const src = "/../public/images/team.jpg";
@@ -24,6 +25,7 @@ export default function kontakt() {
         pinterest poke grailed before they sold out kogi. Gatekeep paleo
         authentic aesthetic.
       </Card>
+      <Footer />
     </>
   );
 }

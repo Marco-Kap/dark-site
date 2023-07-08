@@ -4,6 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Image from "next/image";
 import Banner from "../components/Banner";
 import BSNav from "../components/BSNav";
+import Footer from "../components/Footer";
 
 export default function stellenangebote() {
   const src = "/../public/images/team.jpg";
@@ -206,6 +207,7 @@ export default function stellenangebote() {
           </Card.Body>
         </Card>
       </Container>
+      <Footer />
     </>
   );
 }

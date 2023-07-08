@@ -1,22 +1,33 @@
 # Readme
 
+TODO LISTE
+
+-Telefonnummer und Öffnungszeiten in der Navbar oder dem Footer unterbringen
+
+-Startseite fertigstellen
+
+-Overlay für die Bilder machen
+
+-Die Navbar im Darkmnode gut aussehen lassen
+
 ## Wie man diese Seite einsetzt
 
-Diese Seite basiert auf Next.js. 
+Diese Seite basiert auf Next.js. Schau bei Problemen in die Dokumentation
 
 <!-- #default-branch-switch -->
 
 ```sh
 git clone [repository]
-cd material-next-ts
+cd dark-site
 ```
-Um den Entwicklungsserver zu starten geh in das lokale Verzeichnis gib 
+
+Um den Entwicklungsserver zu starten geh in das Verzeichnis in de
 
 ```sh
 npm run dev
 ```
-in die Cmd ein.
 
+in die Cmd ein.
 
 <!-- #default-branch-switch -->
 
