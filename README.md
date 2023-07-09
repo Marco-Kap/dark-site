@@ -2,11 +2,14 @@
 
 TODO LISTE
 
--Telefonnummer und Öffnungszeiten in der Navbar oder dem Footer unterbringen
+-Telefonnummer und Öffnungszeiten in der Navbar bearbeiten: darf in der mobilen Ansicht nicht mehr auftauchen
 
 -Startseite fertigstellen
 
--Overlay für die Bilder machen
+-Overlay für die Bilder bearbeiten:
+-Text zentrieren
+-größe verändern?
+-Farbe ändern
 
 -Die Navbar im Darkmnode gut aussehen lassen
 

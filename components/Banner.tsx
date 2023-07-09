@@ -2,17 +2,21 @@ import react, { useState, useEffect } from "react";
 import Image from "next/image";
 import { Container, Fade } from "react-bootstrap";
 
-//@ts-expect-error
-export default function Banner({ source, alt, text }) {
-  const place = "hallo";
+export type Props = {
+  source: string;
+  alt: string;
+  text?: string;
+};
+
+export default function Banner(props: Props) {
   return (
     <>
       <div>
         <Image
-          alt={alt}
+          alt={props.alt}
           // Importing an image will
           // automatically set the width and height
-          src={source}
+          src={props.source}
           sizes="100vw"
           width={100}
           height={300}
@@ -26,15 +30,23 @@ export default function Banner({ source, alt, text }) {
         <div
           style={{
             height: "66vw",
-            width: "20vw",
+            width: "2vw",
             float: "left",
             zIndex: 2,
             backgroundColor: "crimson",
             position: "absolute",
-            translate: "100% -100%",
+            translate: "20vw -66vw",
             opacity: 0.3,
+            alignItems: "center",
           }}>
-          <div>{place}</div>
+          <div
+            style={{
+              alignSelf: "center",
+              justifySelf: "center",
+              fontSize: "2vw",
+            }}>
+            {props.text}
+          </div>
         </div>
       </div>
     </>

@@ -16,7 +16,7 @@ export default function Home() {
   return (
     <>
       <BSNav />
-      <Img source={src} alt={alt} />
+      <Img source={src} alt={alt} text="Willkommen bei ihrer Ahorn-Apotheke" />
       <Container>
         <Section children={section1} />
         <Section children={section2} />

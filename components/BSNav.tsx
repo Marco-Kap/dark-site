@@ -3,10 +3,13 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import Logo from "./Logo";
+import Phone from "./Phone";
+import Clock from "./Clock";
+import { isOpen } from "../public/utils/time";
 
 export default function BSNav() {
   return (
-    <Container className="justify-items-start">
+    <Container className="justify-items-start sticky-top bg-light rounded">
       <Navbar collapseOnSelect expand="lg" className="">
         <Container>
           <Navbar.Brand href="/">
@@ -30,6 +33,10 @@ export default function BSNav() {
                 <NavDropdown.Item href="/">Rezepturen</NavDropdown.Item>
               </NavDropdown>
             </Nav>
+            <Phone />
+            <span>05631 4040</span>
+            <Clock />
+            {isOpen()}
             <Nav variant="pills" className="bg-info-subtle rounded">
               <Nav.Link eventKey={"kalender"} href="/kalender">
                 Rezept einlösen
