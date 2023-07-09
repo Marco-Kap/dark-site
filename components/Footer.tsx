@@ -4,7 +4,7 @@ import Navbar from "react-bootstrap/Navbar";
 
 const Footer: React.FC = () => {
   return (
-    <Navbar className="justify-content-center  position-relative bottom-0 translate-x-50 flex">
+    <Navbar className="justify-content-center  position-relative bottom-0 sticky-bottom translate-x-50 flex">
       <Container as="footer" className="row justify-content-">
         <Nav variant="tabs" className="justify-content-center">
           <Nav.Link

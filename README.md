@@ -10,6 +10,12 @@ TODO LISTE
 
 -Die Navbar im Darkmnode gut aussehen lassen
 
+-Rezepturen Seite machen
+
+-Dropdown auf BSNav beenden
+
+-notdienstseite bearbeiten
+
 ## Wie man diese Seite einsetzt
 
 Diese Seite basiert auf Next.js. Schau bei Problemen in die Dokumentation

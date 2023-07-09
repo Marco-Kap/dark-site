@@ -6,12 +6,8 @@ import Logo from "./Logo";
 
 export default function BSNav() {
   return (
-    <Container>
-      <Navbar
-        collapseOnSelect
-        expanded
-        expand="lg"
-        className="bg-body-tertiary">
+    <Container className="justify-items-start">
+      <Navbar collapseOnSelect expand="lg" className="">
         <Container>
           <Navbar.Brand href="/">
             <Logo />
@@ -27,17 +23,11 @@ export default function BSNav() {
                 Stellenangebote
               </Nav.Link>
               <NavDropdown title="Leistungen" id="collasible-nav-dropdown">
-                <NavDropdown.Item eventKey={"leistungen"} href="#action/3.1">
-                  Leistungen
-                </NavDropdown.Item>
+                <NavDropdown.Item href="/">Lieferdienst</NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.2"></NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">
-                  Notdienst
-                </NavDropdown.Item>
+                <NavDropdown.Item href="/notdienst">Notdienst</NavDropdown.Item>
                 <NavDropdown.Divider />
-                <NavDropdown.Item href="#action/3.4">
-                  Rezepturen
-                </NavDropdown.Item>
+                <NavDropdown.Item href="/">Rezepturen</NavDropdown.Item>
               </NavDropdown>
             </Nav>
             <Nav variant="pills" className="bg-info-subtle rounded">
