@@ -2,7 +2,7 @@
 
 TODO LISTE
 
--Telefonnummer und Öffnungszeiten in der Navbar bearbeiten: darf in der mobilen Ansicht nicht mehr auftauchen Dafür den use mediaquery hook benutzen
+-margin für die mobile ansicht in der nav leidte vergeben
 
 -Startseite fertigstellen
 

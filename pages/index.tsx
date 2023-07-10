@@ -12,7 +12,7 @@ export default function Home() {
   const section1 =
     " Ihre Gesundheit liegt uns am Herzen, und wir freuen uns, Sie bei uns begrüßen zu dürfen. Als vertrauenswürdige Apotheke stehen wir Ihnen mit unserer langjährigen Erfahrung, Fachkompetenz und einem breiten Sortiment an Medikamenten und Gesundheitsprodukten zur Seite.";
   const section2 =
-    "Biodiesel solarpunk scenester snackwave pug stumptown thundercats cronut narwhal try-hard. Vexillologist +1 jean shorts truffaut, shabby";
+    "Bei uns finden Sie nicht nur eine große Auswahl an rezeptpflichtigen und rezeptfreien Arzneimitteln, sondern auch ein breites Spektrum an hochwertigen Gesundheitsprodukten, Nahrungsergänzungsmitteln, Naturheilmitteln und Kosmetikartikeln. Wir legen großen Wert auf Qualität und arbeiten nur mit renommierten Herstellern zusammen, um Ihnen Produkte anzubieten, denen Sie vertrauen können.";
 
   return (
     <>

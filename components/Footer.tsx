@@ -9,13 +9,15 @@ const Footer: React.FC = () => {
         <Nav variant="tabs" className="justify-content-center">
           <Nav.Link
             className="col-4-sm justify-self-center"
-            href={"/datenschutz"}>
+            href={"/datenschutz"}
+          >
             Datenschutz
           </Nav.Link>
 
           <Nav.Link
             className="col-4-sm justify-self-center"
-            href={"/impressum"}>
+            href={"/impressum"}
+          >
             Impressum
           </Nav.Link>
         </Nav>
