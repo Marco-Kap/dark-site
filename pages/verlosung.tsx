@@ -29,7 +29,11 @@ export default function verlosung() {
   return (
     <>
       <BSNav />
-      <Banner source={src} alt={alt} />
+      <Banner
+        source={src}
+        alt={alt}
+        text="Gewinnen sie bei unserer Verlosung"
+      />
       <Container>
         <Section children={section1} />
         {images.map((image) => (

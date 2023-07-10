@@ -1,10 +1,12 @@
 # Readme
 
-TODO LISTE
+Falls ich morgen gehe
+
+## TODO LISTE
 
 -Startseite fertigstellen
 
-banner kleiner machen?
+-banner text für mobil anpasssen
 
 -Overlay für die Bilder bearbeiten:
 -text prop auf allen Seiten einstellen
@@ -14,7 +16,9 @@ banner kleiner machen?
 
 -Die Navbar im Darkmode gut aussehen lassen
 
--Rezepturen Seite machen
+-Rezepturen Seite bearbeiten
+
+-404 Seite bearbeiten
 
 -kontaktseite bearbeiten öffnungszeiten hinzufügen
 
@@ -28,42 +32,38 @@ banner kleiner machen?
 
 ## Wie man diese Seite einsetzt
 
-Diese Seite basiert auf Next.js. Schau bei Problemen in die Dokumentation
+Diese Seite basiert auf Next.js. Schau bei Problemen in die Dokumentation.
+Für das Styling wurde teilweise das css Framework Bootstrap 5.3 verwendet.
 
-<!-- #default-branch-switch -->
+### notwendige Befehle
+
+wenn das repository noch nicht lokal vorliegt muss es erst importiert werden.
+Alternativ kannst du einen Online Editor nutzen. Codesandbox und Stackblitz sind empfelenswert.
 
 ```sh
-git clone [repository]
+git clone [repository url]
 cd dark-site
+npm install --save
 ```
 
-Um den Entwicklungsserver zu starten geh in das Verzeichnis in de
+Um den Entwicklungsserver zu starten geh mit der cmd in das Verzeichnis /dark-site und gib den folgenden Befehl ein
 
 ```sh
 npm run dev
 ```
 
-in die Cmd ein.
+Bei Sicherheitsbedenken gib ein:
 
-<!-- #default-branch-switch -->
+```sh
+npm audit
+```
 
-[![Edit on StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/mui/material-ui/tree/master/examples/material-next-ts)
+Das wird dir eventuell eine Liste veralteter Abhängigkeiten oder anfälliger Packete anzeigen. Zusammen mit Reperaturmöglichkeiten.
 
-[![Edit on CodeSandbox](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github/mui/material-ui/tree/master/examples/material-next-ts)
+Wenn du den Quellcode geändert hast und die Änderungen veröffentlichen willst. Nutze
 
-## The idea behind the example
+```sh
+npm run build
+```
 
-The project uses [Next.js](https://github.com/vercel/next.js), which is a framework for server-rendered React apps.
-It includes `@mui/material` and its peer dependencies, including [Emotion](https://emotion.sh/docs/introduction), the default style engine in Material UI v5. If you prefer, you can [use styled-components instead](https://mui.com/material-ui/guides/interoperability/#styled-components).
-
-## The link component
-
-The [example folder](https://github.com/mui/material-ui/tree/HEAD/examples/material-next-ts) provides an adapter for the use of [Next.js's Link component](https://nextjs.org/docs/api-reference/next/link) with MUI.
-More information [in the documentation](https://mui.com/material-ui/guides/routing/#next-js).
-
-## What's next?
-
-<!-- #default-branch-switch -->
-
-You now have a working example project.
-You can head back to the documentation and continue by browsing the [templates](https://mui.com/material-ui/getting-started/templates/) section.
+Das wird einen Ordner mit css ,js und html Dateien für den Server aus dem Typescriptcode erstellen.
