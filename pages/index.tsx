@@ -1,6 +1,7 @@
 import BSNav from "../components/BSNav";
 import Img from "../components/Banner";
 import "bootstrap/dist/css/bootstrap.min.css";
+import style from "public/css/style.css";
 import { Card, Container } from "react-bootstrap";
 import Section from "../components/Section";
 import Footer from "../components/Footer";
