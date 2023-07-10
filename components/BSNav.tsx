@@ -6,9 +6,8 @@ import Logo from "./Logo";
 import Phone from "./Phone";
 import Clock from "./Clock";
 import { isOpen } from "../public/utils/time";
-import style from "public/css/style.css";
 import { useEffect, useState, useCallback } from "react";
-import useMediaQuery from "public/utils/useMediaQuery";
+import useMediaQuery from "../public/utils/useMediaQuery";
 
 export default function BSNav() {
   const breakpoint = useMediaQuery(996);
@@ -23,8 +22,8 @@ export default function BSNav() {
               Ahorn-Apotheke
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-            <Navbar.Collapse id="responsive-navbar-nav">
-              <Nav variant="tabs" defaultActiveKey="/" className="me-auto">
+            <Navbar.Collapse id="responsive-navbar-nav ">
+              <Nav variant="tabs" defaultActiveKey="/" className="me-auto px-2">
                 <Nav.Link eventKey={"verlosung"} href="/verlosung">
                   Verlosung
                 </Nav.Link>
@@ -42,16 +41,29 @@ export default function BSNav() {
                 </NavDropdown>
               </Nav>
               {!breakpoint ? (
-                <div className="pt-2">
+                <div className="p-2">
                   <Phone />
                   {"   "}
-                  <span>05631 4040</span>
-                  {" | "} <Clock className="px-6" /> {isOpen()}
+                  <span>
+                    <a
+                      style={{ color: "grey", margin: "0.3em" }}
+                      href="tel:056314040"
+                    >
+                      05631 4040
+                    </a>
+                  </span>
+                  {" | "} <Clock />
+                  <a
+                    style={{ color: "grey", marginLeft: "0.3em" }}
+                    href="/kontakt"
+                  >
+                    <span>{isOpen()}</span>
+                  </a>
                 </div>
               ) : (
                 <></>
               )}{" "}
-              <Nav variant="pills" className="bg-info-subtle rounded">
+              <Nav variant="pills" className="bg-info-subtle px-2 rounded">
                 <Nav.Link eventKey={"kalender"} href="/kalender">
                   Rezept einlösen
                 </Nav.Link>

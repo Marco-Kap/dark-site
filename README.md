@@ -2,9 +2,9 @@
 
 TODO LISTE
 
--margin für die mobile ansicht in der nav leidte vergeben
-
 -Startseite fertigstellen
+
+banner kleiner machen?
 
 -Overlay für die Bilder bearbeiten:
 -text prop auf allen Seiten einstellen
@@ -16,13 +16,15 @@ TODO LISTE
 
 -Rezepturen Seite machen
 
--Dem Nav-link muss im Bootstrap stylesheet margin left gegeben werden damit nicht jedem einzelnem Link im mobilem Dropdown der Wert zugewiesen werden muss.
+-kontaktseite bearbeiten öffnungszeiten hinzufügen
 
 -notdienstseite bearbeiten
 
 -passende Bilder für Demo einsetzen
 
--einige Links für Demo ausblenden zum Beispiel E-Rezept 
+-einige Links für Demo ausblenden zum Beispiel E-Rezept
+
+-Die Berufhaftpflichtversicherung ins impressum schreiben
 
 ## Wie man diese Seite einsetzt
 

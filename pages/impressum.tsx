@@ -42,7 +42,34 @@ export default function impressum() {
                 <h4>Bildmaterial</h4>
                 <p>https://pexels.com</p>
               </div>
-              <div className="col"></div>
+              <div className="col">
+                <h4>Zust&auml;ndige Apothekerkammer:</h4>
+                <p>Landeskammer Hessen</p>
+                <h4>Berufshaftpflichtversicherung:</h4>
+                <br />
+                <p>
+                  some ensurance Company
+                  <br />
+                  some some street
+                  <br />
+                  34355 somewhere
+                </p>
+                <p>USt.-Id.-Nr. gem&aumlß § 18 Abs. 2 MStV: DE113129508</p>
+                <h4>Zust&aumlndige Aufsichtsbeh&oumlrde:</h4>
+                <a href="https://hlfgp.hessen.de">
+                  <p>
+                    Hessisches Landesamt f&uumlr Gesundheit und Pflege Postfach
+                    2913 65019 Wießbaden
+                  </p>
+                </a>
+                <h4>Stelle f&uumlr Streitbeilegung:</h4>
+                <p>
+                  <a href="www.universalschlichtungsstelle.de">
+                    Universalschlichtungsstelle Zentrale f&uumlr Streitbeilegung
+                    Stra&#223burgerstra&#223e 8 77694 Kehl
+                  </a>
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -50,21 +77,4 @@ export default function impressum() {
       <Footer />
     </>
   );
-}
-{
-  /*
-<h4>Zust&auml;ndige Apothekerkammer:</h4>
-													<p>Landeskammer Hessen</p>
-													<h4>Berufshaftpflichtversicherung:</h4><br>
-													<p>some ensurance Company<br>
-														some some street<br>
-														34355 somewhere
-
-													<p>USt.-Id.-Nr. gem&aumlß § 18 Abs. 2 MStV:	DE113129508</p>
-													<h4>Zust&aumlndige Aufsichtsbeh&oumlrde:</h4>
-													<a href="https://hlfgp.hessen.de"><p>Hessisches Landesamt f&uumlr Gesundheit und Pflege Postfach 2913 65019 Wießbaden</a></p>
-													<h4>Stelle f&uumlr Streitbeilegung:</h4>
-													<p><a href="www.universalschlichtungsstelle.de">Universalschlichtungsstelle Zentrale f&uumlr Streitbeilegung
-													Stra&#223burgerstra&#223e 8
-													77694 Kehl</a></p>*/
 }

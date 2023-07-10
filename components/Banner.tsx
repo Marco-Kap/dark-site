@@ -1,6 +1,5 @@
 import react, { useState, useEffect } from "react";
 import Image from "next/image";
-import { Container, Fade } from "react-bootstrap";
 
 export type Props = {
   source: string;
