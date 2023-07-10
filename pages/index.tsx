@@ -10,7 +10,7 @@ export default function Home() {
   const src = "/../public/images/team.jpg";
   const alt = "image description";
   const section1 =
-    " Snackwave semiotics edison bulb glossier salvia lo-fi, food truck.";
+    " Ihre Gesundheit liegt uns am Herzen, und wir freuen uns, Sie bei uns begrüßen zu dürfen. Als vertrauenswürdige Apotheke stehen wir Ihnen mit unserer langjährigen Erfahrung, Fachkompetenz und einem breiten Sortiment an Medikamenten und Gesundheitsprodukten zur Seite.";
   const section2 =
     "Biodiesel solarpunk scenester snackwave pug stumptown thundercats cronut narwhal try-hard. Vexillologist +1 jean shorts truffaut, shabby";
 

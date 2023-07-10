@@ -1,4 +1,4 @@
-import { useState, useCallback, useEffect } from 'react';
+import { useState, useCallback, useEffect } from "react";
 
 const useMediaQuery = (width) => {
   const [targetReached, setTargetReached] = useState(false);
@@ -25,19 +25,4 @@ const useMediaQuery = (width) => {
 
   return targetReached;
 };
-
-
-const Navbar = () => {
-   const isBreakpoint = useMediaQuery(768)
-   return (
-    <div>
-      { isBreakpoint ? (
-        <div>
-          <HamburgerMenu />
-        </div>
-      ) : (
-        <div>
-           <FullMenu />
-        </div>
-   )
-)}
+export default useMediaQuery;

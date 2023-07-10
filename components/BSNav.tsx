@@ -8,16 +8,15 @@ import Clock from "./Clock";
 import { isOpen } from "../public/utils/time";
 import style from "public/css/style.css";
 import { useEffect, useState, useCallback } from "react";
+import useMediaQuery from "public/utils/useMediaQuery";
 
-function renderContact() {
-  render(<></>);
-}
-//console.log(useRef() + !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!jkpßkü);
 export default function BSNav() {
+  const breakpoint = useMediaQuery(996);
+
   return (
     <>
       <Container className="justify-items-start sticky-top bg-light rounded">
-        <Navbar collapseOnSelect expand="lg" className="red">
+        <Navbar collapseOnSelect expand="lg" className="">
           <Container>
             <Navbar.Brand href="/">
               <Logo />
@@ -42,12 +41,16 @@ export default function BSNav() {
                   <NavDropdown.Item href="/">Rezepturen</NavDropdown.Item>
                 </NavDropdown>
               </Nav>
-              <div>
-                <Phone />
-                <span style={{ margin: "0.5vw" }}>05631 4040</span>
-                <Clock className="px-6" />
-                {isOpen()}{" "}
-              </div>
+              {!breakpoint ? (
+                <div className="pt-2">
+                  <Phone />
+                  {"   "}
+                  <span>05631 4040</span>
+                  {" | "} <Clock className="px-6" /> {isOpen()}
+                </div>
+              ) : (
+                <></>
+              )}{" "}
               <Nav variant="pills" className="bg-info-subtle rounded">
                 <Nav.Link eventKey={"kalender"} href="/kalender">
                   Rezept einlösen

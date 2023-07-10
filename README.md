@@ -2,22 +2,27 @@
 
 TODO LISTE
 
--Telefonnummer und Öffnungszeiten in der Navbar bearbeiten: darf in der mobilen Ansicht nicht mehr auftauchen
+-Telefonnummer und Öffnungszeiten in der Navbar bearbeiten: darf in der mobilen Ansicht nicht mehr auftauchen Dafür den use mediaquery hook benutzen
 
 -Startseite fertigstellen
 
 -Overlay für die Bilder bearbeiten:
+-text prop auf allen Seiten einstellen
 -Text zentrieren
 -größe verändern?
 -Farbe ändern
 
--Die Navbar im Darkmnode gut aussehen lassen
+-Die Navbar im Darkmode gut aussehen lassen
 
 -Rezepturen Seite machen
 
--Dropdown auf BSNav beenden
+-Dem Nav-link muss im Bootstrap stylesheet margin left gegeben werden damit nicht jedem einzelnem Link im mobilem Dropdown der Wert zugewiesen werden muss.
 
 -notdienstseite bearbeiten
+
+-passende Bilder für Demo einsetzen
+
+-einige Links für Demo ausblenden zum Beispiel E-Rezept 
 
 ## Wie man diese Seite einsetzt
 

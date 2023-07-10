@@ -30,22 +30,24 @@ export default function Banner(props: Props) {
         <div
           style={{
             height: "66vw",
-            width: "2vw",
+            width: "20vw",
             float: "left",
             zIndex: 2,
-            backgroundColor: "crimson",
+            backgroundColor: "lightgrey",
             position: "absolute",
             translate: "20vw -66vw",
-            opacity: 0.3,
+            opacity: 0.6,
             alignItems: "center",
-          }}>
+            display: "flex",
+          }}
+        >
           <div
             style={{
-              alignSelf: "center",
-              justifySelf: "center",
               fontSize: "2vw",
-            }}>
-            {props.text}
+              color: "red",
+            }}
+          >
+            <h2 style={{ opacity: 1 }}>{props.text}</h2>
           </div>
         </div>
       </div>
