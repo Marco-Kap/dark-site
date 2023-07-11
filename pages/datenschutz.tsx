@@ -1,7 +1,4 @@
-import React from "react";
-import Section from "../components/Section";
 import BSNav from "../components/BSNav";
-import "bootstrap/dist/css/bootstrap.min.css";
 import { Card } from "react-bootstrap";
 
 const Datenschutz = () => {

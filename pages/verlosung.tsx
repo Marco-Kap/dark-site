@@ -1,10 +1,8 @@
 import BSNav from "../components/BSNav";
 import Banner from "../components/Banner";
-import "bootstrap/dist/css/bootstrap.min.css";
 import { Card, Container } from "react-bootstrap";
 import Image from "next/image";
 import Section from "../components/Section";
-import { dimensions } from "../public/utils/screensize";
 import Footer from "../components/Footer";
 
 export default function verlosung() {

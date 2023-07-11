@@ -1,6 +1,6 @@
 # Readme
 
-Falls ich morgen gehe
+Siehe wie man die Seite einsetzt
 
 ## TODO LISTE
 
@@ -29,6 +29,8 @@ Falls ich morgen gehe
 -einige Links für Demo ausblenden zum Beispiel E-Rezept
 
 -Die Berufhaftpflichtversicherung ins impressum schreiben
+
+-An Wordpress API anbinden
 
 ## Wie man diese Seite einsetzt
 

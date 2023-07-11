@@ -1,6 +1,5 @@
 import React from "react";
 import { Accordion, Container, Card, Row, Col } from "react-bootstrap";
-import "bootstrap/dist/css/bootstrap.min.css";
 import Image from "next/image";
 import Banner from "../components/Banner";
 import BSNav from "../components/BSNav";
