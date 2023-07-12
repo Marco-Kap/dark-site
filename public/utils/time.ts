@@ -44,7 +44,7 @@ export function isOpen() {
   let closingTime;
 
   if (index === 1) {
-    closingTime = "geöffnet";
+    closingTime = "aktuell geöffnet!";
   }
   if (
     index !== 1 &&
@@ -65,13 +65,13 @@ export function isOpen() {
     day !== 5 &&
     (hour >= 8 || (hour <= 18 && minute <= 30))
   ) {
-    closingTime = "schließt um 18:30";
+    closingTime = "geöffnet bis 18:30";
   } else if (
     index !== 1 &&
     day === 6 &&
     (hour <= 8 || (hour <= 13 && minute <= 30))
   ) {
-    closingTime = "schließt um 13:30";
+    closingTime = "geöffnet bis 13:30";
   } else {
     closingTime = "";
   }

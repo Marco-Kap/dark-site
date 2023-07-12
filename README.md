@@ -1,6 +1,6 @@
 # Readme
 
-Siehe wie man die Seite einsetzt
+Für eine kurze Anleitung runterscrollen zu "wie man die Seite einsetzt"
 
 ## TODO LISTE
 

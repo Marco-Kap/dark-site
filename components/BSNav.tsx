@@ -33,15 +33,9 @@ export default function BSNav() {
                 <Nav.Link eventKey={"kontakt"} href="/kontakt">
                   Kontakt
                 </Nav.Link>
-                <NavDropdown title="Leistungen" id="collasible-nav-dropdown">
-                  <NavDropdown.Item href="/">Lieferdienst</NavDropdown.Item>
-                  <NavDropdown.Item href="#action/3.2"></NavDropdown.Item>
-                  <NavDropdown.Item href="/notdienst">
-                    Notdienst
-                  </NavDropdown.Item>
-                  <NavDropdown.Divider />
-                  <NavDropdown.Item href="/">Rezepturen</NavDropdown.Item>
-                </NavDropdown>
+                <Nav.Link eventKey={"notdienst"} href="/notdienst">
+                  Notdienst
+                </Nav.Link>
               </Nav>
               {!breakpoint ? (
                 <div className="p-2">
@@ -50,14 +44,16 @@ export default function BSNav() {
                   <span>
                     <a
                       style={{ color: "grey", margin: "0.3em" }}
-                      href="tel:056314040">
+                      href="tel:056314040"
+                    >
                       05631 4040
                     </a>
                   </span>
                   {" | "} <Clock />
                   <a
                     style={{ color: "grey", marginLeft: "0.3em" }}
-                    href="/kontakt">
+                    href="/kontakt"
+                  >
                     <span>{isOpen()}</span>
                   </a>
                 </div>

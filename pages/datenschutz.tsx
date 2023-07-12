@@ -62,10 +62,11 @@ const Datenschutz = () => {
         </p>
         <h2>3. Weitergabe von Daten</h2>
         <p>
-          Eine Übermittlung Ihrer persönlichen Daten an Dritte zu anderen als
-          den im Folgenden aufgeführten Zwecken findet nicht statt. Wir geben
-          Ihre persönlichen Daten nur an Dritte weiter, wenn: - Sie Ihre nach
-          Art. 6 Abs. 1 S. 1 lit. a DSGVO ausdrückliche Einwilligung dazu
+          a) Allgemein
+          <br /> Eine Übermittlung Ihrer persönlichen Daten an Dritte zu anderen
+          als den im Folgenden aufgeführten Zwecken findet nicht statt. Wir
+          geben Ihre persönlichen Daten nur an Dritte weiter, wenn: - Sie Ihre
+          nach Art. 6 Abs. 1 S. 1 lit. a DSGVO ausdrückliche Einwilligung dazu
           erteilt haben, - die Weitergabe nach Art. 6 Abs. 1 S. 1 lit. f DSGVO
           zur Geltendmachung, Ausübung oder Verteidigung von Rechtsansprüchen
           erforderlich ist und kein Grund zur Annahme besteht, dass Sie ein
@@ -74,6 +75,15 @@ const Datenschutz = () => {
           1 S. 1 lit. c DSGVO eine gesetzliche Verpflichtung besteht, sowie -
           dies gesetzlich zulässig und nach Art. 6 Abs. 1 S. 1 lit. b DSGVO für
           die Abwicklung von Vertragsverhältnissen mit Ihnen erforderlich ist.
+        </p>
+        <p>
+          b) Zur Nutzung von aponet
+          <br /> Durch die Nutzung des Widgets zur Apotheken- und Notdienstsuche
+          wird Ihr eingegebener Suchbegriff (PLZ oder Ort) an die Seite
+          www.aponet.de ausschließlich zum Zweck der Standortermittlung
+          weitergegeben. Näheres zum Datenschutz auf aponet.de entnehmen Sie
+          bitten den dortigen Datenschutzerklärungen unter
+          https://www.aponet.de/datenschutzerklaerung.html.
         </p>
         <h2>4. Betroffenenrechte</h2>
         <p>

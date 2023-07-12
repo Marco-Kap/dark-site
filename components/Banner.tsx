@@ -1,5 +1,6 @@
-import react, { useState, useEffect } from "react";
 import Image from "next/image";
+import { Container } from "react-bootstrap";
+import useMediaQuery from "./../public/utils/useMediaQuery";
 
 export type Props = {
   source: string;
@@ -8,13 +9,13 @@ export type Props = {
 };
 
 export default function Banner(props: Props) {
+  const breakpoint_1 = useMediaQuery(768);
+
   return (
     <>
       <div>
         <Image
           alt={props.alt}
-          // Importing an image will
-          // automatically set the width and height
           src={props.source}
           sizes="100vw"
           width={100}
@@ -40,14 +41,17 @@ export default function Banner(props: Props) {
             display: "flex",
           }}
         >
-          <div
-            style={{
-              fontSize: "2vw",
-              color: "red",
-            }}
-          >
-            <h2 style={{ opacity: 1 }}>{props.text}</h2>
-          </div>
+          {!breakpoint_1 ? (
+            <div
+              style={{
+                color: "red",
+              }}
+            >
+              <h2 style={{ opacity: "1", fontSize: "2vw" }}>{props.text}</h2>
+            </div>
+          ) : (
+            <div></div>
+          )}
         </div>
       </div>
     </>
