@@ -7,15 +7,15 @@ const date = new Date();
 export default function notdienst() {
   // Pharmacies
   const pharmacies = [
-    "Wir haben Notdienst", //Notdienst: Ahornapotheke
-    "Notdienst: Apotheke Am Berndorfer Tor",
-    "Notdienst: Bären-Apotheke",
-    "Notdienst: Eisenberg-Apotheke",
-    "Notdienst: Adler Apotheke Sachsenhausen",
+    "Ahorn-Apotheke", //Ahornapotheke
+    "Apotheke Am Berndorfer Tor",
+    "Bären-Apotheke",
+    "Eisenberg-Apotheke",
+    "Adler Apotheke Sachsenhausen",
     //'Kilian Apotheke', is closed
-    "Notdienst: Hirsch-Apotheke",
-    "Notdienst: Stern-Apotheke",
-    "Notdienst: Edersee-Apotheke Vöhl",
+    "Hirsch-Apotheke",
+    "Stern-Apotheke",
+    "Edersee-Apotheke Vöhl",
   ];
 
   const d = new Date();
@@ -63,22 +63,25 @@ export default function notdienst() {
     <>
       <BSNav />
       <Card style={{ margin: "2em", textAlign: "center" }}>
-        <Card.Header>{getEmergency()}</Card.Header>
-        <Card.Body>
-          <h2>
-            Hier finden sie die aktuell geöffnete Apotheke in Korbach und den
-            geplanten Notdienst.
-          </h2>
-          <>
-                 
-                 
-          Wir sind darum bemüht ihnen rund um die die bestmögliche
+        <Card.Header>
+          {" "}
+          Hier finden sie die momentan geöffnete Apotheke in Korbach und den
+          geplanten Notdienst.
+        </Card.Header>
+        <Card.Body>Aktuelle Notdienst Apotheke: {getEmergency()}</Card.Body>
+        <Card.Footer>
+          {" "}
+          Wir sind bemüht ihnen rund um Uhr die bestmögliche
           Gesundheitsversorgung zu bieten. Sollten sie nicht in der Nähe wohnen
           oder eine Reise planen können sie ihre Postleitzahl eingeben und eine
           momentan geöffnete Apotheke finden.
-        </Card.Body>
+        </Card.Footer>
       </Card>
-
+      {wLabels.map((date) => {
+        <>
+          <p>{date}</p>;
+        </>;
+      })}
       <Footer />
     </>
   );

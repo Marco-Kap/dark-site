@@ -35,16 +35,16 @@ export default function verlosung() {
       <Container>
         <Section children={section1} />
         {images.map((image) => (
-          <>
+          <div style={{ justifyContent: "center", display: "flex" }}>
             <Image
               src={image[0]}
               alt={"Verlosungsdummy1"}
               width={200}
               height={300}
-              style={{ width: "100%", height: "auto" }}
+              style={{ width: "100%", height: "100%" }}
             />
             <Card>{image[1]}</Card>
-          </>
+          </div>
         ))}
       </Container>
       <Footer />
