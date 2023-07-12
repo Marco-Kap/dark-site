@@ -10,7 +10,7 @@ export type Props = {
 
 export default function Banner(props: Props) {
   const breakpoint_1 = useMediaQuery(768);
-
+  console.log(!breakpoint_1 ? "nicht breakpoint" : "breakpoint erreicht");
   return (
     <>
       <div>
@@ -33,7 +33,7 @@ export default function Banner(props: Props) {
             width: "20vw",
             float: "left",
             zIndex: 2,
-            backgroundColor: "lightgrey",
+            backgroundColor: !breakpoint_1 ? "lightgrey" : "",
             position: "absolute",
             translate: "20vw -66vw",
             opacity: 0.6,

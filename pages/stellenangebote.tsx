@@ -8,15 +8,18 @@ import Footer from "../components/Footer";
 export default function stellenangebote() {
   const src = "/../public/images/team.jpg";
   const alt = "image";
-  console.log(src + "src");
-  console.log(alt + "alt");
+
   return (
     <>
       <BSNav />
-      <Banner source={src} alt={alt} />
+      <Banner
+        source={src}
+        alt={alt}
+        text="Wir suchen Verstärkung für unser Team"
+      />
       <Container>
         <Card className={"mt-2"}>
-          <Card.Header> Wir suchen Verstärkung für unser Team</Card.Header>
+          <Card.Header> Wen wir suchen</Card.Header>
         </Card>
         <Card.Body>
           <Row>

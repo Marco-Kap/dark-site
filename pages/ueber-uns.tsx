@@ -10,7 +10,7 @@ export default function ueberuns() {
   return (
     <>
       <BSNav />
-      <Banner source={src} alt={alt} />
+      <Banner source={src} alt={alt} text="Das sind wir" />
       <Card>
         Biodiesel solarpunk scenester snackwave pug stumptown thundercats cronut
         narwhal try-hard. Vexillologist +1 jean shorts truffaut, shabby chic

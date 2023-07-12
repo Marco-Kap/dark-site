@@ -14,6 +14,22 @@ export default function BSNav() {
 
   return (
     <>
+      <Container>
+        <div className="p-2">
+          <span>Bahnhof Straße 7, 34497 Korbach</span>
+          <Phone />
+          {"   "}
+          <span>
+            <a style={{ color: "grey", margin: "0.3em" }} href="tel:056314040">
+              05631 4040
+            </a>
+          </span>
+          {" | "} <Clock />
+          <a style={{ color: "grey", marginLeft: "0.3em" }} href="/kontakt">
+            <span>{isOpen()}</span>
+          </a>
+        </div>
+      </Container>
       <Container className="justify-items-start sticky-top bg-light rounded">
         <Navbar collapseOnSelect expand="lg" className="">
           <Container>
