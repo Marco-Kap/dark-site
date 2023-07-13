@@ -6,7 +6,7 @@ Für eine kurze Anleitung runterscrollen zu "wie man die Seite einsetzt"
 
 -Startseite fertigstellen
 
--banner text für mobil anpasssen
+-Verlosungsseite fertig stellen
 
 -Overlay für die Bilder bearbeiten:
 -text prop auf allen Seiten einstellen

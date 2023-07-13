@@ -5,7 +5,7 @@ import Section from "../components/Section";
 import Footer from "../components/Footer";
 
 export default function Home() {
-  const src = "/../public/images/team.jpg";
+  const src = "/../public/images/jogging2.jpg";
   const alt = "image description";
   const section1 =
     " Ihre Gesundheit liegt uns am Herzen, und wir freuen uns, Sie bei uns begrüßen zu dürfen. Als vertrauenswürdige Apotheke stehen wir Ihnen mit unserer langjährigen Erfahrung, Fachkompetenz und einem breiten Sortiment an Medikamenten und Gesundheitsprodukten zur Seite.";

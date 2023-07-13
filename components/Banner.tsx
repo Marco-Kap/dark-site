@@ -29,29 +29,27 @@ export default function Banner(props: Props) {
         />
         <div
           style={{
-            height: "66vw",
-            width: "20vw",
+            height: "20vw",
+            width: "66vw",
             float: "left",
             zIndex: 2,
-            backgroundColor: !breakpoint_1 ? "lightgrey" : "",
+            backgroundColor: "red",
             position: "absolute",
-            translate: "20vw -66vw",
+            translate: "26vw -42vw",
             opacity: 0.6,
             alignItems: "center",
             display: "flex",
           }}
         >
-          {!breakpoint_1 ? (
-            <div
-              style={{
-                color: "red",
-              }}
-            >
-              <h2 style={{ opacity: "1", fontSize: "2vw" }}>{props.text}</h2>
-            </div>
-          ) : (
-            <div></div>
-          )}
+          <div
+            style={{
+              color: "white",
+            }}
+          >
+            <h2 style={{ opacity: "1", fontSize: "5vw", paddingLeft: "0.3em" }}>
+              {props.text}
+            </h2>
+          </div>
         </div>
       </div>
     </>

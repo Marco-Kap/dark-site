@@ -6,3 +6,9 @@ body {
   color: red;
   background-color: red;
 }
+@media (screen and min-widht: 996px) {
+  .red {
+    color: aquamarine;
+    background-color: aquamarine;
+  }
+}

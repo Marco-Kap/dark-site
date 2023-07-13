@@ -1,5 +1,5 @@
 import BSNav from "../components/BSNav";
-import { Card, Container } from "react-bootstrap";
+import { Card, Container, Form, Button } from "react-bootstrap";
 import Image from "next/image";
 import Footer from "../components/Footer";
 
@@ -77,12 +77,7 @@ export default function notdienst() {
           momentan geöffnete Apotheke finden.
         </Card.Footer>
       </Card>
-      {wLabels.map((date) => {
-        <>
-          <p>{date}</p>;
-        </>;
-      })}
-      <Footer />
+     <Footer />
     </>
   );
 }
