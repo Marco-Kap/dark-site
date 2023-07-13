@@ -16,7 +16,7 @@ export default function Home() {
     <>
       <BSNav />
       <Img source={src} alt={alt} text="Willkommen bei ihrer Ahorn-Apotheke" />
-      <Container>
+      <Container style={{ textAlign: "center" }}>
         <Section children={section1} />
         <Section children={section2} />
       </Container>

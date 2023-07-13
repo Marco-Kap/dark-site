@@ -7,8 +7,10 @@ export default function Phone() {
       x="0px"
       y="0px"
       width="20.156px"
-      height="20.156px"
-      viewBox="0 0 477.156 477.156">
+      height="17.156px"
+      viewBox="0 0 477.156 477.156"
+      style={{ marginLeft: "0.4em", marginRight: "-0.4em" }}
+    >
       <g>
         <path
           d="M475.009,380.316l-2.375-7.156c-5.625-16.719-24.062-34.156-41-38.75l-62.688-17.125c-17-4.625-41.25,1.594-53.688,14.031

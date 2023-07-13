@@ -5,7 +5,7 @@ import NavDropdown from "react-bootstrap/NavDropdown";
 import Logo from "./Logo";
 import Phone from "./Phone";
 import Clock from "./Clock";
-import { isOpen } from "../public/utils/time";
+import { isOpen, log } from "../public/utils/time";
 import { useEffect, useState, useCallback } from "react";
 import useMediaQuery from "../public/utils/useMediaQuery";
 
@@ -14,7 +14,7 @@ export default function BSNav() {
 
   return (
     <>
-      <Container>
+      <Container style={{ backgroundColor: "#f8f9fa" }}>
         <div className="p-2">
           <span>Bahnhof Straße 7, 34497 Korbach</span>
           <Phone />

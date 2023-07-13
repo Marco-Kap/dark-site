@@ -40,10 +40,8 @@ export function getEmergency() {
 }
 
 export function isOpen() {
-  //notdienst und öffnungszeiten abgleichen
   let closingTime;
-
-  if (index === 1) {
+  if (index == 1) {
     closingTime = "aktuell geöffnet!";
   }
   if (
@@ -72,8 +70,10 @@ export function isOpen() {
     (hour <= 8 || (hour <= 13 && minute <= 30))
   ) {
     closingTime = "geöffnet bis 13:30";
-  } else {
-    closingTime = "";
   }
   return closingTime;
+}
+
+export function isOpe() {
+  //notdienst und öffnungszeiten abgleichen
 }
