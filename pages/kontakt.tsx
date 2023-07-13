@@ -2,6 +2,8 @@ import BSNav from "../components/BSNav";
 import { Card } from "react-bootstrap";
 import Footer from "../components/Footer";
 import Section from "../components/Section";
+import Phone from "../components/Phone";
+import Envelope from "../components/Envelope";
 
 export default function kontakt() {
   const src = "/../public/images/team.jpg";
@@ -11,20 +13,34 @@ export default function kontakt() {
     <>
       <BSNav />
 
-      <Card className="mt-2">
-        <Card.Header>Das sind wir</Card.Header>
+      <Card className="mt-2 textCenter">
+        <Card.Header>Wir freuen uns darauf, von Ihnen zu hören!</Card.Header>
         <Section>
-          Affogato everyday carry gastropub portland snackwave pinterest
-          chartreuse +1 biodiesel farm-to-table crucifix yuccie food truck.
-          Williamsburg cupping vegan scenester jean shorts heirloom bushwick
-          jawn migas post-ironic coloring book quinoa synth vinyl. Scenester
-          cornhole irony selvage, forage gluten-free pabst pickled meggings
-          live-edge shaman authentic venmo. Gastropub photo booth small batch
-          chartreuse activated charcoal squid literally sustainable sus. Marfa
-          schlitz crucifix wayfarers neutra raclette seitan hoodie adaptogen
-          copper mug fam. Vape gentrify austin vice, man braid poutine bodega
-          boys squid pinterest poke grailed before they sold out kogi. Gatekeep
-          paleo authentic aesthetic.
+          Kontaktieren sie uns. Bei Fragen, Anliegen oder Feedback stehen wir
+          Ihnen jederzeit zur Verfügung. Hier finden Sie verschiedene
+          Möglichkeiten, um mit uns in Kontakt zu treten: Besuchen Sie uns vor
+          Ort, rufen sie uns an oder schicken sie uns eine E-Mail.
+        </Section>{" "}
+        <Section>
+          <div>
+            <h4>Öffnungszeiten:</h4>
+            Montag bis Freitag: 8:00 - 18:30
+            <br /> Samstag: 8:00 -13:30
+          </div>
+        </Section>
+        <p>Bahnstraße 7</p>
+        <br />
+        <p>34497 Korbach</p>
+        <p>
+          <Phone />
+          <a href="tel:056314040">05631 4040</a>
+        </p>
+        <p>
+          <a href="mailto:email@ahornapo.de">email@ahornapo.de</a>
+        </p>
+        <Section>
+          Ihre Gesundheit liegt uns am Herzen, und wir sind gerne für Sie da.
+          Zögern Sie nicht, uns zu kontaktieren!
         </Section>
       </Card>
       <Footer />

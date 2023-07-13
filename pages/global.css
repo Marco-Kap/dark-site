@@ -12,3 +12,7 @@ body {
     background-color: aquamarine;
   }
 }
+
+.textCenter {
+  text-align: center;
+}

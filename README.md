@@ -8,17 +8,11 @@ Für eine kurze Anleitung runterscrollen zu "wie man die Seite einsetzt"
 
 -Verlosungsseite fertig stellen
 
--Overlay für die Bilder bearbeiten:
--text prop auf allen Seiten einstellen
--Text zentrieren
--größe verändern?
--Farbe ändern
+-Die Kontaktdaten inder Navbar beim breakpoint ein und ausblenden
 
 -Die Navbar im Darkmode gut aussehen lassen
 
 -Rezepturen Seite bearbeiten
-
--404 Seite bearbeiten
 
 -kontaktseite bearbeiten öffnungszeiten hinzufügen
 

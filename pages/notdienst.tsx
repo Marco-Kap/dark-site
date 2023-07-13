@@ -2,9 +2,11 @@ import BSNav from "../components/BSNav";
 import { Card, Container, Form, Button } from "react-bootstrap";
 import Image from "next/image";
 import Footer from "../components/Footer";
+import react, { useRef, useState } from "react";
+import Calendar from "react-calendar";
 
-const date = new Date();
 export default function notdienst() {
+  const [value, onChange] = useState(new Date());
   // Pharmacies
   const pharmacies = [
     "Ahorn-Apotheke", //Ahornapotheke
@@ -32,8 +34,14 @@ export default function notdienst() {
   function getEmergency() {
     return index !== -1 ? pharmacies[index] : pharmacies[7];
   }
+  function getNextEm() {
+    const nIndex =
+      (Math.ceil((value - startDate) / (1000 * 60 * 60 * 24)) % 8) - 1;
+    return pharmacies[nIndex];
+  }
   //----------------------calendar----------------------------------
-
+  {
+    /*
   let wLabels = [
     "Montag",
     "Dienstag",
@@ -56,9 +64,18 @@ export default function notdienst() {
     "Oktober",
     "November",
     "Dezember",
-  ];
+  ]; */
+  }
+  //--------------------emergency search------------------------------
 
-  const dates = ["s", "feqf"];
+  const inputRef = useRef(null);
+  function handleSubmit(event) {
+    event.preventDefault();
+    console.log("Input value:", inputRef.current.value);
+  }
+  function renderEmergency() {
+    console.log(value + "wert!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
+  }
   return (
     <>
       <BSNav />
@@ -68,7 +85,15 @@ export default function notdienst() {
           Hier finden sie die momentan geöffnete Apotheke in Korbach und den
           geplanten Notdienst.
         </Card.Header>
-        <Card.Body>Aktuelle Notdienst Apotheke: {getEmergency()}</Card.Body>
+        <Card.Body>
+          <div className="mb-4 text-hero">
+            Aktuelle Notdienst Apotheke:{" "}
+            <a href="https://www.aponet.de/apotheke/notdienstsuche/34497/%20/5">
+              {getEmergency()}
+            </a>
+          </div>
+          <Calendar onChange={onChange} value={value} />
+        </Card.Body>
         <Card.Footer>
           {" "}
           Wir sind bemüht ihnen rund um Uhr die bestmögliche
@@ -77,7 +102,37 @@ export default function notdienst() {
           momentan geöffnete Apotheke finden.
         </Card.Footer>
       </Card>
-     <Footer />
+      <p>{renderEmergency()}</p>
+      {/*<form onSubmit={handleSubmit} value={value}>
+        <label>
+          <p>Name:</p>
+          <input ref={inputRef} type="text" />
+        </label>
+      </form>*/}
+      <Footer />
     </>
   );
+}
+{
+  /*<!-- aponet.de: Notdienstapotheke finden Start -->
+<div style="position:relative;font:14px Verdana,Helvetica,sans-serif;color:#333333;width:298px;height:165px;background-color:#fff;padding:0;border:1px solid #bfbfbf;border-radius: 5px;">
+  <div style="position:absolute;top:60px;left:8px;width:280px;">
+    <div style="display:block;position:absolute;top:-40px;left:0;font-size:11px;line-height:18px;width:auto;background-color:#e2001a;padding:6px 11px;margin:0;border-radius:100px;color:#FFF">
+      Notdienstapotheke finden
+    </div>
+    <form name="search" action="https://www.aponet.de/apotheke/notdienstsuche?tx_aponetpharmacy_search%5Baction%5D=search&tx_aponetpharmacy_search%5Bcontroller%5D=Search&cHash=d60644fbe4920abed16b25ce29f3b7c8" method="post" target="_blank" style="padding:0;border:0;margin:0;">
+      <fieldset style="display: block;height:38px;background:#fff;padding:0;border:1px solid #e2001a;margin:0;border-radius: 5px;overflow: hidden;">
+        <input name="tx_aponetpharmacy_search[search][plzort]" id="zipcityEmergency" class="text" value="" placeholder="PLZ oder Ort" type="text" style="position:absolute;top:11px;left:10px;font-size:14px;color:#333333;width:180px;background-color:none;padding:0;border:0;margin:0;" />
+        <button type="submit" value="" title="Notdienstsuche starten" alt="Notdienstsuche starten" style="display: inline-block;position:absolute;right:-2px;height:98%;padding:0 10px;background-color:#e2001a;color:#FFF;border-radius: 5px;border:1px solid #e2001a;font-size:14px;cursor:pointer;" />Suchen</button>
+      </fieldset>
+    </form>
+  </div>
+  <p style="position:relative;top:106px;left:8px;font-size:11px;width:282px;padding:0;margin:0;">
+    <span style="display:inline-block;position:absolute;top:8px;left:0;">Ein Service von:</span>
+    <a href="https://www.aponet.de" title="Zur Startseite von aponet.de - dem offiziellen Gesundheitsportal der deutschen ApothekerInnen" style="position:absolute;top:0;right:2px;text-decoration:none;" target="_blank">
+      <img src="https://www.aponet.de/fileadmin/public/widgets/logo_search_widget.svg" alt="aponet.de - dem offiziellen Gesundheitsportal der deutschen Apothekerinnen und Apotheker" />
+    </a>
+  </p>
+</div>
+<!-- aponet.de: Notdienstapotheke finden Ende --> */
 }
