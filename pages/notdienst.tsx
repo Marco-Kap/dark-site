@@ -1,8 +1,7 @@
 import BSNav from "../components/BSNav";
-import { Card, Container, Form, Button } from "react-bootstrap";
-import Image from "next/image";
+import { Card } from "react-bootstrap";
 import Footer from "../components/Footer";
-import react, { useRef, useState } from "react";
+import { useState } from "react";
 import Calendar from "react-calendar";
 
 export default function notdienst() {
@@ -37,6 +36,7 @@ export default function notdienst() {
 
   function getNextEm() {
     let cDate = value.toLocaleDateString("de");
+    //@ts-expect-error
     let nIndex = Math.ceil((value - startDate) / (1000 * 60 * 60 * 24)) % 8;
     return (
       "Notdienstapotheke am " +
@@ -47,12 +47,6 @@ export default function notdienst() {
   }
 
   //--------------------emergency search------------------------------
-
-  const inputRef = useRef(null);
-  function handleSubmit(event) {
-    event.preventDefault();
-    console.log("Input value:", inputRef.current.value);
-  }
 
   return (
     <>
@@ -76,8 +70,14 @@ export default function notdienst() {
               anzeigen zu lassen{" "}
             </span>
             <div style={{ height: "2em" }}>{getNextEm()}</div>
-            <div className="divider" aria-disabled></div>
-            <Calendar onChange={onChange} value={value} locale="de" />
+            <div className="divider" aria-disabled />
+            <div
+              style={{
+                justifyContent: "center",
+                display: "flex",
+              }}>
+              <Calendar onChange={onChange} value={value} locale="de" />
+            </div>
           </div>
         </Card.Body>
         <Card.Footer>
