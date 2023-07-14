@@ -8,23 +8,23 @@ Für eine kurze Anleitung runterscrollen zu "wie man die Seite einsetzt"
 
 -Verlosungsseite fertig stellen
 
--Die Kontaktdaten inder Navbar beim breakpoint ein und ausblenden
-
 -Die Navbar im Darkmode gut aussehen lassen
 
 -Rezepturen Seite bearbeiten
 
--kontaktseite bearbeiten öffnungszeiten hinzufügen
-
 -notdienstseite bearbeiten
 
 -passende Bilder für Demo einsetzen
+
+-Seite für e-rezepte fertig stellen
 
 -einige Links für Demo ausblenden zum Beispiel E-Rezept
 
 -Die Berufhaftpflichtversicherung ins impressum schreiben
 
 -An Wordpress API anbinden
+
+-Informationen auf Navbar bei mobiler Ansicht collabieren lassen
 
 ## Wie man diese Seite einsetzt
 

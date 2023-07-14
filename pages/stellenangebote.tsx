@@ -140,7 +140,7 @@ export default function stellenangebote() {
                   <br />
                   Deutschland
                   <br />
-                  Email:
+                  Email:{" "}
                   <a href="mailto:email@ahornapo.de?subject=Bewerbung">
                     email@ahornapo.de
                   </a>

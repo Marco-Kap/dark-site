@@ -16,7 +16,7 @@ export default function kontakt() {
       <Card className="mt-2 textCenter">
         <Card.Header>Wir freuen uns darauf, von Ihnen zu hören!</Card.Header>
         <Section>
-          Kontaktieren sie uns. Bei Fragen, Anliegen oder Feedback stehen wir
+          Kontaktieren sie uns! Bei Fragen, Anliegen oder Feedback stehen wir
           Ihnen jederzeit zur Verfügung. Hier finden Sie verschiedene
           Möglichkeiten, um mit uns in Kontakt zu treten: Besuchen Sie uns vor
           Ort, rufen sie uns an oder schicken sie uns eine E-Mail.
@@ -28,16 +28,24 @@ export default function kontakt() {
             <br /> Samstag: 8:00 -13:30
           </div>
         </Section>
-        <p>Bahnstraße 7</p>
+        <span>Bahnstraße 7</span>
         <br />
-        <p>34497 Korbach</p>
-        <p>
-          <Phone />
-          <a href="tel:056314040">05631 4040</a>
-        </p>
-        <p>
-          <a href="mailto:email@ahornapo.de">email@ahornapo.de</a>
-        </p>
+        <span>34497 Korbach</span>
+        <span style={{ whiteSpace: "nowrap" }}>
+          {" "}
+          {"   "}
+          <a style={{ color: "grey", margin: "0.3em" }} href="tel:056314040">
+            05631 4040
+          </a>
+        </span>
+        <span>
+          <a
+            style={{ color: "grey", margin: "0.3em" }}
+            href="mailto:email@ahornapo.de"
+          >
+            email@ahornapo.de
+          </a>
+        </span>
         <Section>
           Ihre Gesundheit liegt uns am Herzen, und wir sind gerne für Sie da.
           Zögern Sie nicht, uns zu kontaktieren!

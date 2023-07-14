@@ -35,37 +35,17 @@ export default function notdienst() {
     return index !== -1 ? pharmacies[index] : pharmacies[7];
   }
   function getNextEm() {
-    const nIndex =
+    let cDate = value.toLocaleDateString("de");
+    let nIndex =
       (Math.ceil((value - startDate) / (1000 * 60 * 60 * 24)) % 8) - 1;
-    return pharmacies[nIndex];
+    return (
+      "Notdienstapotheke am " +
+      cDate +
+      " " +
+      (nIndex !== -1 ? pharmacies[nIndex] : pharmacies[7])
+    );
   }
-  //----------------------calendar----------------------------------
-  {
-    /*
-  let wLabels = [
-    "Montag",
-    "Dienstag",
-    "Mittwoch",
-    "Donnerstag",
-    "Freitag",
-    "Samstag",
-    "Sonntag",
-  ];
-  let mLabels = [
-    "Januar",
-    "Februar",
-    "März",
-    "April",
-    "Mai",
-    "Juni",
-    "Juli",
-    "August",
-    "September",
-    "Oktober",
-    "November",
-    "Dezember",
-  ]; */
-  }
+
   //--------------------emergency search------------------------------
 
   const inputRef = useRef(null);
@@ -73,9 +53,7 @@ export default function notdienst() {
     event.preventDefault();
     console.log("Input value:", inputRef.current.value);
   }
-  function renderEmergency() {
-    console.log(value + "wert!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
-  }
+
   return (
     <>
       <BSNav />
@@ -86,13 +64,20 @@ export default function notdienst() {
           geplanten Notdienst.
         </Card.Header>
         <Card.Body>
-          <div className="mb-4 text-hero">
+          <div className="mb-4 texthero">
             Aktuelle Notdienst Apotheke:{" "}
             <a href="https://www.aponet.de/apotheke/notdienstsuche/34497/%20/5">
               {getEmergency()}
             </a>
           </div>
-          <Calendar onChange={onChange} value={value} />
+          <div className="texthero">
+            <span>
+              Klicken sie auf ein Datum um die jeweilige Notdienstapotheke
+              anzeigen zu lassen{" "}
+            </span>
+            <div style={{ height: "2em" }}>{getNextEm()}</div>
+            <Calendar onChange={onChange} value={value} locale="de" />
+          </div>
         </Card.Body>
         <Card.Footer>
           {" "}
@@ -102,7 +87,7 @@ export default function notdienst() {
           momentan geöffnete Apotheke finden.
         </Card.Footer>
       </Card>
-      <p>{renderEmergency()}</p>
+
       {/*<form onSubmit={handleSubmit} value={value}>
         <label>
           <p>Name:</p>

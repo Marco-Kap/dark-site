@@ -6,13 +6,18 @@ body {
   color: red;
   background-color: red;
 }
-@media (screen and min-widht: 996px) {
-  .red {
-    color: aquamarine;
-    background-color: aquamarine;
-  }
+.texthero {
+  font-size: medium;
+  font-weight: bold;
 }
-
 .textCenter {
   text-align: center;
+}
+
+@media only screen and (min-width: 996px) {
+  .infobox {
+    visibility: collapse;
+    background-color: red;
+    margin: -2em;
+  }
 }

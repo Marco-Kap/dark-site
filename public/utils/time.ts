@@ -47,8 +47,7 @@ export function isOpen() {
   if (
     index !== 1 &&
     day !== 6 &&
-    day !== 5 &&
-    (hour <= 8 || (hour >= 18 && minute >= 30))
+    (hour <= 8 || (hour >= 18 && minute >= 30) || day === 0)
   ) {
     closingTime = "öffnet um Morgen 8:00";
   } else if (
@@ -60,7 +59,7 @@ export function isOpen() {
   } else if (
     index !== 1 &&
     day !== 6 &&
-    day !== 5 &&
+    day !== 0 &&
     (hour >= 8 || (hour <= 18 && minute <= 30))
   ) {
     closingTime = "geöffnet bis 18:30";
@@ -70,10 +69,8 @@ export function isOpen() {
     (hour <= 8 || (hour <= 13 && minute <= 30))
   ) {
     closingTime = "geöffnet bis 13:30";
+  } else {
+    closingTime = "";
   }
   return closingTime;
-}
-
-export function isOpe() {
-  //notdienst und öffnungszeiten abgleichen
 }
