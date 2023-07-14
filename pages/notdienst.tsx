@@ -34,10 +34,10 @@ export default function notdienst() {
   function getEmergency() {
     return index !== -1 ? pharmacies[index] : pharmacies[7];
   }
+
   function getNextEm() {
     let cDate = value.toLocaleDateString("de");
-    let nIndex =
-      (Math.ceil((value - startDate) / (1000 * 60 * 60 * 24)) % 8) - 1;
+    let nIndex = Math.ceil((value - startDate) / (1000 * 60 * 60 * 24)) % 8;
     return (
       "Notdienstapotheke am " +
       cDate +

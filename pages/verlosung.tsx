@@ -5,12 +5,16 @@ import Image from "next/image";
 import Section from "../components/Section";
 import Footer from "../components/Footer";
 import Carousel from "react-bootstrap/Carousel";
+import useMediaQuery from "../public/utils/useMediaQuery";
 
 export default function verlosung() {
+  const breakpoint = useMediaQuery(996);
   const src = "/../public/images/dice.jpg";
   const alt = "image description";
   const image = [
     "/../public/images/Velours-orange(no-bg.png",
+    "/../public/images/Bademantel, orange 3-min.png",
+    "/../public/images/Bademantel, rot-min.png",
     "/../public/images/muetze-schal-decke(freigestellt).png",
   ];
 
@@ -38,46 +42,99 @@ export default function verlosung() {
           einfach bei uns vorbei und stimmen sie den Teilnahmebedingungen zu. Es
           ist nicht notwendig bei uns etwas gekauft zu haben um teilnehmen zu
           können. Die Gewinner werden per Zufallsprinzip ausgewählt und von uns
-          per Brief oder E-Mail benachrichtigt.
+          per Brief oder E-Mail benachrichtigt. Die Preise umfassen dieses Mal
+          hochwertige Handtücher und Bademäntel, sowie viele weitere
+          Überraschungen. Verpassen Sie also nicht die Chance, an diesem
+          spannenden Event teilzunehmen und tolle Preise zu gewinnen!{" "}
         </Section>
-        <Carousel fade>
-          <Carousel.Item>
-            <Image
-              src={image[0]}
-              alt={"Handtuch"}
-              width={600}
-              height={400}
-              style={{ width: "100%", height: "auto" }}
-            />
-            <Carousel.Caption>
-              <h3>Überschrift label 1 Schöne Bademäntel</h3>
-              <p>Das hier ist ein Bademantel</p>
-            </Carousel.Caption>
-          </Carousel.Item>
-          <Carousel.Item>
-            <Image
-              src={image[0]}
-              alt={"Handtuch"}
-              width={600}
-              height={400}
-              style={{ width: "100%", height: "auto" }}
-            />
+        {breakpoint ? (
+          <Carousel fade>
+            <Carousel.Item
+              style={{
+                justifyContent: "center",
+                display: "flex",
+              }}
+            >
+              <Image
+                src={image[0]}
+                alt={"Handtuch"}
+                width={600}
+                height={400}
+                style={{ width: "100%", height: "auto" }}
+              />
+              <Carousel.Caption>
+                {/*Hier ist kann man Titel reinschreiben */}
+              </Carousel.Caption>
+            </Carousel.Item>
+            <Carousel.Item
+              style={{
+                justifyContent: "center",
+                display: "flex",
+              }}
+            >
+              <Image
+                src={image[1]}
+                alt={"Bademantel in rot"}
+                width={600}
+                height={400}
+                style={{ width: "10em", height: "auto" }}
+              />
 
-            <Carousel.Caption>
-              <h3>Überschrift 2 slide 2</h3>
-              <p>Das hier ist ein Handtuch</p>
-            </Carousel.Caption>
-          </Carousel.Item>
-        </Carousel>
+              <Carousel.Caption>
+                {/*Hier ist kann man Titel reinschreiben */}
+              </Carousel.Caption>
+            </Carousel.Item>
+            <Carousel.Item
+              style={{
+                justifyContent: "center",
+                display: "flex",
+              }}
+            >
+              <Image
+                src={image[2]}
+                alt={"Bademantel in orange"}
+                width={600}
+                height={400}
+                style={{ width: "10em", height: "auto" }}
+              />
+              <Carousel.Caption>
+                {/*Hier ist kann man Titel reinschreiben */}
+              </Carousel.Caption>
+            </Carousel.Item>
+          </Carousel>
+        ) : (
+          <div style={{ display: "flex", justifyContent: "space-around" }}>
+            <Image
+              src={image[0]}
+              alt={"Handtuch"}
+              width={600}
+              height={400}
+              style={{ width: "16em", height: "auto" }}
+            />
+            <Image
+              src={image[2]}
+              alt={"Bademantel in orange"}
+              width={600}
+              height={400}
+              style={{ width: "10em", height: "auto" }}
+            />
+            <Image
+              src={image[1]}
+              alt={"Bademantel in rot"}
+              width={600}
+              height={400}
+              style={{ width: "10em", height: "auto" }}
+            />{" "}
+          </div>
+        )}{" "}
         <Section>
-          Die Preise umfassen dieses Mal hochwertige Handtücher und Bademäntel,
-          sowie viele weitere Überraschungen. Verpassen Sie also nicht die
-          Chance, an diesem spannenden Event teilzunehmen und tolle Preise zu
-          gewinnen!{" "}
+          Die Preise der Herbstverlosung 2022 können noch abgeholt werden, aber
+          aufgrund des hohen Zuspuchs ist nicht mehr die volle Farbauswahl
+          verfügbar.
         </Section>
         <Container className="align-items-center justify-content-center m-6">
           <Image
-            src={image[1]}
+            src={image[3]}
             alt={"Luxus Decke und Schal"}
             width={800}
             height={600}
