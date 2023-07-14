@@ -2,8 +2,6 @@ import BSNav from "../components/BSNav";
 import { Card } from "react-bootstrap";
 import Footer from "../components/Footer";
 import Section from "../components/Section";
-import Phone from "../components/Phone";
-import Envelope from "../components/Envelope";
 
 export default function kontakt() {
   const src = "/../public/images/team.jpg";

@@ -1,20 +1,23 @@
 # Readme
-
-Für eine kurze Anleitung runterscrollen zu "wie man die Seite einsetzt"
+Die TODO Liste soll zuerst angezeigt werden, für eine kurze Dokumentation bitte runterscrollen zu "wie man die Seite einsetzt"
 
 ## TODO LISTE
 
--Startseite fertigstellen
+-Startseite fertigstellen, Inhalte dafür suchen
 
 -Verlosungsseite fertig stellen
 
 -Die Navbar im Darkmode gut aussehen lassen
 
+-Banner braucht mehr Deckkraft oder Hintergrund der Bilder muss kontrastreich sein
+
 -Rezepturen Seite bearbeiten
 
--notdienstseite bearbeiten
+-kalender bearbeiten
 
--passende Bilder für Demo einsetzen
+-Ein Carousell auf der Verlosungsseite einrichten
+
+-passende Bilder für Demo erstellen und  einsetzen
 
 -Seite für e-rezepte fertig stellen
 
@@ -22,14 +25,23 @@ Für eine kurze Anleitung runterscrollen zu "wie man die Seite einsetzt"
 
 -Die Berufhaftpflichtversicherung ins impressum schreiben
 
+-Accessibility checken, aria labels vergeben und so weiter
+
+-alle Texte noch mal durchlesen und auf typos überprüfen
+
+-SEO verbesseurngen durchführen
+
 -An Wordpress API anbinden
 
--Informationen auf Navbar bei mobiler Ansicht collabieren lassen
 
 ## Wie man diese Seite einsetzt
 
 Diese Seite basiert auf Next.js. Schau bei Problemen in die Dokumentation.
-Für das Styling wurde teilweise das css Framework Bootstrap 5.3 verwendet.
+
+Weitere Abhägkeiten sind Boostrap und React Calendar
+Boostrap 5.3 ist ein css Framework und wurde hier zum teil für das styling eingesetzt. Der Großteil des Stylings beruht allerdings auf inline Sass und dem custom stylesheet
+React Calendar wird im Notdienst Screen eingesetzt. Der React Calendar hat out-of-the-box eine Menge Funktion, die nicht einfach selbst zu schreiben sind.
+Beide Abhägkeiten könnte man durch eigenen Code ersetzten.
 
 ### notwendige Befehle
 

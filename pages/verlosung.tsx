@@ -4,6 +4,7 @@ import { Card, Container } from "react-bootstrap";
 import Image from "next/image";
 import Section from "../components/Section";
 import Footer from "../components/Footer";
+import Carousel from "react-bootstrap/Carousel";
 
 export default function verlosung() {
   const src = "/../public/images/dice.jpg";
@@ -25,38 +26,66 @@ export default function verlosung() {
         alt={alt}
         text="Gewinnen sie bei unserer Verlosung"
       />
-      <Section>
-        {" "}
-        "Wir wünschen Ihnen viel Glück und bedanken uns für Ihre Treue zu
-        unserer Apotheke. Bei Fragen stehen wir Ihnen gerne zur Verfügung.
-        Besuchen Sie uns auf unserer Webseite und entdecken Sie auch unsere
-        weiteren Angebote und Services.",
-      </Section>
-      <Card>
-        <div className="row text-center">
-          <div className="col-4">
+
+      <Container>
+        <Section>
+          {" "}
+          Es gibt viele tolle Preise! Bei Ihrer Treue ist es uns ein wichtiges
+          Anliegen, Ihnen etwas zurückzugeben. Deshalb möchten wir Sie zu
+          unserer aufregenden Verlosung einladen. Es gibt großartige Preise zu
+          gewinnen, die Ihnen den Alltag erleichtern und Ihre Gesundheit fördern
+          können. Und so können sie an der Verlosung teilnehmen: Kommen sie
+          einfach bei uns vorbei und stimmen sie den Teilnahmebedingungen zu. Es
+          ist nicht notwendig bei uns etwas gekauft zu haben um teilnehmen zu
+          können. Die Gewinner werden per Zufallsprinzip ausgewählt und von uns
+          per Brief oder E-Mail benachrichtigt.
+        </Section>
+        <Carousel fade>
+          <Carousel.Item>
             <Image
               src={image[0]}
               alt={"Handtuch"}
-              width={200}
-              height={300}
+              width={600}
+              height={400}
               style={{ width: "100%", height: "auto" }}
             />
-          </div>
-          <div className="col-6">place</div>
-        </div>
-      </Card>
-      <Container className="align-items-center justify-content-center m-6">
-        <Section children={text[1]} />
-        <Image
-          src={image[1]}
-          alt={"Luxus Decke und Schal"}
-          width={200}
-          height={300}
-          style={{ width: "100%", height: "100%" }}
-        />
+            <Carousel.Caption>
+              <h3>Überschrift label 1 Schöne Bademäntel</h3>
+              <p>Das hier ist ein Bademantel</p>
+            </Carousel.Caption>
+          </Carousel.Item>
+          <Carousel.Item>
+            <Image
+              src={image[0]}
+              alt={"Handtuch"}
+              width={600}
+              height={400}
+              style={{ width: "100%", height: "auto" }}
+            />
+
+            <Carousel.Caption>
+              <h3>Überschrift 2 slide 2</h3>
+              <p>Das hier ist ein Handtuch</p>
+            </Carousel.Caption>
+          </Carousel.Item>
+        </Carousel>
+        <Section>
+          Die Preise umfassen dieses Mal hochwertige Handtücher und Bademäntel,
+          sowie viele weitere Überraschungen. Verpassen Sie also nicht die
+          Chance, an diesem spannenden Event teilzunehmen und tolle Preise zu
+          gewinnen!{" "}
+        </Section>
+        <Container className="align-items-center justify-content-center m-6">
+          <Image
+            src={image[1]}
+            alt={"Luxus Decke und Schal"}
+            width={800}
+            height={600}
+            style={{ width: "100%", height: "100%" }}
+          />
+        </Container>
+        <Footer />
       </Container>
-      <Footer />
     </>
   );
 }

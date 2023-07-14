@@ -84,7 +84,7 @@ export default function BSNav() {
                 <></>
               )}{" "}
               <Nav variant="pills" className="bg-info-subtle px-2 rounded">
-                <Nav.Link eventKey={"e-rezepte"} href="/e-rezepte">
+                <Nav.Link eventKey={"erezepte"} href="/erezepte">
                   Rezept einlösen
                 </Nav.Link>
               </Nav>
