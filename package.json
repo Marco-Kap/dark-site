@@ -1,6 +1,6 @@
 {
-  "name": "material-next-ts",
-  "version": "5.0.0",
+  "name": "ahornapotheke",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -10,8 +10,6 @@
     "post-update": "echo \"codesandbox preview only, need an update\" && yarn upgrade --latest"
   },
   "dependencies": {
-    "@emotion/cache": "latest",
-    "@emotion/react": "latest",
     "@emotion/server": "latest",
     "@emotion/styled": "latest",
     "bootstrap": "^5.3.0",
