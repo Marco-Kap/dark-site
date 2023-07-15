@@ -76,6 +76,7 @@ export default function notdienst() {
                 justifyContent: "center",
                 display: "flex",
               }}>
+              {/*@ts-expect-error*/}
               <Calendar onChange={onChange} value={value} locale="de" />
             </div>
           </div>

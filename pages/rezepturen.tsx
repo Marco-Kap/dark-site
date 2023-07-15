@@ -11,7 +11,7 @@ export default function rezepturen() {
   return (
     <>
       <BSNav />
-      <Banner src={src} alt={alt} text={text} />
+      <Banner source={src} alt={alt} text={text} />
       <Section>
         Wir stellen Medikamente nach Bedarf verordnete Medikamente für sie her
       </Section>

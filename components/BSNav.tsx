@@ -5,7 +5,7 @@ import NavDropdown from "react-bootstrap/NavDropdown";
 import Logo from "./Logo";
 import Phone from "./Phone";
 import Clock from "./Clock";
-import { isOpen, log } from "../public/utils/time";
+import { isOpen } from "../public/utils/time";
 import { useEffect, useState, useCallback } from "react";
 import useMediaQuery from "../public/utils/useMediaQuery";
 
@@ -63,8 +63,7 @@ export default function BSNav() {
                   <span>
                     <a
                       style={{ color: "grey", margin: "0.3em" }}
-                      href="tel:056314040"
-                    >
+                      href="tel:056314040">
                       05631 4040
                     </a>
                   </span>
@@ -74,8 +73,7 @@ export default function BSNav() {
                     <Clock />
                     <a
                       style={{ color: "grey", marginLeft: "0.3em" }}
-                      href="/kontakt"
-                    >
+                      href="/kontakt">
                       {isOpen()}
                     </a>
                   </span>

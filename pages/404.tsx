@@ -9,11 +9,8 @@ export default function notFoundPage() {
           translate: "0vw 0vw",
           alignItems: "center",
           display: "flex",
-          alignItems: "center",
           justifyContent: "center",
-          display: "flex",
-        }}
-      >
+        }}>
         <div style={{}}>
           <h3 style={{ textAlign: "center", alignSelf: "center" }}>
             Da ist etwas schief gelaufen
