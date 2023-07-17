@@ -1,5 +1,5 @@
 import BSNav from "../components/BSNav";
-import { Card } from "react-bootstrap";
+import { Card, Form } from "react-bootstrap";
 import Footer from "../components/Footer";
 import { useState } from "react";
 import Calendar from "react-calendar";
@@ -89,8 +89,17 @@ export default function notdienst() {
           momentan geöffnete Apotheke finden.
         </Card.Footer>
       </Card>
-
-      {/*<form onSubmit={handleSubmit} value={value}>
+         {/* <Form >
+      <Form.Group className="mb-3" controlId="formBasicEmail">
+        <Form.Label>Postleitzahl</Form.Label>
+        <Form.Control type="submit" placeholder="Postleitzahl" />
+        <Form.Text className="text-muted">
+          Ein Service von aponet
+        </Form.Text>
+      </Form.Group>
+      </Form>
+------------aponet form------------------------
+      <form onSubmit={handleSubmit} value={value}>
         <label>
           <p>Name:</p>
           <input ref={inputRef} type="text" />

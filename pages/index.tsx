@@ -3,6 +3,7 @@ import Img from "../components/Banner";
 import { Card, Container } from "react-bootstrap";
 import Section from "../components/Section";
 import Footer from "../components/Footer";
+import Image from "next/image";
 
 export default function Home() {
   const src = "/../public/images/jogging2.jpg";
@@ -11,14 +12,20 @@ export default function Home() {
     " Ihre Gesundheit liegt uns am Herzen, und wir freuen uns, Sie bei uns begrüßen zu dürfen. Als vertrauenswürdige Apotheke stehen wir Ihnen mit unserer langjährigen Erfahrung, Fachkompetenz und einem breiten Sortiment an Medikamenten und Gesundheitsprodukten zur Seite.";
   const section2 =
     "Bei uns finden Sie nicht nur eine große Auswahl an rezeptpflichtigen und rezeptfreien Arzneimitteln, sondern auch ein breites Spektrum an hochwertigen Gesundheitsprodukten, Nahrungsergänzungsmitteln, Naturheilmitteln und Kosmetikartikeln. Wir legen großen Wert auf Qualität und arbeiten nur mit renommierten Herstellern zusammen, um Ihnen Produkte anzubieten, denen Sie vertrauen können.";
-
+const images = ["/../public/images/fruits.jpg"]
   return (
     <>
       <BSNav />
       <Img source={src} alt={alt} text="Willkommen bei ihrer Ahorn-Apotheke" />
-      <Container style={{ textAlign: "center" }}>
+      <Container style={{ textAlign: "center", alignContent: "center", alignItems: "spaceBetween", display: "flex" }}>
+        <div>
+        <Image 
+        src={images[0]}
+        width={120}
+        height={80}
+        alt="bildbeschreibung"/></div><div>
         <Section children={section1} />
-        <Section children={section2} />
+        <Section children={section2} /></div>
       </Container>
       <Footer />
     </>

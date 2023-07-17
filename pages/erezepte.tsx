@@ -8,6 +8,7 @@ export default function erezepte() {
   return (
     <>
       <BSNav />
+      
       <Banner source={src} alt={alt} text="Wir sind E-Rezept Ready" />
       <Footer />
     </>

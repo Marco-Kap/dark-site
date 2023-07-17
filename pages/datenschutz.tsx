@@ -146,11 +146,11 @@ const Datenschutz = () => {
         <h2>6. Aktualität und Änderung dieser Datenschutzerklärung</h2>
         <p>
           Diese Datenschutzerklärung ist aktuell gültig und hat den Stand
-          [Datum]. Durch die Weiterentwicklung unserer Website und Angebote
+          17.07.2023. Durch die Weiterentwicklung unserer Website und Angebote
           darüber oder aufgrund geänderter gesetzlicher beziehungsweise
           behördlicher Vorgaben kann es notwendig werden, diese
           Datenschutzerklärung zu ändern. Die jeweils aktuelle
-          Datenschutzerklärung kann jederzeit auf der Website unter [URL] von
+          Datenschutzerklärung kann jederzeit auf der Website unter ahornapo.de/datenschutz von
           Ihnen abgerufen und ausgedruckt werden.
         </p>
       </Card>

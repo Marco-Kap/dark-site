@@ -15,7 +15,12 @@ export default function verlosung() {
     "/../public/images/Velours-orange(no-bg.png",
     "/../public/images/Bademantel, orange 3-min.png",
     "/../public/images/Bademantel, rot-min.png",
+    "/../public/images/05-HT-Velours-grün-2023-min.png",
     "/../public/images/muetze-schal-decke(freigestellt).png",
+    "/../public/images/Mütze-min.png",
+    "/../public/images/schal-min.png",
+    "/../public/images/Deckegrün-min.png",
+    
   ];
 
   const text = [
@@ -48,7 +53,7 @@ export default function verlosung() {
           spannenden Event teilzunehmen und tolle Preise zu gewinnen!{" "}
         </Section>
         {breakpoint ? (
-          <Carousel fade>
+          <Carousel slide={false} fade>
             <Carousel.Item
               style={{
                 justifyContent: "center",
@@ -56,14 +61,15 @@ export default function verlosung() {
               }}
             >
               <Image
-                src={image[0]}
+                src={image[3]}
                 alt={"Handtuch"}
-                width={600}
-                height={400}
+                width={400}
+                height={600}
                 style={{ width: "100%", height: "auto" }}
+                
               />
               <Carousel.Caption>
-                {/*Hier ist kann man Titel reinschreiben */}
+                {/*Hier kann man Titel reinschreiben */}
               </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item
@@ -105,18 +111,18 @@ export default function verlosung() {
         ) : (
           <div style={{ display: "flex", justifyContent: "space-around" }}>
             <Image
-              src={image[0]}
+              src={image[2]}
               alt={"Handtuch"}
               width={600}
               height={400}
-              style={{ width: "16em", height: "auto" }}
+              style={{ width: "10em", height: "auto" }}
             />
             <Image
-              src={image[2]}
+              src={image[3]}
               alt={"Bademantel in orange"}
               width={600}
               height={400}
-              style={{ width: "10em", height: "auto" }}
+              style={{ width: "18em", height: "auto" }}
             />
             <Image
               src={image[1]}
@@ -132,15 +138,89 @@ export default function verlosung() {
           aufgrund des hohen Zuspuchs ist nicht mehr die volle Farbauswahl
           verfügbar.
         </Section>
-        <Container className="align-items-center justify-content-center m-6">
-          <Image
-            src={image[3]}
-            alt={"Luxus Decke und Schal"}
-            width={800}
-            height={600}
-            style={{ width: "100%", height: "100%" }}
-          />
-        </Container>
+        {breakpoint ? (
+          <Carousel slide={false} fade>
+            <Carousel.Item
+              style={{
+                justifyContent: "center",
+                display: "flex",
+              }}
+            >
+              <Image
+                src={image[7]}
+                alt={"Handtuch"}
+                width={400}
+                height={600}
+                style={{ width: "50%", height: "auto" }}
+                
+              />
+              <Carousel.Caption>
+                {/*Hier kann man Titel reinschreiben */}
+              </Carousel.Caption>
+            </Carousel.Item>
+            <Carousel.Item
+              style={{
+                justifyContent: "center",
+                display: "flex",
+              }}
+            >
+              <Image
+                src={image[6]}
+                alt={"Bademantel in rot"}
+                width={600}
+                height={400}
+                style={{ width: "10em", height: "auto" }}
+              />
+
+              <Carousel.Caption>
+                {/*Hier ist kann man Titel reinschreiben */}
+              </Carousel.Caption>
+            </Carousel.Item>
+            <Carousel.Item
+              style={{
+                justifyContent: "center",
+                display: "flex",
+              }}
+            >
+              <Image
+                src={image[5]}
+                alt={"Bademantel in orange"}
+                width={600}
+                height={400}
+                style={{ width: "10em", height: "auto" }}
+              />
+              <Carousel.Caption>
+                {/*Hier ist kann man Titel reinschreiben */}
+              </Carousel.Caption>
+            </Carousel.Item>
+          </Carousel>
+        ) : (
+          <div style={{ display: "flex", justifyContent: "space-around", marginBottom: "" }}>
+            <Image
+              src={image[6]}
+              alt={"Handtuch"}
+              width={600}
+              height={400}
+              style={{ width: "10em", height: "auto" }}
+            />
+            <Image
+              src={image[7]}
+              alt={"Bademantel in orange"}
+              width={600}
+              height={400}
+              style={{ width: "18em", height: "auto" }}
+            />
+
+            <Image
+              src={image[5]}
+              alt={"Bademantel in rot"}
+              width={600}
+              height={400}
+              style={{ width: "10em", height: "auto" }}
+            />{" "}
+          </div>
+        )}
+
         <Footer />
       </Container>
     </>

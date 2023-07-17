@@ -4,6 +4,11 @@ Die TODO Liste soll zuerst angezeigt werden, für eine kurze Dokumentation bitte
 ## TODO LISTE
 
 -Startseite fertigstellen, Inhalte dafür suchen
+  -vll. Carousell dabei einbauen
+
+-das aponet widget auf der Notdienst seite implementieren
+
+-e-rezepte Seite überarbeiten
 
 -Verlosungsseite fertig stellen
 
@@ -15,9 +20,7 @@ Die TODO Liste soll zuerst angezeigt werden, für eine kurze Dokumentation bitte
 
 -kalender bearbeiten
 
--Ein Carousell auf der Verlosungsseite einrichten
-
--passende Bilder für Demo erstellen und  einsetzen
+-passende Bilder für Demo erstellen und einsetzen
 
 -Seite für e-rezepte fertig stellen
 
@@ -27,9 +30,11 @@ Die TODO Liste soll zuerst angezeigt werden, für eine kurze Dokumentation bitte
 
 -Accessibility checken, aria labels vergeben und so weiter
 
--alle Texte noch mal durchlesen und auf typos überprüfen
+-alle sichtbaren Texte noch mal durchlesen und auf typos überprüfen
 
--SEO verbesseurngen durchführen
+-datenschutzerklärung prüfen
+
+-SEO verbesserungen durchführen
 
 -An Wordpress API anbinden
 
