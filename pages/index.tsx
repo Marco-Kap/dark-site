@@ -1,11 +1,10 @@
 import BSNav from "../components/BSNav";
-import { Carousel } from "react-bootstrap";
+import { Carousel, Card } from "react-bootstrap";
 import Section from "../components/Section";
 import Footer from "../components/Footer";
 import Image from "next/image";
 import Banner from "../components/Banner";
 import useMediaQuery from "../public/utils/useMediaQuery";
-import Card from "../components/Card";
 
 export default function Home() {
   const breakpoint = useMediaQuery(996);
