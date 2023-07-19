@@ -47,11 +47,10 @@ export default function impressum() {
                 <h4>Berufshaftpflichtversicherung:</h4>
                 <br />
                 <p>
-                  some ensurance Company
+                  R+V Allgemeine Versicherungen AG
+                  <br />Raiffeisenplatz 1
                   <br />
-                  some some street
-                  <br />
-                  34355 somewhere
+                  65189 Wiesbaden
                 </p>
                 <p>USt.-Id.-Nr. gem&aumlß § 18 Abs. 2 MStV: DE113129508</p>
                 <h4>Zust&aumlndige Aufsichtsbeh&oumlrde:</h4>

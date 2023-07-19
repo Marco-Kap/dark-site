@@ -9,7 +9,7 @@ import useMediaQuery from "../public/utils/useMediaQuery";
 
 export default function Home() {
   const breakpoint = useMediaQuery(996)
-  const src = "/../public/images/jogging-1080x566.jpg";
+  const src = "/../public/images/motherchild.jpg";
   const alt = "image description";
   const section1 =
     " Ihre Gesundheit liegt uns am Herzen, und wir freuen uns, Sie bei uns begrüßen zu dürfen. Als vertrauenswürdige Apotheke stehen wir Ihnen mit unserer langjährigen Erfahrung, Fachkompetenz und einem breiten Sortiment an Medikamenten und Gesundheitsprodukten zur Seite.";
@@ -37,8 +37,8 @@ const images = ["/../public/images/Laborantin.jpg", "/../public/images/classic-b
                 style={{ width: "100%", height: "auto" }}
                 
               />
-              <Carousel.Caption>
-                Wir stellen Medizin nur für ihren her 
+              <Carousel.Caption className="cc">
+                Wir stellen Medizin nur für ihren Bedarf her 
               </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item
@@ -55,7 +55,7 @@ const images = ["/../public/images/Laborantin.jpg", "/../public/images/classic-b
                 style={{ width: "100%", height: "auto" }}
                 
               />
-              <Carousel.Caption>
+              <Carousel.Caption className="cc">
                 Hier werden sie ganz persönlich beraten
               </Carousel.Caption>
             </Carousel.Item>
@@ -73,7 +73,7 @@ const images = ["/../public/images/Laborantin.jpg", "/../public/images/classic-b
                 style={{ width: "100%", height: "auto" }}
                 
               />
-              <Carousel.Caption>
+              <Carousel.Caption className="cc">
                 Lieferung bis nach Hause
               </Carousel.Caption>
             </Carousel.Item>

@@ -49,6 +49,7 @@ export default function kontakt() {
           Zögern Sie nicht, uns zu kontaktieren!
         </Section>
       </Card>
+      
       <Footer />
     </>
   );

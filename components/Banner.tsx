@@ -28,18 +28,7 @@ export default function Banner(props: Props) {
           }}
         />
         <div
-          style={{
-            height: "20vw",
-            width: "66vw",
-            float: "left",
-            zIndex: 2,
-            backgroundColor: "red",
-            position: "absolute",
-            translate: "26vw -42vw",
-            opacity: 0.75,
-            alignItems: "center",
-            display: "flex",
-          }}
+  className="slider"
         >
           <div
             style={{

@@ -9,7 +9,7 @@ import useMediaQuery from "../public/utils/useMediaQuery";
 
 export default function verlosung() {
   const breakpoint = useMediaQuery(996);
-  const src = "/../public/images/dice.jpg";
+  const src = "/../public/images/black-dice.jpg";
   const alt = "image description";
   const image = [
     "/../public/images/Velours-orange(no-bg.png",
@@ -195,7 +195,7 @@ export default function verlosung() {
             </Carousel.Item>
           </Carousel>
         ) : (
-          <div style={{ display: "flex", justifyContent: "space-around", marginBottom: "" }}>
+          <div style={{ display: "flex", justifyContent: "space-around", marginBottom: "1em" }}>
             <Image
               src={image[6]}
               alt={"Handtuch"}

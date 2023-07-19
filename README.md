@@ -14,8 +14,6 @@ Die TODO Liste soll zuerst angezeigt werden, für eine kurze Dokumentation bitte
 
 -Die Navbar im Darkmode gut aussehen lassen
 
--Banner braucht mehr Deckkraft oder Hintergrund der Bilder muss kontrastreich sein
-
 -Rezepturen Seite bearbeiten
 
 -kalender bearbeiten
@@ -24,11 +22,9 @@ Die TODO Liste soll zuerst angezeigt werden, für eine kurze Dokumentation bitte
 
 -Seite für e-rezepte fertig stellen
 
--einige Links für Demo ausblenden zum Beispiel E-Rezept
-
--Die Berufhaftpflichtversicherung ins impressum schreiben
-
 -Accessibility checken, aria labels vergeben und so weiter
+
+-vielleicht auf der Kontaktseite google maps einbetten oder openstreetmaps
 
 -alle sichtbaren Texte noch mal durchlesen und auf typos überprüfen
 
@@ -37,6 +33,8 @@ Die TODO Liste soll zuerst angezeigt werden, für eine kurze Dokumentation bitte
 -SEO verbesserungen durchführen
 
 -An Wordpress API anbinden
+
+-Nach der Berufhaftpflichtversicherung fragen
 
 
 ## Wie man diese Seite einsetzt
