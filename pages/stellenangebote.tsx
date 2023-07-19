@@ -6,7 +6,7 @@ import BSNav from "../components/BSNav";
 import Footer from "../components/Footer";
 
 export default function stellenangebote() {
-  const src = "/../public/images/team.jpg";
+  const src = "/../public/images/Laborantinnen-landscape.jpg";
   const alt = "image";
 
   return (

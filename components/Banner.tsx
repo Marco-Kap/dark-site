@@ -36,7 +36,7 @@ export default function Banner(props: Props) {
             backgroundColor: "red",
             position: "absolute",
             translate: "26vw -42vw",
-            opacity: 0.6,
+            opacity: 0.75,
             alignItems: "center",
             display: "flex",
           }}

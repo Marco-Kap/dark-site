@@ -16,7 +16,7 @@ export default function BSNav() {
     <>
       <Container className="infobox">
         <div className="p-2">
-          <span>Bahnhof Straße 7, 34497 Korbach</span>
+          <span >Bahnhof Straße 7, 34497 Korbach</span>
           <span style={{ whiteSpace: "nowrap" }}>
             {" "}
             <Phone />
