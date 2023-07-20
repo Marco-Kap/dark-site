@@ -21,21 +21,7 @@ export default function Home() {
   ];
   return (
     <>
-      <BSNav /><div style={{display: "flex", justifyContent: "center"}}>
-<Image src={src} alt="logo" width={1080} height={566} style={{width: "100%", height: "auto", opacity: 0.8, marginTop: "1em",}} />
-<div
-className="logo"
-        >
-          <div
-            style={{
-              color: "white",
-            }}
-          >
-            <h2 style={{ opacity: "1", fontSize: "5vw", paddingLeft: "0.3em" }}>
-              Herzlich Willkommen
-            </h2>
-          </div>
-        </div></div>
+      <BSNav /><Banner source="/../public/images/logoohneschrift.png" alt="logo" widht={200} height={300} text="Willkommen in ihrer Ahornapotheke"/>
       <Section children={section1, section2} />
 
       {breakpoint ? (
