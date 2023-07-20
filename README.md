@@ -3,24 +3,19 @@ Die TODO Liste soll zuerst angezeigt werden, für eine kurze Dokumentation bitte
 
 ## TODO LISTE
 
--Startseite fertigstellen, Inhalte dafür suchen
-  -vll. Carousell dabei einbauen
+-momentanen Text der Startseite überarbeiteten
 
 -das aponet widget auf der Notdienst seite implementieren
 
 -e-rezepte Seite überarbeiten
 
--Verlosungsseite fertig stellen
-
 -Die Navbar im Darkmode gut aussehen lassen
 
--Rezepturen Seite bearbeiten
+-Rezepturen Seite bearbeiten und verlinken
 
--kalender bearbeiten
+-kalender bearbeiten / die Position in Desktopansicht ändern und Ahornapo Notdienst hervorheben? 
 
--passende Bilder für Demo erstellen und einsetzen
-
--Seite für e-rezepte fertig stellen
+-alle Bilder verkleinern und tauschen
 
 -Accessibility checken, aria labels vergeben und so weiter
 
@@ -36,14 +31,18 @@ Die TODO Liste soll zuerst angezeigt werden, für eine kurze Dokumentation bitte
 
 -Nach der Berufhaftpflichtversicherung fragen
 
+-openstreetmaps auf Kontaktseite einbauen
+
+-deployment
+
 
 ## Wie man diese Seite einsetzt
 
 Diese Seite basiert auf Next.js. Schau bei Problemen in die Dokumentation.
 
-Weitere Abhägkeiten sind Boostrap und React Calendar
-Boostrap 5.3 ist ein css Framework und wurde hier zum teil für das styling eingesetzt. Der Großteil des Stylings beruht allerdings auf inline Sass und dem custom stylesheet
-React Calendar wird im Notdienst Screen eingesetzt. Der React Calendar hat out-of-the-box eine Menge Funktion, die nicht einfach selbst zu schreiben sind.
+Nicht notwendige "Abhägkeiten" sind Bootstrap und React Calendar
+Boostrap 5.3 ist ein CSS Framework und wurde hier zum teil für das styling eingesetzt. Der Großteil des Stylings beruht allerdings auf inline Sass und dem custom stylesheet
+React Calendar wird im Notdienst Screen eingesetzt. Der React Calendar hat out-of-the-box eine Menge Funktion, die selber zu schreiben, zeitaufwendig wäre.
 Beide Abhägkeiten könnte man durch eigenen Code ersetzten.
 
 ### notwendige Befehle

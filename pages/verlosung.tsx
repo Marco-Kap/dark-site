@@ -134,9 +134,9 @@ export default function verlosung() {
           </div>
         )}{" "}
         <Section>
-          Die Preise der Herbstverlosung 2022 können noch abgeholt werden, aber
-          aufgrund des hohen Zuspuchs ist nicht mehr die volle Farbauswahl
-          verfügbar.
+          Die Preise der Herbstverlosung 2022 können noch abgeholt werden. Kommen sie einfach vorbei!
+          Aufgrund des hohen Zuspruchs ist allerdings nicht mehr die volle Farbauswahl
+          verfügbar. 
         </Section>
         {breakpoint ? (
           <Carousel slide={false} fade>

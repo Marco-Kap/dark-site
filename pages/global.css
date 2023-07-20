@@ -32,18 +32,23 @@ body {
   background-color: rgba(255, 0, 0, 0.4);
   position: absolute;
   translate: 26vw -42vw;
-
   align-items: center;
   display: flex;
 }
 @media only screen and (min-width: 996px) {
   .infobox {
     visibility: collapse;
-    background-color: red;
     margin: -2em;
   }
+  .gtext {font-size: 1.4vw;
+  }
 }
+@media only screen and (min-width: 1024px) {
+  .gtext {
+    font-size: 1.2vw;
 
+  }
+}
 /* ------------------ React Calendar -------------- */
 
 .react-calendar {

@@ -28,7 +28,8 @@ export default function Home() {
         text="Willkommen bei ihrer Ahorn-Apotheke"
       />
 
-      <Section children={section1} />
+      <Section children={section1, section2} />
+
       {breakpoint ? (
         <Carousel style={{ margin: "2em" }} slide={false} fade>
           <Carousel.Item
@@ -45,7 +46,7 @@ export default function Home() {
               style={{ width: "100%", height: "auto" }}
             />
             <Carousel.Caption className="cc">
-              Wir stellen Medizin nur für ihren Bedarf her
+              Wir stellen Medizin nur für ihren individuellen Bedarf her
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item
@@ -78,61 +79,71 @@ export default function Home() {
               height={600}
               style={{ width: "100%", height: "auto" }}
             />
+            
             <Carousel.Caption className="cc">
-              Lieferung bis nach Hause
+              Wir liefen bis nach Hause
             </Carousel.Caption>
+
+
           </Carousel.Item>
         </Carousel>
       ) : (
-        <Card>
+        <Section>
           <div className="row col mt-2">
+            <div className="col">
+              <Image
+                src={images[1]}
+                alt={"Beratung"}
+                width={600}
+                height={400}
+                style={{ width: "100%", height: "auto", borderRadius: "2%" }}
+              />
+            </div>
+            <div className="col px-4">
+           <p> Unsere erfahrenen Apotheker und Apothekerinnen stehen Ihnen mit ihrem Fachwissen
+             zur Seite und beraten Sie individuell zu Ihren Medikamenten und Gesundheitsprodukten. </p>
+             <p>Unsere Apotheker und Apothekerinnen geben Ihnen Empfehlungen zu einer ausgewogenen Ernährung 
+             und informieren Sie über sinnvolle Nahrungsergänzungsmittel, die Ihre Gesundheit unterstützen können. 
+           </p><p>Ob Kopfschmerzen, Erkältung oder Magenprobleme - wir bieten Ihnen eine breite Palette von 
+            rezeptfreien Medikamenten und Gesundheitsprodukten, die speziell auf Ihre Bedürfnisse abgestimmt sind.</p> </div>
+          </div>
+
+          <div className="row col mt-4">
+            <div className="col px-2">
+           <p> Bei uns ist Ihre Gesundheit unsere oberste Priorität, und wir möchten Ihnen den bestmöglichen Service bieten. Deshalb freuen wir uns, Ihnen unsere kostenlose Medikamentenlieferung anzubieten, um Ihre Bedürfnisse und Anforderungen noch besser zu erfüllen.
+           </p><p>Ihre Gesundheit ist uns wichtig, und wir möchten Ihnen mit unserem Lieferservice den Alltag erleichtern. Nutzen Sie unseren kostenlosen Lieferservice für Ihre Medikamente und Gesundheitsprodukte. Wir freuen uns darauf, Ihnen diesen besonderen Service 
+            bieten zu können und sind für Sie da, um Ihre Gesundheit und Ihr Wohlbefinden zu unterstützen.</p> </div>
+
+            <div className="col">
+              <Image
+                src={images[2]}
+                alt={"Lieferung"}
+                width={600}
+                height={400}
+                style={{ width: "100%", height: "auto", borderRadius: "1%" }}
+              />
+            </div>
+          </div>
+
+          <div className="col row mt-4">
             <div className="col">
               <Image
                 src={images[0]}
                 alt={"Laborantin"}
                 width={600}
                 height={400}
-                style={{ width: "100%", height: "auto" }}
+                style={{ width: "100%", height: "auto", borderRadius: "2%" }} 
               />
             </div>
-            <div className="col-4">
-              i am baby yoyo ba oil rreadnaouht you won´t know them
+            <div className="col-8">
+           <p> Die individuelle Herstellung von Medikamenten ermöglicht es uns, auf spezielle Bedürfnisse einzugehen, wie z. B. die Anpassung der Dosierung oder die Vermeidung von Unverträglichkeiten. Dies bietet Ihnen eine maßgeschneiderte Behandlung, 
+            die Ihren individuellen Gesundheitszustand berücksichtigt. Unsere erfahrenen Apotheker und Apothekerinnen nutzen ihr umfangreiches pharmazeutisches Wissen, um individuell angepasste Medikamente herzustellen. Dabei arbeiten wir eng mit Ihrem Arzt zusammen, um sicherzustellen, dass 
+            die hergestellten Medikamente genau auf Ihre Bedürfnisse abgestimmt sind.</p>
             </div>
           </div>
-
-          <div className="row col mt-2">
-            <div className="col">
-              i am baby yoyo ba oil rreadnaouht you won´t know them
-            </div>
-
-            <div className="col-4">
-              <Image
-                src={images[1]}
-                alt={"Laborantin"}
-                width={600}
-                height={400}
-                style={{ width: "100%", height: "auto" }}
-              />
-            </div>
-          </div>
-
-          <div className="col row mt-2">
-            <div className="col-4">
-              <Image
-                src={images[2]}
-                alt={"Laborantin"}
-                width={600}
-                height={400}
-                style={{ width: "100%", height: "auto" }}
-              />
-            </div>
-            <div className="col-4">
-              i am baby yoyo ba oil rreadnaouht you won´t know them
-            </div>
-          </div>
-        </Card>
+        </Section>
       )}
-      <Section children={section2} />
+     {/* <Section children={section2} />*/}
 
       <Footer />
     </>
