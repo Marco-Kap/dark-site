@@ -5,11 +5,19 @@ Die TODO Liste soll zuerst angezeigt werden, für eine kurze Dokumentation bitte
 
 -momentanen Text der Startseite überarbeiteten
 
+-apotheker und apotheker im praktikum vertauscht
+
+-Auszubildende zu Bürokauffaru/Kaufmann im Büromanagement
+
+-Bademäntel aus Verlosung rausnehmen
+
 -das aponet widget auf der Notdienst seite implementieren
 
 -e-rezepte Seite überarbeiten
 
 -Die Navbar im Darkmode gut aussehen lassen
+
+-Hintergrund Bild ändern
 
 -Rezepturen Seite bearbeiten und verlinken
 
@@ -23,7 +31,7 @@ Die TODO Liste soll zuerst angezeigt werden, für eine kurze Dokumentation bitte
 
 -alle sichtbaren Texte noch mal durchlesen und auf typos überprüfen
 
--datenschutzerklärung prüfen
+-datenschutzerklärung prüfen/das Datum bei aktualisierungen eintragen
 
 -SEO verbesserungen durchführen
 

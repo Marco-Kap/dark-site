@@ -1,5 +1,5 @@
 import BSNav from "../components/BSNav";
-import { Carousel, Card } from "react-bootstrap";
+import { Carousel, Card, Container } from "react-bootstrap";
 import Section from "../components/Section";
 import Footer from "../components/Footer";
 import Image from "next/image";
@@ -8,7 +8,7 @@ import useMediaQuery from "../public/utils/useMediaQuery";
 
 export default function Home() {
   const breakpoint = useMediaQuery(996);
-  const src = "/../public/images/motherchild.jpg";
+  const src = "/../public/images/logoohneschrift.png";
   const alt = "image description";
   const section1 =
     " Ihre Gesundheit liegt uns am Herzen, und wir freuen uns, Sie bei uns begrüßen zu dürfen. Als vertrauenswürdige Apotheke stehen wir Ihnen mit unserer langjährigen Erfahrung, Fachkompetenz und einem breiten Sortiment an Medikamenten und Gesundheitsprodukten zur Seite.";
@@ -21,13 +21,21 @@ export default function Home() {
   ];
   return (
     <>
-      <BSNav />
-      <Banner
-        source={src}
-        alt={alt}
-        text="Willkommen bei ihrer Ahorn-Apotheke"
-      />
-
+      <BSNav /><div style={{display: "flex", justifyContent: "center"}}>
+<Image src={src} alt="logo" width={1080} height={566} style={{width: "100%", height: "auto", opacity: 0.8, marginTop: "1em",}} />
+<div
+className="logo"
+        >
+          <div
+            style={{
+              color: "white",
+            }}
+          >
+            <h2 style={{ opacity: "1", fontSize: "5vw", paddingLeft: "0.3em" }}>
+              Herzlich Willkommen
+            </h2>
+          </div>
+        </div></div>
       <Section children={section1, section2} />
 
       {breakpoint ? (
@@ -89,17 +97,17 @@ export default function Home() {
         </Carousel>
       ) : (
         <Section>
-          <div className="row col mt-2">
-            <div className="col">
+          <div className="row col m-2 ">
+            <div className="col-7">
               <Image
                 src={images[1]}
                 alt={"Beratung"}
                 width={600}
                 height={400}
-                style={{ width: "100%", height: "auto", borderRadius: "2%" }}
+                style={{ width: "100%", height: "auto", borderRadius: "2%", }}
               />
             </div>
-            <div className="col px-4">
+            <div className="col" style={{paddingLeft: "3em", paddingRight: "0.5em",  }}>
            <p> Unsere erfahrenen Apotheker und Apothekerinnen stehen Ihnen mit ihrem Fachwissen
              zur Seite und beraten Sie individuell zu Ihren Medikamenten und Gesundheitsprodukten. </p>
              <p>Unsere Apotheker und Apothekerinnen geben Ihnen Empfehlungen zu einer ausgewogenen Ernährung 
@@ -108,8 +116,8 @@ export default function Home() {
             rezeptfreien Medikamenten und Gesundheitsprodukten, die speziell auf Ihre Bedürfnisse abgestimmt sind.</p> </div>
           </div>
 
-          <div className="row col mt-4">
-            <div className="col px-2">
+          <div className="row col m-4">
+            <div className="col" style={{paddingLeft: "0.5em", paddingRight: "3em", }}>
            <p> Bei uns ist Ihre Gesundheit unsere oberste Priorität, und wir möchten Ihnen den bestmöglichen Service bieten. Deshalb freuen wir uns, Ihnen unsere kostenlose Medikamentenlieferung anzubieten, um Ihre Bedürfnisse und Anforderungen noch besser zu erfüllen.
            </p><p>Ihre Gesundheit ist uns wichtig, und wir möchten Ihnen mit unserem Lieferservice den Alltag erleichtern. Nutzen Sie unseren kostenlosen Lieferservice für Ihre Medikamente und Gesundheitsprodukte. Wir freuen uns darauf, Ihnen diesen besonderen Service 
             bieten zu können und sind für Sie da, um Ihre Gesundheit und Ihr Wohlbefinden zu unterstützen.</p> </div>
@@ -125,19 +133,19 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="col row mt-4">
-            <div className="col">
+          <div className="col row m-4">
+            <div className="col-7">
               <Image
                 src={images[0]}
                 alt={"Laborantin"}
                 width={600}
                 height={400}
-                style={{ width: "100%", height: "auto", borderRadius: "2%" }} 
+                style={{ width: "100%", height: "auto", borderRadius: "2%", }} 
               />
             </div>
-            <div className="col-8">
+            <div className="col" style={{paddingLeft: "3em", paddingRight: "0.5em", }}>
            <p> Die individuelle Herstellung von Medikamenten ermöglicht es uns, auf spezielle Bedürfnisse einzugehen, wie z. B. die Anpassung der Dosierung oder die Vermeidung von Unverträglichkeiten. Dies bietet Ihnen eine maßgeschneiderte Behandlung, 
-            die Ihren individuellen Gesundheitszustand berücksichtigt. Unsere erfahrenen Apotheker und Apothekerinnen nutzen ihr umfangreiches pharmazeutisches Wissen, um individuell angepasste Medikamente herzustellen. Dabei arbeiten wir eng mit Ihrem Arzt zusammen, um sicherzustellen, dass 
+            die Ihren individuellen Gesundheitszustand berücksichtigt.</p> <p>Unsere erfahrenen Apotheker und Apothekerinnen nutzen ihr umfangreiches pharmazeutisches Wissen, um individuell angepasste Medikamente herzustellen. Dabei arbeiten wir eng mit Ihrem Arzt zusammen, um sicherzustellen, dass 
             die hergestellten Medikamente genau auf Ihre Bedürfnisse abgestimmt sind.</p>
             </div>
           </div>

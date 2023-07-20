@@ -26,7 +26,7 @@ export default function stellenangebote() {
             <Col>
               <Accordion style={{ margin: "2em" }} defaultActiveKey="0">
                 <Accordion.Item eventKey="0">
-                  <Accordion.Header>Apotheker/in im Praktikum</Accordion.Header>
+                  <Accordion.Header>Apotheker/in</Accordion.Header>
                   <Accordion.Body>
                     <h6>Vorrausetzungen:</h6>
                     <ul>
@@ -36,7 +36,7 @@ export default function stellenangebote() {
                   </Accordion.Body>
                 </Accordion.Item>
                 <Accordion.Item eventKey="1">
-                  <Accordion.Header>Apotheker/in</Accordion.Header>
+                  <Accordion.Header>Apotheker/in im Praktikum</Accordion.Header>
                   <Accordion.Body>
                     <h6>Vorrausetzungen:</h6>
                     <ul>
@@ -58,7 +58,7 @@ export default function stellenangebote() {
                     zu Gesundheitsprodukten zuständig. Du überprüfst Rezepte,
                     gibst Medikamente aus und bereitest sie zu.
                   </Accordion.Body>
-                </Accordion.Item>
+                </Accordion.Item> 
                 <Accordion.Item eventKey="3">
                   <Accordion.Header>PTA im Praktikum</Accordion.Header>
                   <Accordion.Body>
@@ -71,8 +71,14 @@ export default function stellenangebote() {
                 <Accordion.Item eventKey="4">
                   <Accordion.Header>Kaufmänner/Kauffrauen</Accordion.Header>
                   <Accordion.Body>
-                    <h6>Vorrausstzungen</h6>
+                    <h6>Vorraussetzungen</h6>
                     <li>Abgeschlossene Kaufmännische Ausbildung</li>
+                  </Accordion.Body>
+                </Accordion.Item>
+                <Accordion.Item eventKey="9">
+                  <Accordion.Header>Auszubildende zur Kauffrau/Kaufmann für Büromanagement</Accordion.Header>
+                  <Accordion.Body>
+
                   </Accordion.Body>
                 </Accordion.Item>
                 <Accordion.Item eventKey="5">

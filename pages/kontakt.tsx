@@ -25,17 +25,15 @@ export default function kontakt() {
             Montag bis Freitag: 8:00 - 18:30
             <br /> Samstag: 8:00 -13:30
           </div>
-        </Section>
-        <span>Bahnstraße 7</span>
-        <br />
-        <span>34497 Korbach</span>
+        </Section><div className="gText">
+        <span>Bahnstraße 7</span><br/>
+        <span>34497 Korbach</span><br/>
         <span style={{ whiteSpace: "nowrap" }}>
-          {" "}
-          {"   "}
+
           <a style={{ color: "grey", margin: "0.3em" }} href="tel:056314040">
             05631 4040
           </a>
-        </span>
+        </span><br/>
         <span>
           <a
             style={{ color: "grey", margin: "0.3em" }}
@@ -43,7 +41,7 @@ export default function kontakt() {
           >
             email@ahornapo.de
           </a>
-        </span>
+        </span></div>
         <Section>
           Ihre Gesundheit liegt uns am Herzen, und wir sind gerne für Sie da.
           Zögern Sie nicht, uns zu kontaktieren!

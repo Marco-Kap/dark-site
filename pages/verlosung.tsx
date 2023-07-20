@@ -13,8 +13,8 @@ export default function verlosung() {
   const alt = "image description";
   const image = [
     "/../public/images/Velours-orange(no-bg.png",
-    "/../public/images/Bademantel, orange 3-min.png",
-    "/../public/images/Bademantel, rot-min.png",
+    "/../public/images/05-HT-Velours-grün-2023-min.png", //ersetzen
+    "/../public/images/07-HT-Velours-rot-2023-min.png", //ersetzen
     "/../public/images/05-HT-Velours-grün-2023-min.png",
     "/../public/images/muetze-schal-decke(freigestellt).png",
     "/../public/images/Mütze-min.png",
@@ -48,7 +48,7 @@ export default function verlosung() {
           ist nicht notwendig bei uns etwas gekauft zu haben um teilnehmen zu
           können. Die Gewinner werden per Zufallsprinzip ausgewählt und von uns
           per Brief oder E-Mail benachrichtigt. Die Preise umfassen dieses Mal
-          hochwertige Handtücher und Bademäntel, sowie viele weitere
+          hochwertige Handtücher und viele weitere
           Überraschungen. Verpassen Sie also nicht die Chance, an diesem
           spannenden Event teilzunehmen und tolle Preise zu gewinnen!{" "}
         </Section>
@@ -61,10 +61,10 @@ export default function verlosung() {
               }}
             >
               <Image
-                src={image[3]}
-                alt={"Handtuch"}
-                width={400}
-                height={600}
+                src={image[0]}
+                alt={"Handtuch in "}
+                width={600}
+                height={400}
                 style={{ width: "100%", height: "auto" }}
                 
               />
@@ -80,10 +80,10 @@ export default function verlosung() {
             >
               <Image
                 src={image[1]}
-                alt={"Bademantel in rot"}
+                alt={"Hantuch in türkis"}
                 width={600}
                 height={400}
-                style={{ width: "10em", height: "auto" }}
+                style={{ width: "100%", height: "auto" }}
               />
 
               <Carousel.Caption>
@@ -98,10 +98,10 @@ export default function verlosung() {
             >
               <Image
                 src={image[2]}
-                alt={"Bademantel in orange"}
+                alt={"Handtuch in rot"}
                 width={600}
                 height={400}
-                style={{ width: "10em", height: "auto" }}
+                style={{ width: "100%", height: "auto" }}
               />
               <Carousel.Caption>
                 {/*Hier ist kann man Titel reinschreiben */}
