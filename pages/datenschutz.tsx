@@ -21,6 +21,8 @@ const Datenschutz = () => {
           tel: 05631 4040
           <br /> email:{" "}
           <a href="mailto:datenschutz@ahornapo.de">datenschutz@ahornapo.de</a>
+          <br />
+          Datenschutzbeauftragte : Karen Temme
         </p>
         <h2>
           2. Erhebung und Speicherung personenbezogener Daten sowie Art und

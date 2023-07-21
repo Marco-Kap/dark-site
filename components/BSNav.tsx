@@ -6,12 +6,13 @@ import Logo from "./Logo";
 import Phone from "./Phone";
 import Clock from "./Clock";
 import { isOpen } from "../public/utils/time";
+import Image from "next/image";
 import { useEffect, useState, useCallback } from "react";
 import useMediaQuery from "../public/utils/useMediaQuery";
 
 export default function BSNav() {
   const breakpoint = useMediaQuery(996);
-
+const src = "/../public/images/ahornapo haus.png"
   return (
     <>
       <Container className="infobox">
@@ -37,7 +38,6 @@ export default function BSNav() {
         <Navbar collapseOnSelect expand="lg" className="">
           <Container>
           <Navbar.Brand href="/">
-              <Logo />
               Ahorn-Apotheke
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
