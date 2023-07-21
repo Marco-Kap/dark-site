@@ -15,8 +15,9 @@ export default function BSNav() {
 const src = "/../public/images/ahornapo haus.png"
   return (
     <>
-      <Container className="infobox">
-        <div className="p-2">
+      <Container className="row"><div className="col"><Image src={src} alt="logo" width={80} height={70} /></div>
+
+        <div className="p-2 col">
           <span >Bahnhof Straße 7, 34497 Korbach</span>
           <span style={{ whiteSpace: "nowrap" }}>
             {" "}
@@ -38,12 +39,14 @@ const src = "/../public/images/ahornapo haus.png"
         <Navbar collapseOnSelect expand="lg" className="">
           <Container>
           <Navbar.Brand href="/">
-              Ahorn-Apotheke
+
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav ">
               <Nav variant="tabs" defaultActiveKey="/" className="me-auto px-2">
-                
+              <Nav.Link eventKey={"verlosung"} href="/verlosung">
+                  Startseite
+                </Nav.Link>
                 <Nav.Link eventKey={"verlosung"} href="/verlosung">
                   Verlosung
                 </Nav.Link>
