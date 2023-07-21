@@ -21,22 +21,25 @@ export default function Home() {
   ];
   return (
     <><BSNav />
-      {/*<Banner source="/../public/images/logoohneschrift.png" alt="logo" text="Willkommen in ihrer Ahornapotheke"/>*/}
-      <div style={{marginRight: "2em", marginLeft: "2em"}}>
-        <Image
-          alt={alt}
+      <Banner source="/../public/images/motherchild.jpg" alt="logo" text="Willkommen in ihrer Ahornapotheke"/>
+     {/* <div style={{display:"flex", alignContent: "center", justifyContent:"center"}}><Image
+      alt={alt}
           src={src}
           sizes="100vw"
           width={100}
           height={300}
           // Make the image display full width
           style={{
-            width: "100%",
+            width: "70%",
             height: "auto",
             zIndex: 1,
+            display: "flex",
+alignSelf: "center", 
+justifySelf: "center"
           }}
         />
-        <div
+       
+      </div> <div
   className="logo"
         >
           <div
@@ -48,8 +51,7 @@ export default function Home() {
 Willkommen in ihrer Ahornapotheke
             </h2>
           </div>
-        </div>
-      </div>
+        </div>*/}
       <Section children={section2} />
 
       {breakpoint ? (
