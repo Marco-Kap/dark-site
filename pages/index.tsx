@@ -13,16 +13,44 @@ export default function Home() {
   const section1 =
     " Ihre Gesundheit liegt uns am Herzen, und wir freuen uns, Sie bei uns begrüßen zu dürfen. Als vertrauenswürdige Apotheke stehen wir Ihnen mit unserer langjährigen Erfahrung, Fachkompetenz und einem breiten Sortiment an Medikamenten und Gesundheitsprodukten zur Seite.";
   const section2 =
-    "Bei uns finden Sie nicht nur eine große Auswahl an rezeptpflichtigen und rezeptfreien Arzneimitteln, sondern auch ein breites Spektrum an hochwertigen Gesundheitsprodukten, Nahrungsergänzungsmitteln, Naturheilmitteln und Kosmetikartikeln. Wir legen großen Wert auf Qualität und arbeiten nur mit renommierten Herstellern zusammen, um Ihnen Produkte anzubieten, denen Sie vertrauen können.";
+    "Bei uns finden Sie nicht nur eine große Auswahl an rezeptpflichtigen und rezeptfreien Arzneimitteln, sondern auch ein breites Spektrum an hochwertigen Gesundheitsprodukten, Nahrungsergänzungsmitteln, Naturheilmitteln und Kosmetikartikeln. Wir legen großen Wert auf Qualität und arbeiten nur mit renommierten Herstellern zusammen, um Ihnen Produkte anzubieten, denen Sie vertrauen können. Ihre Gesundheit liegt uns am Herzen, und wir freuen uns, Sie bei uns begrüßen zu dürfen. Als vertrauenswürdige Apotheke stehen wir Ihnen mit unserer langjährigen Erfahrung, Fachkompetenz und einem breiten Sortiment an Medikamenten und Gesundheitsprodukten zur Seite.";
   const images = [
     "/../public/images/Laborantin.jpg",
     "/../public/images/classic-beratung-standard.jpg",
     "/../public/images/lieferfahrer.jpg",
   ];
   return (
-    <>
-      <BSNav /><Banner source="/../public/images/logoohneschrift.png" alt="logo" widht={200} height={300} text="Willkommen in ihrer Ahornapotheke"/>
-      <Section children={section1, section2} />
+    <><BSNav />
+      {/*<Banner source="/../public/images/logoohneschrift.png" alt="logo" text="Willkommen in ihrer Ahornapotheke"/>*/}
+      <div style={{marginRight: "2em", marginLeft: "2em"}}>
+        <Image
+          alt={alt}
+          src={src}
+          sizes="100vw"
+          width={100}
+          height={300}
+          // Make the image display full width
+          style={{
+            width: "100%",
+            height: "auto",
+            zIndex: 1,
+          }}
+        />
+        <div
+  className="logo"
+        >
+          <div
+            style={{
+              color: "white",
+            }}
+          >
+            <h2 style={{ opacity: "1", fontSize: "5vw", paddingLeft: "0.3em" }}>
+Willkommen in ihrer Ahornapotheke
+            </h2>
+          </div>
+        </div>
+      </div>
+      <Section children={section2} />
 
       {breakpoint ? (
         <Carousel style={{ margin: "2em" }} slide={false} fade>

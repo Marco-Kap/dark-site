@@ -41,36 +41,34 @@ export function getEmergency() {
 
 export function isOpen() {
   let closingTime;
-  if (index == 1) {
-    closingTime = "aktuell geöffnet!";
+  if (index == 0) {
+    closingTime = "geöffnet im Notdienst!";
   }
   if (
-    index !== 1 &&
+    index !== 0 &&
     day !== 6 &&
     (hour <= 8 || (hour >= 18 && minute >= 30) || day === 0)
   ) {
     closingTime = "öffnet um Morgen 8:00";
   } else if (
-    index !== 1 &&
+    index !== 0 &&
     day === 6 &&
     (hour <= 8 || (hour >= 13 && minute >= 30))
   ) {
     closingTime = "öffnet Montag um 8:00";
   } else if (
-    index !== 1 &&
+    index !== 0 &&
     day !== 6 &&
     day !== 0 &&
     (hour >= 8 || (hour <= 18 && minute <= 30))
   ) {
     closingTime = "geöffnet bis 18:30";
   } else if (
-    index !== 1 &&
+    index !== 0 &&
     day === 6 &&
     (hour <= 8 || (hour <= 13 && minute <= 30))
   ) {
     closingTime = "geöffnet bis 13:30";
-  } else {
-    closingTime = "";
-  }
+  } 
   return closingTime;
 }
