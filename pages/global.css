@@ -1,3 +1,9 @@
+span {white-space: nowrap;}
+
+.icon {
+  border-radius: 50%; background-color: red; padding: 16px; width:4em; height: auto;
+}
+
 .red {
   color: red;
   background-color: red;

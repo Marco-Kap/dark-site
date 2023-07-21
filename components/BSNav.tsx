@@ -1,13 +1,15 @@
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import NavDropdown from "react-bootstrap/NavDropdown";
+
+import SVG from "./SVG"
 import Logo from "./Logo";
 import Phone from "./Phone";
 import Clock from "./Clock";
 import { isOpen } from "../public/utils/time";
 import Image from "next/image";
 import { useEffect, useState, useCallback } from "react";
+import Location from "./Location";
 import useMediaQuery from "../public/utils/useMediaQuery";
 
 export default function BSNav() {
@@ -17,7 +19,7 @@ const src = "/../public/images/ahornapo haus.png"
     <>
       <Container className="row"><div className="col"><Image src={src} alt="logo" width={80} height={70} /></div>
 
-        <div className="p-2 col">
+        <div className="p-2 col"><Location/>
           <span >Bahnhof Straße 7, 34497 Korbach</span>
           <span style={{ whiteSpace: "nowrap" }}>
             {" "}

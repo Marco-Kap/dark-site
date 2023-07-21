@@ -21,6 +21,7 @@ export default function kontakt() {
         </Section>{" "}
         <Section>
           <div>
+            
             <h4>Öffnungszeiten:</h4>
             Montag bis Freitag: 8:00 - 18:30
             <br /> Samstag: 8:00 -13:30
@@ -47,7 +48,6 @@ export default function kontakt() {
           Zögern Sie nicht, uns zu kontaktieren!
         </Section>
       </Card>
-      
       <Footer />
     </>
   );

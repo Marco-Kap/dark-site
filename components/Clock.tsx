@@ -1,13 +1,16 @@
+import { isOpen } from "../public/utils/time";
+
 export default function Clock() {
   return (
+    <div className="row">
+    <div className="icon">
     <svg
       version="1.1"
       id="Capa_1"
       xmlns="http://www.w3.org/2000/svg"
       x="0px"
       y="0px"
-      width="20.213px"
-      height="30.212px"
+
       viewBox="0 0 485.213 485.212">
       <g>
         <path
@@ -38,5 +41,8 @@ export default function Clock() {
       <g></g>
       <g></g>
     </svg>
+    </div>
+    <div className="col">{isOpen()}</div>
+    </div>
   );
 }
