@@ -9,7 +9,6 @@ export type Props = {
 };
 
 export default function Banner(props: Props) {
-
   return (
     <>
       <div>
@@ -26,9 +25,7 @@ export default function Banner(props: Props) {
             zIndex: 1,
           }}
         />
-        <div
-  className="slider"
-        >
+        <div className="slider">
           <div
             style={{
               color: "white",

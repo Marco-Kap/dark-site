@@ -13,14 +13,13 @@ export default function verlosung() {
   const alt = "image description";
   const image = [
     "/../public/images/Velours-orange(no-bg.png",
-    "/../public/images/05-HT-Velours-grün-2023-min.png", //ersetzen
-    "/../public/images/07-HT-Velours-rot-2023-min.png", //ersetzen
+    "/../public/images/05-HT-Velours-grün-2023-min.png",
+    "/../public/images/07-HT-Velours-rot-2023-min.png",
     "/../public/images/05-HT-Velours-grün-2023-min.png",
     "/../public/images/muetze-schal-decke(freigestellt).png",
     "/../public/images/Mütze-min.png",
     "/../public/images/schal-min.png",
     "/../public/images/Deckegrün-min.png",
-    
   ];
 
   const text = [
@@ -48,9 +47,9 @@ export default function verlosung() {
           ist nicht notwendig bei uns etwas gekauft zu haben um teilnehmen zu
           können. Die Gewinner werden per Zufallsprinzip ausgewählt und von uns
           per Brief oder E-Mail benachrichtigt. Die Preise umfassen dieses Mal
-          hochwertige Handtücher und viele weitere
-          Überraschungen. Verpassen Sie also nicht die Chance, an diesem
-          spannenden Event teilzunehmen und tolle Preise zu gewinnen!{" "}
+          hochwertige Handtücher und viele weitere Überraschungen. Verpassen Sie
+          also nicht die Chance, an diesem spannenden Event teilzunehmen und
+          tolle Preise zu gewinnen!{" "}
         </Section>
         {breakpoint ? (
           <Carousel slide={false} fade>
@@ -66,11 +65,8 @@ export default function verlosung() {
                 width={600}
                 height={400}
                 style={{ width: "100%", height: "auto" }}
-                
               />
-              <Carousel.Caption>
-                {/*Hier kann man Titel reinschreiben */}
-              </Carousel.Caption>
+              <Carousel.Caption></Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item
               style={{
@@ -134,9 +130,9 @@ export default function verlosung() {
           </div>
         )}{" "}
         <Section>
-          Die Preise der Herbstverlosung 2022 können noch abgeholt werden. Kommen sie einfach vorbei!
-          Aufgrund des hohen Zuspruchs ist allerdings nicht mehr die volle Farbauswahl
-          verfügbar. 
+          Die Preise der Herbstverlosung 2022 können noch abgeholt werden.
+          Kommen sie einfach vorbei! Aufgrund des hohen Zuspruchs ist allerdings
+          nicht mehr die volle Farbauswahl verfügbar.
         </Section>
         {breakpoint ? (
           <Carousel slide={false} fade>
@@ -152,7 +148,6 @@ export default function verlosung() {
                 width={400}
                 height={600}
                 style={{ width: "50%", height: "auto" }}
-                
               />
               <Carousel.Caption>
                 {/*Hier kann man Titel reinschreiben */}
@@ -195,7 +190,13 @@ export default function verlosung() {
             </Carousel.Item>
           </Carousel>
         ) : (
-          <div style={{ display: "flex", justifyContent: "space-around", marginBottom: "1em" }}>
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "space-around",
+              marginBottom: "1em",
+            }}
+          >
             <Image
               src={image[6]}
               alt={"Handtuch"}
@@ -210,7 +211,6 @@ export default function verlosung() {
               height={400}
               style={{ width: "18em", height: "auto" }}
             />
-
             <Image
               src={image[5]}
               alt={"Bademantel in rot"}
@@ -220,7 +220,6 @@ export default function verlosung() {
             />{" "}
           </div>
         )}
-
         <Footer />
       </Container>
     </>
