@@ -1,16 +1,20 @@
-span {white-space: nowrap;}
+span {
+  white-space: nowrap;
+}
 
 .icon {
-  border-radius: 50%; background-color: red; padding: 16px; width:4em; height: auto;
-}
-
-.red {
-  color: red;
+  border-radius: 50%;
   background-color: red;
+  padding: 16px;
+  width: 4em;
+  height: auto;
 }
-body {
-  color: red;
-  background-color: red;
+.nowrap {
+  white-space: nowrap;
+}
+.irow {
+  justify-content: center;
+  display: flex;
 }
 .texthero {
   font-size: medium;
@@ -24,7 +28,7 @@ body {
 }
 
 .cc {
-  background-color:  rgba(255, 0, 0, 0.5);
+  background-color: rgba(255, 0, 0, 0.5);
   border-radius: 5%;
 }
 .slider {
@@ -39,7 +43,7 @@ body {
   display: flex;
 }
 .logo {
-    height: 20vw;
+  height: 20vw;
   width: 48vw;
   float: left;
   z-index: 2;
@@ -54,13 +58,13 @@ body {
     visibility: collapse;
     margin: -2em;
   }
-  .gtext {font-size: 1.4vw;
+  .gtext {
+    font-size: 1.4vw;
   }
 }
 @media only screen and (min-width: 1024px) {
   .gtext {
     font-size: 1.2vw;
-
   }
 }
 /* ------------------ React Calendar -------------- */

@@ -2,51 +2,43 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 
-import SVG from "./SVG"
-import Logo from "./Logo";
 import Phone from "./Phone";
 import Clock from "./Clock";
 import { isOpen } from "../public/utils/time";
 import Image from "next/image";
-import { useEffect, useState, useCallback } from "react";
 import Location from "./Location";
 import useMediaQuery from "../public/utils/useMediaQuery";
 
 export default function BSNav() {
   const breakpoint = useMediaQuery(996);
-const src = "/../public/images/ahornapo haus.png"
+  const src = "/../public/images/ahornapo haus.png";
   return (
     <>
-      <Container className="row"><div className="col"><Image src={src} alt="logo" width={80} height={70} /></div>
+      <Container className="row">
+        <div className="col">
+          <Image src={src} alt="logo" width={80} height={70} />
+        </div>
 
-        <div className="p-2 col"><Location/>
-          <span >Bahnhof Straße 7, 34497 Korbach</span>
-          <span style={{ whiteSpace: "nowrap" }}>
-            {" "}
+        <div className="p-2 row col">
+          <div className="col">
+            <Location />
+          </div>
+          <div className="col">
             <Phone />
-            {"   "}
-            <a style={{ color: "grey", margin: "0.3em" }} href="tel:056314040">
-              05631 4040
-            </a>
-          </span>{" "}
-          <span style={{ whiteSpace: "nowrap" }}>
+          </div>
+          <div className="col">
             <Clock />
-            <a style={{ color: "grey", marginLeft: "0.3em" }} href="/kontakt">
-              {isOpen()}
-            </a>
-          </span>
+          </div>
         </div>
       </Container>
       <Container className="justify-items-start sticky-top bg-light rounded">
         <Navbar collapseOnSelect expand="lg" className="">
           <Container>
-          <Navbar.Brand href="/">
-
-            </Navbar.Brand>
+            <Navbar.Brand href="/"></Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav ">
               <Nav variant="tabs" defaultActiveKey="/" className="me-auto px-2">
-              <Nav.Link eventKey={"verlosung"} href="/verlosung">
+                <Nav.Link eventKey={"verlosung"} href="/verlosung">
                   Startseite
                 </Nav.Link>
                 <Nav.Link eventKey={"verlosung"} href="/verlosung">
@@ -62,31 +54,7 @@ const src = "/../public/images/ahornapo haus.png"
                   Notdienst
                 </Nav.Link>
               </Nav>
-              {!breakpoint ? (
-                <div className="p-2">
-                  <Phone />
-                  {"   "}
-                  <span>
-                    <a
-                      style={{ color: "grey", margin: "0.3em" }}
-                      href="tel:056314040">
-                      05631 4040
-                    </a>
-                  </span>
-                  {" | "}{" "}
-                  <span style={{ whiteSpace: "nowrap" }}>
-                    {" "}
-                    <Clock />
-                    <a
-                      style={{ color: "grey", marginLeft: "0.3em" }}
-                      href="/kontakt">
-                      {isOpen()}
-                    </a>
-                  </span>
-                </div>
-              ) : (
-                <></>
-              )}{" "}
+
               <Nav variant="pills" className="bg-info-subtle px-2 rounded">
                 <Nav.Link eventKey={"erezepte"} href="/erezepte">
                   Rezept einlösen
