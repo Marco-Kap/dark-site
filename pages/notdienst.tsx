@@ -65,10 +65,10 @@ export default function notdienst() {
             </a>
           </div>
           <div className="texthero">
-            <span>
+            <p>
               Klicken sie auf ein Datum um die jeweilige Notdienstapotheke
               anzeigen zu lassen{" "}
-            </span>
+            </p>
             <div style={{ height: "2em" }}>{getNextEm()}</div>
             <div className="divider" aria-disabled />
             <div
@@ -89,7 +89,7 @@ export default function notdienst() {
           momentan geöffnete Apotheke finden.
         </Card.Footer>
       </Card>
-         {/* <Form >
+      {/* <Form >
       <Form.Group className="mb-3" controlId="formBasicEmail">
         <Form.Label>Postleitzahl</Form.Label>
         <Form.Control type="submit" placeholder="Postleitzahl" />

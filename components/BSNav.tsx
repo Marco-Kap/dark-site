@@ -34,7 +34,6 @@ export default function BSNav() {
       <Container className="justify-items-start sticky-top bg-light rounded">
         <Navbar collapseOnSelect expand="lg" className="">
           <Container>
-            <Navbar.Brand href="/"></Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav ">
               <Nav variant="tabs" defaultActiveKey="/" className="me-auto px-2">
