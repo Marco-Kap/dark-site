@@ -10,7 +10,6 @@ import Location from "./Location";
 import useMediaQuery from "../public/utils/useMediaQuery";
 
 export default function BSNav() {
-  const breakpoint = useMediaQuery(996);
   const src = "/../public/images/ahornapo haus.png";
   return (
     <>
@@ -18,17 +17,14 @@ export default function BSNav() {
         <div className="col">
           <Image src={src} alt="logo" width={80} height={70} />
         </div>
-
-        <div className="p-2 row col">
-          <div className="col">
-            <Location />
-          </div>
-          <div className="col">
-            <Phone />
-          </div>
-          <div className="col">
-            <Clock />
-          </div>
+        <div className="col">
+          <Location />
+        </div>
+        <div className="col">
+          <Phone />
+        </div>
+        <div className="col">
+          <Clock />
         </div>
       </Container>
       <Container className="justify-items-start sticky-top bg-light rounded">
@@ -37,7 +33,7 @@ export default function BSNav() {
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav ">
               <Nav variant="tabs" defaultActiveKey="/" className="me-auto px-2">
-                <Nav.Link eventKey={"verlosung"} href="/verlosung">
+                <Nav.Link eventKey={"startseite"} href="/">
                   Startseite
                 </Nav.Link>
                 <Nav.Link eventKey={"verlosung"} href="/verlosung">
