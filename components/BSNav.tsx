@@ -6,17 +6,19 @@ import Logo from "./Logo";
 import Phone from "./Phone";
 import Clock from "./Clock";
 import { isOpen } from "../public/utils/time";
-import { useEffect, useState, useCallback } from "react";
+
 import useMediaQuery from "../public/utils/useMediaQuery";
+import Image from "next/image";
 
 export default function BSNav() {
   const breakpoint = useMediaQuery(996);
+  const corporate = "/../public/images/ahornapo-haus-yel-bg-420x320.png";
 
   return (
     <>
-      <Container className="infobox">
+      <Container className="infobox bg">
         <div className="p-2">
-          <span >Bahnhof Straße 7, 34497 Korbach</span>
+          <span>Bahnhof Straße 7, 34497 Korbach</span>
           <span style={{ whiteSpace: "nowrap" }}>
             {" "}
             <Phone />
@@ -33,11 +35,20 @@ export default function BSNav() {
           </span>
         </div>
       </Container>
-      <Container className="justify-items-start sticky-top bg-light rounded">
+      <Container className="justify-items-start sticky-top bg-light bg rounded">
         <Navbar collapseOnSelect expand="lg" className="">
           <Container>
             <Navbar.Brand href="/">
               <Logo />
+              <div className="corporateID">
+                <Image
+                  src={corporate}
+                  width={160}
+                  height={120}
+                  alt="bild"
+                  style={{}}
+                />
+              </div>
               Ahorn-Apotheke
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -63,7 +74,8 @@ export default function BSNav() {
                   <span>
                     <a
                       style={{ color: "grey", margin: "0.3em" }}
-                      href="tel:056314040">
+                      href="tel:056314040"
+                    >
                       05631 4040
                     </a>
                   </span>
@@ -73,7 +85,8 @@ export default function BSNav() {
                     <Clock />
                     <a
                       style={{ color: "grey", marginLeft: "0.3em" }}
-                      href="/kontakt">
+                      href="/kontakt"
+                    >
                       {isOpen()}
                     </a>
                   </span>
