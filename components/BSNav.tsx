@@ -9,10 +9,23 @@ import { isOpen } from "../public/utils/time";
 
 import useMediaQuery from "../public/utils/useMediaQuery";
 import Image from "next/image";
+import { useEffect } from "react";
 
 export default function BSNav() {
   const breakpoint = useMediaQuery(996);
   const corporate = "/../public/images/ahornapo-haus-yel-bg-420x320.png";
+
+  const handleScroll = () => {
+    const scrollPosition = window.scrollY; // => scroll position
+    console.log(scrollPosition + "hallooooooooooooooooooo");
+  };
+  useEffect(() => {
+    handleScroll();
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
     <>
