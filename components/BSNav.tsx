@@ -6,31 +6,40 @@ import Logo from "./Logo";
 import Phone from "./Phone";
 import Clock from "./Clock";
 import { isOpen } from "../public/utils/time";
-
+import react from "react";
 import useMediaQuery from "../public/utils/useMediaQuery";
 import Image from "next/image";
-import { useEffect } from "react";
+import { useEffect, useState, useRef } from "react";
 
 export default function BSNav() {
   const breakpoint = useMediaQuery(996);
-  const corporate = "/../public/images/ahornapo-haus-yel-bg-420x320.png";
+  const corporate = "/../public/images/ahornapo haus.png";
 
-  const handleScroll = () => {
-    const scrollPosition = window.scrollY; // => scroll position
-    console.log(scrollPosition + "hallooooooooooooooooooo");
-  };
+  const [scrollValue, setScrollValue] = useState(0);
+
   useEffect(() => {
-    handleScroll();
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
+    //@ts-expect-error;
+    const onScroll = (e) => {
+      setScrollValue(e.target.documentElement.scrollTop);
     };
-  }, []);
+
+    window.addEventListener("scroll", onScroll);
+
+    return () => window.removeEventListener("scroll", onScroll);
+  }, [scrollValue]);
 
   return (
     <>
-      <Container className="infobox bg">
-        <div className="p-2">
+      <Container className="infobox bg row">
+        <Image
+          src={corporate}
+          width={50}
+          height={50}
+          alt="bild"
+          className="col"
+          style={{ width: "10em", height: "auto", marginTop: "0.5em" }}
+        />
+        <div className="p-2 col">
           <span>Bahnhof Straße 7, 34497 Korbach</span>
           <span style={{ whiteSpace: "nowrap" }}>
             {" "}
@@ -53,15 +62,23 @@ export default function BSNav() {
           <Container>
             <Navbar.Brand href="/">
               <Logo />
-              <div className="corporateID">
-                <Image
-                  src={corporate}
-                  width={160}
-                  height={120}
-                  alt="bild"
-                  style={{}}
-                />
-              </div>
+              {!breakpoint && scrollValue <= 1 ? (
+                <div className="corporateID">
+                  <Image
+                    src={corporate}
+                    width={420}
+                    height={320}
+                    alt="bild"
+                    style={{
+                      translate: "0px 20px -20px",
+                      width: "10em",
+                      height: "auto",
+                    }}
+                  />
+                </div>
+              ) : (
+                <></>
+              )}
               Ahorn-Apotheke
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />

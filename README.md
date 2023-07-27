@@ -3,6 +3,8 @@ Die TODO Liste soll zuerst angezeigt werden, für eine kurze Dokumentation bitte
 
 ## TODO LISTE
 
+-anderen Hintergrund für das Bild für die bookmark komponente verwenden
+
 -momentanen Text der Startseite überarbeiteten
 
 -das aponet widget auf der Notdienst seite implementieren

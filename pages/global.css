@@ -17,8 +17,14 @@ body {
   float: left;
   z-index: 2;
   position: absolute;
-  translate: 0px -28px;
+  translate: -2px -50px;
+  width: 10em;
+  height: auto;
 }
+.coll {
+  visibility: collapse;
+}
+
 .bg {
   z-index: -1;
 }
