@@ -1,11 +1,12 @@
 import BSNav from "../components/BSNav";
 import { Card } from "react-bootstrap";
+import Footer from "../components/Footer";
 
 const Datenschutz = () => {
   return (
     <>
       <BSNav />
-      <Card style={{ margin: "2em", padding: "1em" }}>
+      <Card style={{ margin: "2em", marginTop: "8em", padding: "1em" }}>
         <h1>Datenschutzerklärung</h1>
         <p>
           Gemäß den Bestimmungen der Datenschutz-Grundverordnung (DSGVO)
@@ -150,10 +151,11 @@ const Datenschutz = () => {
           darüber oder aufgrund geänderter gesetzlicher beziehungsweise
           behördlicher Vorgaben kann es notwendig werden, diese
           Datenschutzerklärung zu ändern. Die jeweils aktuelle
-          Datenschutzerklärung kann jederzeit auf der Website unter ahornapo.de/datenschutz von
-          Ihnen abgerufen und ausgedruckt werden.
+          Datenschutzerklärung kann jederzeit auf der Website unter
+          ahornapo.de/datenschutz von Ihnen abgerufen und ausgedruckt werden.
         </p>
       </Card>
+      <Footer />
     </>
   );
 };

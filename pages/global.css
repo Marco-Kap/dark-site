@@ -18,15 +18,11 @@ body {
   z-index: 2;
   position: absolute;
   translate: -2px -50px;
-  width: 10em;
+  width: 12em;
   height: auto;
 }
 .coll {
   visibility: collapse;
-}
-
-.bg {
-  z-index: -1;
 }
 .cc {
   background-color: rgba(255, 0, 0, 0.5);
@@ -46,10 +42,22 @@ body {
 @media only screen and (min-width: 996px) {
   .infobox {
     visibility: collapse;
-    margin: -2em;
+    width: 0px;
+    height: 0px;
   }
   .gtext {
     font-size: 1.4vw;
+  }
+  .corporateID {
+    float: left;
+    z-index: 2;
+    position: absolute;
+    translate: -2px -50px;
+    width: 12em;
+    height: auto;
+  }
+  .coll {
+    visibility: visible;
   }
 }
 @media only screen and (min-width: 1024px) {

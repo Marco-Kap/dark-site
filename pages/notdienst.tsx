@@ -3,9 +3,12 @@ import { Card, Form } from "react-bootstrap";
 import Footer from "../components/Footer";
 import { useState } from "react";
 import Calendar from "react-calendar";
+import Banner from "../components/Banner";
 
 export default function notdienst() {
   const [value, onChange] = useState(new Date());
+
+  const src = "/../public/images/dna.jpg";
   // Pharmacies
   const pharmacies = [
     "Ahorn-Apotheke", //Ahornapotheke
@@ -51,6 +54,11 @@ export default function notdienst() {
   return (
     <>
       <BSNav />
+      <Banner
+        source={src}
+        alt="bildbeschreibung"
+        text="Sie sind rund um die Uhr versorgt"
+      />
       <Card style={{ margin: "2em", textAlign: "center" }}>
         <Card.Header>
           {" "}
@@ -75,8 +83,8 @@ export default function notdienst() {
               style={{
                 justifyContent: "center",
                 display: "flex",
-              }}>
-              {/*@ts-expect-error*/}
+              }}
+            >
               <Calendar onChange={onChange} value={value} locale="de" />
             </div>
           </div>
@@ -89,7 +97,7 @@ export default function notdienst() {
           momentan geöffnete Apotheke finden.
         </Card.Footer>
       </Card>
-         {/* <Form >
+      {/* <Form >
       <Form.Group className="mb-3" controlId="formBasicEmail">
         <Form.Label>Postleitzahl</Form.Label>
         <Form.Control type="submit" placeholder="Postleitzahl" />

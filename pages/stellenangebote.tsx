@@ -26,7 +26,7 @@ export default function stellenangebote() {
             <Col>
               <Accordion style={{ margin: "2em" }} defaultActiveKey="0">
                 <Accordion.Item eventKey="0">
-                  <Accordion.Header>Apotheker/in im Praktikum</Accordion.Header>
+                  <Accordion.Header>Apotheker/in</Accordion.Header>
                   <Accordion.Body>
                     <h6>Vorrausetzungen:</h6>
                     <ul>
@@ -36,7 +36,7 @@ export default function stellenangebote() {
                   </Accordion.Body>
                 </Accordion.Item>
                 <Accordion.Item eventKey="1">
-                  <Accordion.Header>Apotheker/in</Accordion.Header>
+                  <Accordion.Header>Apotheker/in im Praktikum</Accordion.Header>
                   <Accordion.Body>
                     <h6>Vorrausetzungen:</h6>
                     <ul>
@@ -112,6 +112,20 @@ export default function stellenangebote() {
                     bei der Buchhaltung.
                   </Accordion.Body>
                 </Accordion.Item>
+                <Accordion.Item eventKey="9">
+                  <Accordion.Header>
+                    Auszubildende zur Kauffrau/Kaufmann für Büromanagement
+                  </Accordion.Header>
+                  <Accordion.Body>
+ <h6>Vorrausetzungen:</h6>
+                    <ul>
+                      <li>Erfolgreich abgeschlossene Schulausbildung (idealerweise mittlere Reife oder Abitur)</li>
+                      <li>Grundlegende Kenntnisse zu MS-Office</li>
+                      <li>Deutschkenntnisse in Wort und Schrift</li>
+                      <li>Gut organisierte Arbeitsweise</li>
+                    </ul>
+                  </Accordion.Body>
+                </Accordion.Item>
               </Accordion>
             </Col>
             <Col>
@@ -120,7 +134,7 @@ export default function stellenangebote() {
                 alt={alt}
                 // Importing an image will
                 // automatically set the width and height
-                src="/../public/images/klassik-logo-freigestellt-480x320.png"
+                src="/../public/images/ahornapo haus.png"
                 sizes="100vw"
                 width={100}
                 height={300}

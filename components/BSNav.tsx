@@ -33,8 +33,8 @@ export default function BSNav() {
       <Container className="infobox bg row">
         <Image
           src={corporate}
-          width={50}
-          height={50}
+          width={220}
+          height={220}
           alt="bild"
           className="col"
           style={{ width: "10em", height: "auto", marginTop: "0.5em" }}
@@ -61,7 +61,11 @@ export default function BSNav() {
         <Navbar collapseOnSelect expand="lg" className="">
           <Container>
             <Navbar.Brand href="/">
-              <Logo />
+              <div className="coll">
+                {" "}
+                {/*<Image src={"/../corporate"} width={30} height={30} alt="Ahornapotheke Logo"/>*/}
+                <Logo /> Ahorn-Apotheke
+              </div>
               {!breakpoint && scrollValue <= 1 ? (
                 <div className="corporateID">
                   <Image
@@ -79,7 +83,6 @@ export default function BSNav() {
               ) : (
                 <></>
               )}
-              Ahorn-Apotheke
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav ">

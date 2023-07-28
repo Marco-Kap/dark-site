@@ -7,7 +7,7 @@ export default function impressum() {
   return (
     <>
       <BSNav />
-      <Card style={{ margin: "2em", padding: "1em" }}>
+      <Card style={{ margin: "2em", marginTop: "8em", padding: "1em" }}>
         <div className="row">
           <div className="col">
             <h2>Impressum</h2>
@@ -48,7 +48,8 @@ export default function impressum() {
                 <br />
                 <p>
                   R+V Allgemeine Versicherungen AG
-                  <br />Raiffeisenplatz 1
+                  <br />
+                  Raiffeisenplatz 1
                   <br />
                   65189 Wiesbaden
                 </p>

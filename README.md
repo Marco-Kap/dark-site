@@ -3,6 +3,8 @@ Die TODO Liste soll zuerst angezeigt werden, für eine kurze Dokumentation bitte
 
 ## TODO LISTE
 
+-Banner oder margin für alle Seiten verwenden, damit bookmark sich nicht überschneidet
+
 -anderen Hintergrund für das Bild für die bookmark komponente verwenden
 
 -momentanen Text der Startseite überarbeiteten
@@ -11,7 +13,7 @@ Die TODO Liste soll zuerst angezeigt werden, für eine kurze Dokumentation bitte
 
 -e-rezepte Seite überarbeiten
 
--Die Navbar im Darkmode gut aussehen lassen
+-Die Navbar im Firefox Darkmode gut aussehen lassen
 
 -Rezepturen Seite bearbeiten und verlinken
 
@@ -30,8 +32,6 @@ Die TODO Liste soll zuerst angezeigt werden, für eine kurze Dokumentation bitte
 -SEO verbesserungen durchführen
 
 -An Wordpress API anbinden
-
--Nach der Berufhaftpflichtversicherung fragen
 
 -openstreetmaps auf Kontaktseite einbauen
 
