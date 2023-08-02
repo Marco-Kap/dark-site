@@ -3,7 +3,7 @@ Die TODO Liste soll zuerst angezeigt werden, für eine kurze Dokumentation bitte
 
 ## TODO LISTE
 
--Banner oder margin für alle Seiten verwenden, damit bookmark sich nicht überschneidet
+-Alle Bilder verkleinern sowohl die Dateigröße als auch das Format
 
 -anderen Hintergrund für das Bild für die bookmark komponente verwenden
 
@@ -36,7 +36,9 @@ Die TODO Liste soll zuerst angezeigt werden, für eine kurze Dokumentation bitte
 -openstreetmaps auf Kontaktseite einbauen
 
 -deployment
-
+## Liste der Bilder
+erezpte: E-rezept-Handy-min.jpg
+notdienst: einfach margin
 
 ## Wie man diese Seite einsetzt
 

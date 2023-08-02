@@ -65,6 +65,11 @@ body {
     font-size: 1.2vw;
   }
 }
+@media print {
+  .infobox {
+    visibility: collapse;
+  }
+}
 /* ------------------ React Calendar -------------- */
 
 .react-calendar {

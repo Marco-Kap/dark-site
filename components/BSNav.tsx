@@ -18,7 +18,7 @@ export default function BSNav() {
   const [scrollValue, setScrollValue] = useState(0);
 
   useEffect(() => {
-    //@ts-expect-error;
+    //@ts-expect-error
     const onScroll = (e) => {
       setScrollValue(e.target.documentElement.scrollTop);
     };
@@ -40,8 +40,8 @@ export default function BSNav() {
           style={{ width: "10em", height: "auto", marginTop: "0.5em" }}
         />
         <div className="p-2 col">
-          <span>Bahnhof Straße 7, 34497 Korbach</span>
-          <span style={{ whiteSpace: "nowrap" }}>
+          <span>Bahnhof Straße 7,</span> <span>34497 Korbach</span>
+          <span>
             {" "}
             <Phone />
             {"   "}

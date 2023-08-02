@@ -8,6 +8,7 @@ import Banner from "../components/Banner";
 export default function notdienst() {
   const [value, onChange] = useState(new Date());
 
+  const alt = "Bildbeschreibung"
   const src = "/../public/images/dna.jpg";
   // Pharmacies
   const pharmacies = [
@@ -54,11 +55,12 @@ export default function notdienst() {
   return (
     <>
       <BSNav />
-      <Banner
+      <div style={{marginTop: "6em"}}></div>
+{/*      <Banner
         source={src}
-        alt="bildbeschreibung"
+        alt={alt}
         text="Sie sind rund um die Uhr versorgt"
-      />
+  /> */}
       <Card style={{ margin: "2em", textAlign: "center" }}>
         <Card.Header>
           {" "}
@@ -77,8 +79,8 @@ export default function notdienst() {
               Klicken sie auf ein Datum um die jeweilige Notdienstapotheke
               anzeigen zu lassen{" "}
             </span>
-            <div style={{ height: "2em" }}>{getNextEm()}</div>
-            <div className="divider" aria-disabled />
+            <div style={{}}>{getNextEm()}</div>
+            <div className="" aria-disabled />
             <div
               style={{
                 justifyContent: "center",
