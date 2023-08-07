@@ -5,8 +5,6 @@ Die TODO Liste soll zuerst angezeigt werden, für eine kurze Dokumentation bitte
 
 -Alle Bilder verkleinern sowohl die Dateigröße als auch das Format
 
--anderen Hintergrund für das Bild für die bookmark komponente verwenden
-
 -momentanen Text der Startseite überarbeiteten
 
 -das aponet widget auf der Notdienst seite implementieren
@@ -27,7 +25,7 @@ Die TODO Liste soll zuerst angezeigt werden, für eine kurze Dokumentation bitte
 
 -alle sichtbaren Texte noch mal durchlesen und auf typos überprüfen
 
--datenschutzerklärung prüfen
+-datenschutzerklärung Datum ändern wenn fertig (Carmen gegeben)
 
 -SEO verbesserungen durchführen
 
@@ -37,7 +35,7 @@ Die TODO Liste soll zuerst angezeigt werden, für eine kurze Dokumentation bitte
 
 -deployment
 ## Liste der Bilder
-erezpte: E-rezept-Handy-min.jpg
+erezepte: E-rezept-Handy-min.jpg
 notdienst: einfach margin
 
 ## Wie man diese Seite einsetzt
