@@ -40,7 +40,7 @@ export default function BSNav() {
           style={{ width: "10em", height: "auto", marginTop: "0.5em" }}
         />
         <div className="p-2 col">
-          <span>Bahnhof Straße 7,</span> <span>34497 Korbach</span>
+          <span>Bahnhof Straße 7, 34497 Korbach</span>
           <span>
             {" "}
             <Phone />

@@ -2,6 +2,10 @@ body {
   color: red;
   background-color: red;
 }
+span {
+  white-space: nowrap;
+}
+
 .texthero {
   font-size: medium;
   font-weight: bold;
@@ -12,7 +16,6 @@ body {
 .divider {
   margin-bottom: 2em;
 }
-
 .corporateID {
   float: left;
   z-index: 2;
@@ -48,6 +51,7 @@ body {
   .gtext {
     font-size: 1.4vw;
   }
+
   .corporateID {
     float: left;
     z-index: 2;

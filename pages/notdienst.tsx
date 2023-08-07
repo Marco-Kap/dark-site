@@ -55,7 +55,7 @@ export default function notdienst() {
   return (
     <>
       <BSNav />
-      <div style={{marginTop: "6em"}}></div>
+      <div className="emdivider"></div>
 {/*      <Banner
         source={src}
         alt={alt}

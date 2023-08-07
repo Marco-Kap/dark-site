@@ -17,6 +17,7 @@
     "eslint-plugin-react": "^7.25.3",
     "font-awesome": "^4.7.0",
     "i": "^0.3.7",
+    "leaflet": "^1.9.4",
     "next": "latest",
     "npm": "^9.7.2",
     "react": "latest",
@@ -26,6 +27,7 @@
     "semver": "^7.5.2"
   },
   "devDependencies": {
+    "@types/leaflet": "^1.9.3",
     "@types/node": "latest",
     "@types/react": "latest",
     "eslint": "latest",
