@@ -1,5 +1,5 @@
 import BSNav from "../components/BSNav";
-import { Carousel, Card } from "react-bootstrap";
+import { Carousel, Card, Container } from "react-bootstrap";
 import Section from "../components/Section";
 import Footer from "../components/Footer";
 import Image from "next/image";
@@ -8,7 +8,7 @@ import useMediaQuery from "../public/utils/useMediaQuery";
 
 export default function Home() {
   const breakpoint = useMediaQuery(996);
-  const src = "/../public/images/motherchild.jpg";
+  const src = "/../public/images/ahornapo haus.png";
   const alt = "image description";
   const section1 =
     " Ihre Gesundheit liegt uns am Herzen, und wir freuen uns, Sie bei uns begrüßen zu dürfen. Als vertrauenswürdige Apotheke stehen wir Ihnen mit unserer langjährigen Erfahrung, Fachkompetenz und einem breiten Sortiment an Medikamenten und Gesundheitsprodukten zur Seite.";
@@ -22,11 +22,13 @@ export default function Home() {
   return (
     <>
       <BSNav />
-      <Banner
-        source={src}
-        alt={alt}
-        text="Willkommen bei ihrer Ahorn-Apotheke"
-      />
+      <Container>
+        <Banner
+          source={src}
+          alt={alt}
+          text="Willkommen bei ihrer Ahorn-Apotheke"
+        />
+      </Container>
 
       <Section children={section2} />
 
@@ -41,8 +43,8 @@ export default function Home() {
             <Image
               src={images[0]}
               alt={"Laborantin"}
-              width={200}
-              height={200}
+              width={400}
+              height={320}
               style={{ width: "100%", height: "auto" }}
             />
             <Carousel.Caption className="cc">
@@ -58,8 +60,8 @@ export default function Home() {
             <Image
               src={images[1]}
               alt={"Beratung"}
-              width={200}
-              height={200}
+              width={400}
+              height={320}
               style={{ width: "100%", height: "auto" }}
             />
             <Carousel.Caption className="cc">
@@ -75,8 +77,8 @@ export default function Home() {
             <Image
               src={images[2]}
               alt={"Lieferung"}
-              width={200}
-              height={200}
+              width={400}
+              height={320}
               style={{ width: "100%", height: "auto" }}
             />
 

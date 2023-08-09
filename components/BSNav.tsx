@@ -93,6 +93,9 @@ export default function BSNav() {
                 <Nav.Link eventKey={"stellenangebote"} href="/stellenangebote">
                   Stellenangebote
                 </Nav.Link>
+                <Nav.Link eventKey={"leistungen"} href="/leistungen">
+                  Leistungen
+                </Nav.Link>
                 <Nav.Link eventKey={"kontakt"} href="/kontakt">
                   Kontakt
                 </Nav.Link>

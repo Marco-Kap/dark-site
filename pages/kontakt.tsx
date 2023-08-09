@@ -6,7 +6,7 @@ import Section from "../components/Section";
 export default function kontakt() {
   const src = "/../public/images/team.jpg";
   const alt = "image description";
-
+  const Map = dynamic(() => import("../components/Map"), { ssr: false });
   return (
     <>
       <BSNav />
@@ -49,15 +49,7 @@ export default function kontakt() {
           Zögern Sie nicht, uns zu kontaktieren!
         </Section>
       </Card>
-      <Card style={{ alignItems: "center" }}>
-        <p>Sie finden uns hier</p>
-        <iframe
-          width="420"
-          height="350"
-          src="https://www.openstreetmap.org/export/embed.html?bbox=8.87026906013489%2C51.276108758843755%2C8.873809576034548%2C51.277571868007726&amp;layer=mapnik&amp;marker=51.276840319250326%2C8.872039318084717"
-          style={{ border: "2px solid black" }}
-        ></iframe>
-      </Card>
+      <Card style={{ alignItems: "center" }}></Card>
       <Footer />
     </>
   );

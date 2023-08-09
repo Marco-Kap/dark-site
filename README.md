@@ -3,7 +3,7 @@ Die TODO Liste soll zuerst angezeigt werden, für eine kurze Dokumentation bitte
 
 ## TODO LISTE
 
--auf Kontaktseite Openstreet Map überarbeiten damit nicht Weltkarte angezeigt wird.!!!!
+-auf Kontaktseite Openstreet Map überarbeiten damit nicht Weltkarte angezeigt wird!!!!
 
 -überflüssige Bilder aus dem images Ordner entfernen
 
