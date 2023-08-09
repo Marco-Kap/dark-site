@@ -1,5 +1,5 @@
 import BSNav from "../components/BSNav";
-import { Card, Form } from "react-bootstrap";
+import { Card, Form, Container } from "react-bootstrap";
 import Footer from "../components/Footer";
 import { useState } from "react";
 import Calendar from "react-calendar";
@@ -8,7 +8,7 @@ import Banner from "../components/Banner";
 export default function notdienst() {
   const [value, onChange] = useState(new Date());
 
-  const alt = "Bildbeschreibung"
+  const alt = "Bildbeschreibung";
   const src = "/../public/images/dna.jpg";
   // Pharmacies
   const pharmacies = [
@@ -56,7 +56,7 @@ export default function notdienst() {
     <>
       <BSNav />
       <div className="emdivider"></div>
-{/*      <Banner
+      {/*      <Banner
         source={src}
         alt={alt}
         text="Sie sind rund um die Uhr versorgt"
@@ -75,10 +75,10 @@ export default function notdienst() {
             </a>
           </div>
           <div className="texthero">
-            <span>
+            <p>
               Klicken sie auf ein Datum um die jeweilige Notdienstapotheke
               anzeigen zu lassen{" "}
-            </span>
+            </p>
             <div style={{}}>{getNextEm()}</div>
             <div className="" aria-disabled />
             <div

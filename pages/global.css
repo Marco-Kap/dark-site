@@ -1,6 +1,5 @@
 body {
-  color: red;
-  background-color: red;
+  margin-bottom: 50em;
 }
 span {
   white-space: nowrap;
@@ -51,7 +50,6 @@ span {
   .gtext {
     font-size: 1.4vw;
   }
-
   .corporateID {
     float: left;
     z-index: 2;
@@ -73,6 +71,11 @@ span {
   .infobox {
     visibility: collapse;
   }
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 /* ------------------ React Calendar -------------- */
 

@@ -4,7 +4,7 @@ import Navbar from "react-bootstrap/Navbar";
 
 const Footer: React.FC = () => {
   return (
-    <Card>
+    <Card className="footer">
       <Card.Header>
         <Navbar className="justify-content-center footer  position-relative bottom-0 sticky-bottom translate-x-50 flex">
           <Container as="footer" className="row justify-content-">

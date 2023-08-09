@@ -3,9 +3,17 @@ Die TODO Liste soll zuerst angezeigt werden, für eine kurze Dokumentation bitte
 
 ## TODO LISTE
 
+-auf Kontaktseite Openstreet Map überarbeiten damit nicht Weltkarte angezeigt wird.!!!!
+
+-überflüssige Bilder aus dem images Ordner entfernen
+
 -Alle Bilder verkleinern sowohl die Dateigröße als auch das Format
 
 -momentanen Text der Startseite überarbeiteten
+
+-Leistungen zusammenfassen
+
+-Rechte für Ratgeberseite abklären
 
 -das aponet widget auf der Notdienst seite implementieren
 
@@ -13,15 +21,13 @@ Die TODO Liste soll zuerst angezeigt werden, für eine kurze Dokumentation bitte
 
 -Die Navbar im Firefox Darkmode gut aussehen lassen
 
--Rezepturen Seite bearbeiten und verlinken
+-Rezepturen Seite bearbeiten und verlinken (in Leistungen enthalten)
 
 -kalender bearbeiten / die Position in Desktopansicht ändern und Ahornapo Notdienst hervorheben? 
 
 -alle Bilder verkleinern und tauschen
 
 -Accessibility checken, aria labels vergeben und so weiter
-
--vielleicht auf der Kontaktseite google maps einbetten oder openstreetmaps
 
 -alle sichtbaren Texte noch mal durchlesen und auf typos überprüfen
 
@@ -34,6 +40,7 @@ Die TODO Liste soll zuerst angezeigt werden, für eine kurze Dokumentation bitte
 -openstreetmaps auf Kontaktseite einbauen
 
 -deployment
+
 ## Liste der Bilder
 erezepte: E-rezept-Handy-min.jpg
 notdienst: einfach margin
