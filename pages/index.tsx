@@ -23,7 +23,7 @@ export default function Home() {
 
   return (
     <>
-      <BSNav />
+      <BSNav page />
       {!breakpoint ? (
         <Container>
           {" "}
@@ -47,6 +47,19 @@ export default function Home() {
               borderRadius: "50%",
             }}
           />
+          <div className="slider">
+            <div
+              style={{
+                color: "white",
+              }}
+            >
+              <h2
+                style={{  opacity: "1", fontSize: "5vw", paddingLeft: "0.3em" }}
+              >
+                Willkommen bei ihrer Ahornapotheke
+              </h2>
+            </div>
+          </div>
         </Container>
       ) : (
         <></>

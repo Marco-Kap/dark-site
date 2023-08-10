@@ -28,7 +28,7 @@ const Datenschutz = () => {
           Zweck der Verwendung
         </h2>
         <p>
-          a) Beim Besuch der Website
+          a) Beim Besuch der Webseite
           <br />
           Beim Aufrufen unserer Website werden durch den auf Ihrem Endgerät zum
           Einsatz kommenden Browser automatisch Informationen an den Server

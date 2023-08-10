@@ -12,11 +12,11 @@ export default function stellenangebote() {
   return (
     <>
       <BSNav />
-      <Banner
-        source={src}
-        alt={alt}
-        text="Wir suchen Verstärkung für unser Team"
-      />
+        <Banner
+          source={src}
+          alt={alt}
+          text="Wir suchen Verstärkung für unser Team"
+        />
       <Container>
         <Card className={"mt-2"}>
           <Card.Header> Wen wir suchen</Card.Header>
@@ -117,9 +117,12 @@ export default function stellenangebote() {
                     Auszubildende zur Kauffrau/Kaufmann für Büromanagement
                   </Accordion.Header>
                   <Accordion.Body>
- <h6>Vorrausetzungen:</h6>
+                    <h6>Vorrausetzungen:</h6>
                     <ul>
-                      <li>Erfolgreich abgeschlossene Schulausbildung (idealerweise mittlere Reife oder Abitur)</li>
+                      <li>
+                        Erfolgreich abgeschlossene Schulausbildung (idealerweise
+                        mittlere Reife oder Abitur)
+                      </li>
                       <li>Grundlegende Kenntnisse zu MS-Office</li>
                       <li>Deutschkenntnisse in Wort und Schrift</li>
                       <li>Gut organisierte Arbeitsweise</li>

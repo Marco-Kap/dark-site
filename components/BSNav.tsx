@@ -11,9 +11,22 @@ import useMediaQuery from "../public/utils/useMediaQuery";
 import Image from "next/image";
 import { useEffect, useState, useRef } from "react";
 
-export default function BSNav() {
+export default function BSNav(page: string) {
   const breakpoint = useMediaQuery(996);
   const corporate = "/../public/images/ahornapo haus.png";
+
+  const [scrollValue, setScrollValue] = useState(0);
+
+  useEffect(() => {
+    //@ts-expect-error
+    const onScroll = (e) => {
+      setScrollValue(e.target.documentElement.scrollTop);
+    };
+
+    window.addEventListener("scroll", onScroll);
+
+    return () => window.removeEventListener("scroll", onScroll);
+  }, [scrollValue]);
 
   return (
     <>
@@ -52,6 +65,23 @@ export default function BSNav() {
                 {" "}
                 {/*<Image src={"/../corporate"} width={30} height={30} alt="Ahornapotheke Logo"/>*/}
                 <Logo /> Ahorn-Apotheke
+                {!breakpoint && scrollValue <= 1 && page !== true ? (
+                  <div className="corporateID">
+                    <Image
+                      src={corporate}
+                      width={420}
+                      height={320}
+                      alt="bild"
+                      style={{
+                        translate: "0px 20px -20px",
+                        width: "10em",
+                        height: "auto",
+                      }}
+                    />
+                  </div>
+                ) : (
+                  <></>
+                )}
               </div>
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />

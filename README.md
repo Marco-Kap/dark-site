@@ -15,7 +15,7 @@ Die TODO Liste soll zuerst angezeigt werden, für eine kurze Dokumentation bitte
 
 -Leistungen zusammenfassen
 
--Rechte für Ratgeberseite abklären
+-Rechte für mögliche Ratgeberseite abklären. hilfreiche Artikel aus Deutscher Apotheker Zeitung.
 
 -das aponet widget auf der Notdienst seite implementieren
 

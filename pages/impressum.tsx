@@ -42,7 +42,7 @@ export default function impressum() {
                 <p>https://pexels.com</p>
               </div>
               <div className="col">
-                <h4>Zust&auml;ndige Apothekerkammer:</h4>
+                <h4>Zuständige Apothekerkammer:</h4>
                 <p>Landeskammer Hessen</p>
                 <h4>Berufshaftpflichtversicherung:</h4>
                 <br />
@@ -53,19 +53,19 @@ export default function impressum() {
                   <br />
                   65189 Wiesbaden
                 </p>
-                <p>USt.-Id.-Nr. gem&aumlß § 18 Abs. 2 MStV: DE113129508</p>
-                <h4>Zust&aumlndige Aufsichtsbeh&oumlrde:</h4>
+                <p>USt.-Id.-Nr. gemäß § 18 Abs. 2 MStV: DE113129508</p>
+                <h4>Zuständige Aufsichtsbehörde:</h4>
                 <a href="https://hlfgp.hessen.de">
                   <p>
-                    Hessisches Landesamt f&uumlr Gesundheit und Pflege Postfach
-                    2913 65019 Wießbaden
+                    Hessisches Landesamt für Gesundheit und Pflege Postfach 2913
+                    65019 Wießbaden
                   </p>
                 </a>
-                <h4>Stelle f&uumlr Streitbeilegung:</h4>
+                <h4>Stelle für Streitbeilegung:</h4>
                 <p>
                   <a href="www.universalschlichtungsstelle.de">
-                    Universalschlichtungsstelle Zentrale f&uumlr Streitbeilegung
-                    Stra&#223burgerstra&#223e 8 77694 Kehl
+                    Universalschlichtungsstelle Zentrale für Streitbeilegung
+                    Straßburgerstraße 8 77694 Kehl
                   </a>
                 </p>
               </div>
