@@ -7,14 +7,14 @@ interface CardProps {
   alt?: string;
   title?: string;
   content?: string;
-  src?: string;
+  src?: string | {};
   id?: number;
 }
 
 export default function MyCard(props: CardProps) {
   return (
     <>
-      <Card>
+      <Card style={{ padding: "4em" }}>
         <Card.Header style={{ textAlign: "center" }}>{props.title}</Card.Header>
         <Image
           alt={props.alt}

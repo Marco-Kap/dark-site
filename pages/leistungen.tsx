@@ -1,41 +1,27 @@
 import BSNav from "../components/BSNav";
-import MyCard from "../components/MyCard";
 import Footer from "../components/Footer";
-import { Grid } from "react-bootstrap";
+import { Card } from "react-bootstrap";
+import Image from "next/image";
 
 export default function leistungen() {
-  const images = ["/../public/images/coffee.jpg"];
+  const images = [
+    "/images/coffee.jpg",
+    "/../public/images/coffee.jpg",
+    "/../public/images/coffee.jpg",
+  ];
   return (
     <>
       <BSNav />
-      <div className="row">
-      <MyCard
-      className="col"
-        content="hallo"
-        src={images[0]}
-        title="Persönliche Beratung"
-        alt="bild"
-        id={0}
-      ></MyCard>
-      <MyCard className="col"
-        content="hallo"
-        src={images[0]}
-        title="Hautpflege und Beautyprodukte"
-        alt="bild"
-        id={0}
-      ></MyCard>{" "}
-      <MyCard className="col"
-        content="hallo"
-        src={images[0]}
-        title="Herstellung von Rezepturen"
-        alt="bild"
-        id={0}
-      >
-        </div>
-      </MyCard>
+
+      <Card>
+        <Card.Header>lorem</Card.Header>
+        <Card.Body>
+          <Image src={images[1]} width={200} height={200} alt="kaffee" />
+        </Card.Body>
+        <Card.Footer>ipsum</Card.Footer>
+      </Card>
+
       <Footer />
-      {/**Cards for Services
-        Beautity Products/Skin Care () */}
     </>
   );
 }

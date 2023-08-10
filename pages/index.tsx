@@ -5,6 +5,7 @@ import Footer from "../components/Footer";
 import Image from "next/image";
 import Banner from "../components/Banner";
 import useMediaQuery from "../public/utils/useMediaQuery";
+import useEffect from "react";
 
 export default function Home() {
   const breakpoint = useMediaQuery(996);
@@ -19,17 +20,37 @@ export default function Home() {
     "/../public/images/classic-beratung-standard.jpg",
     "/../public/images/lieferant.jpg",
   ];
+
   return (
     <>
       <BSNav />
-      <Container>
-        <Banner
-          source={src}
-          alt={alt}
-          text="Willkommen bei ihrer Ahorn-Apotheke"
-        />
-      </Container>
-
+      {!breakpoint ? (
+        <Container>
+          {" "}
+          <Image
+            alt="Logo"
+            src={src}
+            sizes="100vw"
+            width={100}
+            height={300}
+            // Make the image display full width
+            style={{
+              width: "100%",
+              height: "auto",
+            }}
+          />{" "}
+          <button
+            style={{
+              backgroundColor: "black",
+              width: "10em",
+              height: "auto",
+              borderRadius: "50%",
+            }}
+          />
+        </Container>
+      ) : (
+        <></>
+      )}
       <Section children={section2} />
 
       {breakpoint ? (
