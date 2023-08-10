@@ -6,7 +6,7 @@ import Section from "../components/Section";
 export default function kontakt() {
   const src = "/../public/images/team.jpg";
   const alt = "image description";
-  const Map = dynamic(() => import("../components/Map"), { ssr: false });
+  //  const Map = dynamic(() => import("../components/Map"), { ssr: false });
   return (
     <>
       <BSNav />

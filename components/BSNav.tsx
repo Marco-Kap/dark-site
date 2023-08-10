@@ -53,23 +53,6 @@ export default function BSNav() {
                 {/*<Image src={"/../corporate"} width={30} height={30} alt="Ahornapotheke Logo"/>*/}
                 <Logo /> Ahorn-Apotheke
               </div>
-              {!breakpoint && scrollValue <= 1 ? (
-                <div className="corporateID">
-                  <Image
-                    src={corporate}
-                    width={420}
-                    height={320}
-                    alt="bild"
-                    style={{
-                      translate: "0px 20px -20px",
-                      width: "10em",
-                      height: "auto",
-                    }}
-                  />
-                </div>
-              ) : (
-                <></>
-              )}
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav ">
