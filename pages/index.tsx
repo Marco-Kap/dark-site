@@ -1,15 +1,19 @@
 import BSNav from "../components/BSNav";
 import { Carousel, Card, Container } from "react-bootstrap";
 import Section from "../components/Section";
+import Arrow from "../components/Arrow";
 import Footer from "../components/Footer";
 import Image from "next/image";
 import Banner from "../components/Banner";
 import useMediaQuery from "../public/utils/useMediaQuery";
-import useEffect from "react";
+import { useEffect, useState } from "react";
+import ScrollButton from "../components/ScrollButton";
+import react from "react";
 
 export default function Home() {
+  const [show, setshown] = useState(true);
   const breakpoint = useMediaQuery(996);
-  const src = "/../public/images/ahornapo haus.png";
+  const src = "/../public/images/ahornapo haus_zugeschnitten-min.png";
   const alt = "image description";
   const section1 =
     " Ihre Gesundheit liegt uns am Herzen, und wir freuen uns, Sie bei uns begrüßen zu dürfen. Als vertrauenswürdige Apotheke stehen wir Ihnen mit unserer langjährigen Erfahrung, Fachkompetenz und einem breiten Sortiment an Medikamenten und Gesundheitsprodukten zur Seite.";
@@ -20,47 +24,28 @@ export default function Home() {
     "/../public/images/classic-beratung-standard.jpg",
     "/../public/images/lieferant.jpg",
   ];
-
+  const handleOnClick = () => {
+    setshown(false);
+    scrollTo(800, 20);
+  };
   return (
     <>
-      <BSNav page />
+      <BSNav page="index" />
       {!breakpoint ? (
-        <Container>
+        <>
           {" "}
-          <Image
-            alt="Logo"
-            src={src}
-            sizes="100vw"
-            width={100}
-            height={300}
-            // Make the image display full width
-            style={{
-              width: "100%",
-              height: "auto",
-            }}
-          />{" "}
-          <button
-            style={{
-              backgroundColor: "black",
-              width: "10em",
-              height: "auto",
-              borderRadius: "50%",
-            }}
-          />
-          <div className="slider">
-            <div
-              style={{
-                color: "white",
-              }}
-            >
-              <h2
-                style={{  opacity: "1", fontSize: "5vw", paddingLeft: "0.3em" }}
-              >
-                Willkommen bei ihrer Ahornapotheke
-              </h2>
-            </div>
-          </div>
-        </Container>
+          <Container>
+            {" "}
+            <Image
+              src={src}
+              width={420}
+              height={300}
+              alt="logo"
+              style={{ zIndex: "1", width: "90%", height: "auto" }}
+            />
+          </Container>{" "}
+          <ScrollButton visible={show} onClick={handleOnClick} />
+        </>
       ) : (
         <></>
       )}

@@ -5,6 +5,8 @@ Die TODO Liste soll zuerst angezeigt werden, für eine kurze Dokumentation bitte
 
 -Die Startseite für das Coporate Logo umbauen. auf navbar achten 
 
+-Footer immer am unterem Ende der Seite anzeigen
+
 -auf Kontaktseite Openstreet Map überarbeiten damit nicht Weltkarte angezeigt wird!!!!
 
 -überflüssige Bilder aus dem images Ordner entfernen

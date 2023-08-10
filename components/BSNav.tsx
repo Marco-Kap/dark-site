@@ -11,7 +11,11 @@ import useMediaQuery from "../public/utils/useMediaQuery";
 import Image from "next/image";
 import { useEffect, useState, useRef } from "react";
 
-export default function BSNav(page: string) {
+export type NavProps = {
+  page?: string;
+};
+
+export default function BSNav(props: NavProps) {
   const breakpoint = useMediaQuery(996);
   const corporate = "/../public/images/ahornapo haus.png";
 
@@ -61,12 +65,12 @@ export default function BSNav(page: string) {
         <Navbar collapseOnSelect expand="lg" className="">
           <Container>
             <Navbar.Brand href="/">
-              <div className="coll">
+              <div>
                 {" "}
                 {/*<Image src={"/../corporate"} width={30} height={30} alt="Ahornapotheke Logo"/>*/}
-                <Logo /> Ahorn-Apotheke
-                {!breakpoint && scrollValue <= 1 && page !== true ? (
-                  <div className="corporateID">
+                <Logo />
+                {!breakpoint && scrollValue <= 1 && props.page !== "index" ? (
+                  <div className="corporateID coll ">
                     <Image
                       src={corporate}
                       width={420}

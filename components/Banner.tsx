@@ -7,12 +7,11 @@ export type Props = {
   alt: string;
   text?: string;
 };
-
 export default function Banner(props: Props) {
   const breakpoint_1 = useMediaQuery(768);
   console.log(!breakpoint_1 ? "nicht breakpoint" : "breakpoint erreicht");
   return (
-    <>
+    <Container>
       <div>
         <Image
           alt={props.alt}
@@ -35,12 +34,12 @@ export default function Banner(props: Props) {
               color: "white",
             }}
           >
-            <h2 style={{ opacity: "1", fontSize: "5vw", paddingLeft: "0.3em" }}>
+            <h2 style={{ opacity: "1", fontSize: "3.6vw", paddingLeft: "0.3em" }}>
               {props.text}
             </h2>
           </div>
         </div>
       </div>
-    </>
+    </Container>
   );
 }

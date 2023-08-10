@@ -31,13 +31,13 @@ span {
   border-radius: 5%;
 }
 .slider {
-  height: 20vw;
-  width: 66vw;
+  height: 16vw;
+  width: 46vw;
   float: left;
   z-index: 2;
   background-color: rgba(255, 0, 0, 0.4);
   position: absolute;
-  translate: 26vw -42vw;
+  translate: 16vw -32vw;
   align-items: center;
   display: flex;
 }

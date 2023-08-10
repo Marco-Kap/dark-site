@@ -10,13 +10,14 @@ export default function notFoundPage() {
           alignItems: "center",
           display: "flex",
           justifyContent: "center",
-        }}>
+        }}
+      >
         <div style={{}}>
           <h3 style={{ textAlign: "center", alignSelf: "center" }}>
             Da ist etwas schief gelaufen
           </h3>{" "}
           <div style={{ textAlign: "center" }}>
-            <a href="/">zurück zur Startseite</a>{" "}
+            <a href="/">zurück zur Startseite</a>
           </div>
         </div>
       </div>
