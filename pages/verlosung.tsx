@@ -12,15 +12,13 @@ export default function verlosung() {
   const src = "/../public/images/black-dice.jpg";
   const alt = "image description";
   const image = [
-    "/../public/images/Velours-orange(no-bg.png",
-    "/../public/images/Bademantel, orange 3-min.png",
-    "/../public/images/Bademantel, rot-min.png",
     "/../public/images/05-HT-Velours-grün-2023-min.png",
+    "/../public/images/06-HT-Velours-gemischt-2023-min2-min.png",
+    "/../public/images/07-HT-Velours-rot-2023-min.png",
     "/../public/images/muetze-schal-decke(freigestellt).png",
     "/../public/images/Mütze-min.png",
     "/../public/images/schal-min.png",
     "/../public/images/Deckegrün-min.png",
-    
   ];
 
   const text = [
@@ -48,9 +46,9 @@ export default function verlosung() {
           ist nicht notwendig bei uns etwas gekauft zu haben um teilnehmen zu
           können. Die Gewinner werden per Zufallsprinzip ausgewählt und von uns
           per Brief oder E-Mail benachrichtigt. Die Preise umfassen dieses Mal
-          hochwertige Handtücher und Bademäntel, sowie viele weitere
-          Überraschungen. Verpassen Sie also nicht die Chance, an diesem
-          spannenden Event teilzunehmen und tolle Preise zu gewinnen!{" "}
+          hochwertige Handtücher sowie viele weitere Überraschungen. Verpassen
+          Sie also nicht die Chance, an diesem spannenden Event teilzunehmen und
+          tolle Preise zu gewinnen!{" "}
         </Section>
         {breakpoint ? (
           <Carousel slide={false} fade>
@@ -61,12 +59,11 @@ export default function verlosung() {
               }}
             >
               <Image
-                src={image[3]}
-                alt={"Handtuch"}
+                src={image[0]}
+                alt={"handtuch in grün"}
                 width={400}
                 height={600}
-                style={{ width: "100%", height: "auto" }}
-                
+                style={{ width: "120%", height: "auto" }}
               />
               <Carousel.Caption>
                 {/*Hier kann man Titel reinschreiben */}
@@ -80,10 +77,10 @@ export default function verlosung() {
             >
               <Image
                 src={image[1]}
-                alt={"Bademantel in rot"}
+                alt={"gestreiftes Handtuch"}
                 width={600}
                 height={400}
-                style={{ width: "10em", height: "auto" }}
+                style={{ width: "60%", height: "auto" }}
               />
 
               <Carousel.Caption>
@@ -98,10 +95,10 @@ export default function verlosung() {
             >
               <Image
                 src={image[2]}
-                alt={"Bademantel in orange"}
+                alt={"Handtuch in Rot"}
                 width={600}
                 height={400}
-                style={{ width: "10em", height: "auto" }}
+                style={{ width: "90%", height: "auto" }}
               />
               <Carousel.Caption>
                 {/*Hier ist kann man Titel reinschreiben */}
@@ -112,21 +109,21 @@ export default function verlosung() {
           <div style={{ display: "flex", justifyContent: "space-around" }}>
             <Image
               src={image[2]}
-              alt={"Handtuch"}
+              alt={"Handtuch in grün"}
               width={600}
               height={400}
               style={{ width: "10em", height: "auto" }}
             />
             <Image
-              src={image[3]}
-              alt={"Bademantel in orange"}
+              src={image[0]}
+              alt={"Handtuch in orange"}
               width={600}
               height={400}
               style={{ width: "18em", height: "auto" }}
             />
             <Image
               src={image[1]}
-              alt={"Bademantel in rot"}
+              alt={"Handtuch gemischt farbirg"}
               width={600}
               height={400}
               style={{ width: "10em", height: "auto" }}
@@ -134,9 +131,9 @@ export default function verlosung() {
           </div>
         )}{" "}
         <Section>
-          Die Preise der Herbstverlosung 2022 können noch abgeholt werden. Kommen sie einfach vorbei!
-          Aufgrund des hohen Zuspruchs ist allerdings nicht mehr die volle Farbauswahl
-          verfügbar. 
+          Die Preise der Herbstverlosung 2022 können noch abgeholt werden.
+          Kommen sie einfach vorbei! Aufgrund des hohen Zuspruchs ist allerdings
+          nicht mehr die volle Farbauswahl verfügbar.
         </Section>
         {breakpoint ? (
           <Carousel slide={false} fade>
@@ -147,12 +144,11 @@ export default function verlosung() {
               }}
             >
               <Image
-                src={image[7]}
-                alt={"Handtuch"}
+                src={image[3]}
+                alt={"Mütze, Schal und Decke"}
                 width={400}
                 height={600}
                 style={{ width: "50%", height: "auto" }}
-                
               />
               <Carousel.Caption>
                 {/*Hier kann man Titel reinschreiben */}
@@ -165,11 +161,11 @@ export default function verlosung() {
               }}
             >
               <Image
-                src={image[6]}
-                alt={"Bademantel in rot"}
+                src={image[4]}
+                alt={"Mütze, Schal und Decke"}
                 width={600}
                 height={400}
-                style={{ width: "10em", height: "auto" }}
+                style={{ width: "10em", height: "auto", marginBottom: "2em" }}
               />
 
               <Carousel.Caption>
@@ -184,7 +180,7 @@ export default function verlosung() {
             >
               <Image
                 src={image[5]}
-                alt={"Bademantel in orange"}
+                alt={"Schal"}
                 width={600}
                 height={400}
                 style={{ width: "10em", height: "auto" }}
@@ -195,32 +191,36 @@ export default function verlosung() {
             </Carousel.Item>
           </Carousel>
         ) : (
-          <div style={{ display: "flex", justifyContent: "space-around", marginBottom: "1em" }}>
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "space-around",
+              marginBottom: "1em",
+            }}
+          >
+            <Image
+              src={image[4]}
+              alt={"Mütze, Schal und Decke"}
+              width={600}
+              height={400}
+              style={{ width: "10em", height: "auto" }}
+            />
+            <Image
+              src={image[3]}
+              alt={"Schal"}
+              width={600}
+              height={400}
+              style={{ width: "24em", height: "auto" }}
+            />
             <Image
               src={image[6]}
-              alt={"Handtuch"}
+              alt={"Decke in grün"}
               width={600}
               height={400}
-              style={{ width: "10em", height: "auto" }}
-            />
-            <Image
-              src={image[7]}
-              alt={"Bademantel in orange"}
-              width={600}
-              height={400}
-              style={{ width: "18em", height: "auto" }}
-            />
-
-            <Image
-              src={image[5]}
-              alt={"Bademantel in rot"}
-              width={600}
-              height={400}
-              style={{ width: "10em", height: "auto" }}
+              style={{ width: "12em", height: "12em" }}
             />{" "}
           </div>
         )}
-
         <Footer />
       </Container>
     </>

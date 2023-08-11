@@ -19,43 +19,38 @@ export default function ScrollButton(props: ButtonProps) {
   }, [scrollValue]);
 
   return (
-    <div
+    <button
+      onClick={props.onClick}
       style={
-        scrollValue <= 4
-          ? { visibility: "visible" }
+        scrollValue <= 6
+          ? {
+              visibility: "visible",
+              borderRadius: "50%",
+              width: "10em",
+              height: "10em",
+              opacity: "80%",
+              float: "left",
+              position: "absolute",
+              zIndex: "2",
+              translate: "40vw -26vw",
+              backgroundColor: "red",
+              alignItems: "center",
+              shadow: "1px ",
+              
+            }
           : { visibility: "collapse" }
       }
     >
-      <button
-        onClick={props.onClick}
+      {" "}
+      <img
+        src="../images/angles-down-solid.svg"
+        alt="nach unten"
         style={{
-          borderRadius: "50%",
-          width: "10em",
-          height: "10em",
-          opacity: "80%",
-          float: "left",
-          position: "absolute",
-          zIndex: "2",
-          translate: "40vw -32vw",
-          backgroundColor: "red",
-          alignItems: "center",
-          shadow: "1px blue",
+          widht: "120px",
+          height: "120px",
+          opacity: "60%",
         }}
-      >
-        <p style={{ color: "white", fontSize: "1.2vw" }}>Willkommen</p>
-        <img
-          src="../images/arrow-down_icon-icons.com_72377.png"
-          alt="pfeil"
-          style={{
-            widht: "30px",
-            height: "40px",
-            float: "left",
-            position: "absolute",
-            zIndex: "2",
-            translate: "-1.2vw -1vw",
-          }}
-        ></img>
-      </button>
-    </div>
+      ></img>
+    </button>
   );
 }

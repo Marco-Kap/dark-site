@@ -26,7 +26,7 @@ export default function Home() {
   ];
   const handleOnClick = () => {
     setshown(false);
-    scrollTo(800, 20);
+    window.scroll(0, 850);
   };
   return (
     <>
@@ -45,11 +45,15 @@ export default function Home() {
             />
           </Container>{" "}
           <ScrollButton visible={show} onClick={handleOnClick} />
-          
         </>
       ) : (
         <></>
       )}
+      <Card>
+        <Card.Header style={{ textAlign: "center" }}>
+          <h2>Willkommen bei ihrer Ahorn-Apotheke</h2>
+        </Card.Header>
+      </Card>
       <Section children={section2} />
 
       {breakpoint ? (
