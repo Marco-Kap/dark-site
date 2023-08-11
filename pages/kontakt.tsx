@@ -11,8 +11,10 @@ export default function kontakt() {
     <>
       <BSNav />
 
-      <Card className="mt-4 textCenter">
-        <Card.Header>Wir freuen uns darauf, von Ihnen zu hören!</Card.Header>
+      <Card className="mt-4 textcenter ">
+        <Card.Header>
+          <b>Wir freuen uns darauf, von Ihnen zu hören!</b>
+        </Card.Header>
         <Section>
           Kontaktieren sie uns! Bei Fragen, Anliegen oder Feedback stehen wir
           Ihnen jederzeit zur Verfügung. Hier finden Sie verschiedene

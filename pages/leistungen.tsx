@@ -13,14 +13,36 @@ export default function leistungen() {
     <>
       <BSNav />
 
-      <Card>
-        <Card.Header>lorem</Card.Header>
-        <Card.Body>
-          <Image src={images[1]} width={200} height={200} alt="kaffee" />
-        </Card.Body>
-        <Card.Footer>ipsum</Card.Footer>
-      </Card>
-      <img src="/images/angles-down-solid.svg" />
+      <main className="row spacer">
+        <Card className="col-md">
+          <Card.Header>Beauty Beratung</Card.Header>
+          <Card.Body>
+            <Image src={images[1]} width={200} height={200} alt="kaffee" />
+          </Card.Body>
+          <Card.Footer></Card.Footer>
+        </Card>{" "}
+        <Card className="col-md">
+          <Card.Header>Herstellung von Rezepturen</Card.Header>
+          <Card.Body>
+            <Image src={images[1]} width={200} height={200} alt="kaffee" />
+          </Card.Body>
+          <Card.Footer></Card.Footer>
+        </Card>{" "}
+        <Card className="col-md">
+          <Card.Header>Ratgeber</Card.Header>
+          <Card.Body>
+            <Image src={images[1]} width={200} height={200} alt="kaffee" />
+          </Card.Body>
+          <Card.Footer>Sprachen</Card.Footer>
+        </Card>{" "}
+        <Card className="col-md">
+          <Card.Header></Card.Header>
+          <Card.Body>
+            <Image src={images[1]} width={200} height={200} alt="kaffee" />
+          </Card.Body>
+          <Card.Footer>ipsum</Card.Footer>
+        </Card>
+      </main>
       <Footer />
     </>
   );

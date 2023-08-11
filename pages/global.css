@@ -1,14 +1,19 @@
 body {
-  margin-bottom: 50em;
+}
+footer {
 }
 span {
   white-space: nowrap;
 }
+.maincontent {
+  min-height: 80%;
+  position: relative;
+}
 .texthero {
-  font-size: medium;
+  font-size: 2.4vw;
   font-weight: bold;
 }
-.textCenter {
+.textcenter {
   text-align: center;
 }
 .divider {
@@ -60,6 +65,9 @@ span {
   .coll {
     visibility: visible;
   }
+  .spacer {
+    margin-top: 8em;
+  }
 }
 @media only screen and (min-width: 1024px) {
   .gtext {
@@ -70,11 +78,6 @@ span {
   .infobox {
     visibility: collapse;
   }
-}
-.footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
 }
 /* ------------------ React Calendar -------------- */
 
