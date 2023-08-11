@@ -1,5 +1,5 @@
 # Readme
-Die TODO Liste soll zuerst angezeigt werden, für eine kurze Dokumentation bitte runterscrollen zu "wie man die Seite einsetzt"
+Die TODO Liste wird zuerst angezeigt, aber für eine kurze Dokumentation bitte runterscrollen zu "wie man die Seite einsetzt"
 
 ## TODO LISTE
 
@@ -35,7 +35,7 @@ Die TODO Liste soll zuerst angezeigt werden, für eine kurze Dokumentation bitte
 
 -alle sichtbaren Texte noch mal durchlesen und auf typos überprüfen
 
--datenschutzerklärung Datum ändern wenn fertig (Carmen gegeben)
+-datenschutzerklärung Datum ändern wenn fertig
 
 -SEO verbesserungen durchführen
 

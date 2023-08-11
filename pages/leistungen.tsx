@@ -20,7 +20,7 @@ export default function leistungen() {
         </Card.Body>
         <Card.Footer>ipsum</Card.Footer>
       </Card>
-
+      <img src="/images/angles-down-solid.svg" />
       <Footer />
     </>
   );
