@@ -55,7 +55,11 @@ export default function BSNav(props: NavProps) {
           </span>{" "}
           <span style={{ whiteSpace: "nowrap" }}>
             <Clock />
-            <a style={{ color: "grey", marginLeft: "0.3em" }} href="/kontakt">
+            <a
+              style={{ color: "grey", marginLeft: "0.3em" }}
+              href="/kontakt"
+              suppressHydrationWarning
+            >
               {isOpen()}
             </a>
           </span>
@@ -126,6 +130,7 @@ export default function BSNav(props: NavProps) {
                     <a
                       style={{ color: "grey", marginLeft: "0.3em" }}
                       href="/kontakt"
+                      suppressHydrationWarning
                     >
                       {isOpen()}
                     </a>

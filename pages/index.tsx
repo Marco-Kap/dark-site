@@ -34,14 +34,19 @@ export default function Home() {
       {!breakpoint ? (
         <>
           {" "}
-          <Container>
+          <Container style={{ justifyContent: "center", display: "flex" }}>
             {" "}
             <Image
               src={src}
               width={420}
               height={300}
               alt="logo"
-              style={{ zIndex: "1", width: "90%", height: "auto" }}
+              style={{
+                zIndex: "1",
+                width: "90%",
+                height: "auto",
+                paddingBottom: "4em",
+              }}
             />
           </Container>{" "}
           <ScrollButton visible={show} onClick={handleOnClick} />

@@ -1,10 +1,23 @@
+html,
 body {
+  height: 100%;
+  margin: 0;
+}
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+main {
+  flex: 1;
 }
 footer {
+  margin-top: auto;
 }
 span {
   white-space: nowrap;
 }
+
 .maincontent {
   min-height: 80%;
   position: relative;
@@ -45,6 +58,35 @@ span {
   align-items: center;
   display: flex;
 }
+.scrollbutton {
+  visibility: visible;
+  border-radius: 50%;
+  width: 10em;
+  height: 10em;
+  opacity: 80%;
+  float: left;
+  position: fixed;
+  z-index: 2;
+  background-color: red;
+  align-items: center;
+  translate: 44vw -24.6vw;
+}
+
+@media all and (display-mode: fullscreen) {
+  .scrollbutton {
+    visibility: visible;
+    border-radius: 50%;
+    width: 10em;
+    height: 10em;
+    opacity: 80%;
+    float: left;
+    position: fixed;
+    z-index: 2;
+    background-color: red;
+    align-items: center;
+    translate: 40vw -26vw;
+  }
+}
 @media only screen and (min-width: 996px) {
   .infobox {
     visibility: collapse;
@@ -72,6 +114,12 @@ span {
 @media only screen and (min-width: 1024px) {
   .gtext {
     font-size: 1.2vw;
+  }
+  .services {
+    margin-bottom: 12em;
+  }
+  spacer {
+    margin-top: 8em;
   }
 }
 @media print {

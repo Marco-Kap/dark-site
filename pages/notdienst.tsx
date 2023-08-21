@@ -54,54 +54,49 @@ export default function notdienst() {
 
   return (
     <>
-      <BSNav />{" "}
- 
-        <div className="emdivider"></div>
-        {/*      <Banner
-        source={src}
-        alt={alt}
-        text="Sie sind rund um die Uhr versorgt"
-  /> */}
-        <Card style={{ margin: "2em", textAlign: "center" }}>
-          <Card.Header>
-            {" "}
-            <h2> Aktuelle Notdienstapotheke</h2>
-          </Card.Header>
-          <Card.Body>
-            <div className="mb-4">
-              <h3>
-                <a href="https://www.aponet.de/apotheke/notdienstsuche/34497/%20/5">
-                  {getEmergency()}
-                </a>
-              </h3>
-            </div>
-            <div>
-              <p>
-                Klicken sie auf ein Datum um die jeweilige Notdienstapotheke
-                anzeigen zu lassen{" "}
-              </p>
-              <div style={{}}>{getNextEm()}</div>
-              <div className="" aria-disabled />
-              <div
-                style={{
-                  justifyContent: "center",
-                  display: "flex",
-                }}
-              >
-                <Calendar onChange={onChange} value={value} locale="de" />
+      <BSNav /> <div className="emdivider"></div>
+      <div className="wrapper">
+        <main>
+          <Card style={{ margin: "2em", textAlign: "center" }}>
+            <Card.Header>
+              {" "}
+              <h2> Aktuelle Notdienstapotheke</h2>
+            </Card.Header>
+            <Card.Body>
+              <div className="mb-4">
+                <h3>
+                  <a href="https://www.aponet.de/apotheke/notdienstsuche/34497/%20/5">
+                    {getEmergency()}
+                  </a>
+                </h3>
               </div>
-            </div>
-          </Card.Body>
-          <Card.Footer>
-            {" "}
-            Wir sind bemüht ihnen rund um Uhr die bestmögliche
-            Gesundheitsversorgung zu bieten. Sollten sie nicht in der Nähe
-            wohnen oder eine Reise planen können sie ihre Postleitzahl eingeben
-            und eine momentan geöffnete Apotheke finden.
-          </Card.Footer>
-        </Card>
-
-      {/* <Form >
+              <div>
+                <p>
+                  Klicken sie auf ein Datum um die jeweilige Notdienstapotheke
+                  anzeigen zu lassen{" "}
+                </p>
+                <div style={{}}>{getNextEm()}</div>
+                <div className="" aria-disabled />
+                <div
+                  style={{
+                    justifyContent: "center",
+                    display: "flex",
+                  }}
+                >
+                  <Calendar onChange={onChange} value={value} locale="de" />
+                </div>
+              </div>
+            </Card.Body>
+            <Card.Footer>
+              {" "}
+              Wir sind bemüht ihnen rund um Uhr die bestmögliche
+              Gesundheitsversorgung zu bieten. Sollten sie nicht in der Nähe
+              wohnen oder eine Reise planen können sie ihre Postleitzahl
+              eingeben und eine momentan geöffnete Apotheke finden.
+            </Card.Footer>
+          </Card>
+        </main>
+        {/* <Form >
       <Form.Group className="mb-3" controlId="formBasicEmail">
         <Form.Label>Postleitzahl</Form.Label>
         <Form.Control type="submit" placeholder="Postleitzahl" />
@@ -117,7 +112,8 @@ export default function notdienst() {
           <input ref={inputRef} type="text" />
         </label>
       </form>*/}
-      <Footer />
+        <Footer />
+      </div>
     </>
   );
 }
