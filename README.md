@@ -15,7 +15,7 @@ Die TODO Liste wird zuerst angezeigt, aber für eine kurze Dokumentation bitte r
 
 -momentanen Text der Startseite überarbeiteten
 
--Leistungen zusammenfassen
+-Leistungen auf einer Seite zusammenfassen
 
 -Rechte für mögliche Ratgeberseite abklären. hilfreiche Artikel aus Deutscher Apotheker Zeitung.
 
@@ -31,17 +31,15 @@ Die TODO Liste wird zuerst angezeigt, aber für eine kurze Dokumentation bitte r
 
 -alle Bilder verkleinern und tauschen
 
+-ungenutzte bilder und Komponenten löschen, Importe aufräumen
+
 -Accessibility checken, aria labels vergeben und so weiter
 
 -alle sichtbaren Texte noch mal durchlesen und auf typos überprüfen
 
--datenschutzerklärung Datum ändern wenn fertig
-
 -SEO verbesserungen durchführen
 
 -An Wordpress API anbinden
-
--openstreetmaps auf Kontaktseite einbauen
 
 -deployment
 
