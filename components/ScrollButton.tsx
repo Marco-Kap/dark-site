@@ -19,15 +19,16 @@ export default function ScrollButton(props: ButtonProps) {
   }, [scrollValue]);
 
   return (
-    <div className={scrollValue <= 6 ? "scrollbutton" : "coll"}>
-      <button onClick={props.onClick}>
-        {" "}
-        <img
-          src="../images/angles-down-solid.svg"
-          alt="nach unten"
-          className={scrollValue <= 6 ? "scrollimg" : "coll"}
-        ></img>
-      </button>
-    </div>
+    <button
+      className={scrollValue <= 6 ? "scrollbutton" : "coll"}
+      onClick={props.onClick}
+    >
+      {" "}
+      <img
+        src="../images/angles-down-solid.svg"
+        alt="nach unten"
+        className={scrollValue <= 6 ? "scrollimg" : "coll"}
+      ></img>
+    </button>
   );
 }

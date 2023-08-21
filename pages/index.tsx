@@ -1,17 +1,13 @@
 import BSNav from "../components/BSNav";
 import { Carousel, Card, Container } from "react-bootstrap";
 import Section from "../components/Section";
-import Arrow from "../components/Arrow";
 import Footer from "../components/Footer";
 import Image from "next/image";
-import Banner from "../components/Banner";
 import useMediaQuery from "../public/utils/useMediaQuery";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import ScrollButton from "../components/ScrollButton";
-import react from "react";
 
 export default function Home() {
-  const [show, setshown] = useState(true);
   const breakpoint = useMediaQuery(996);
   const src = "/../public/images/ahornapo haus_zugeschnitten-min.png";
   const alt = "image description";
@@ -25,7 +21,6 @@ export default function Home() {
     "/../public/images/lieferant.jpg",
   ];
   const handleOnClick = () => {
-    setshown(false);
     window.scroll(0, 850);
   };
   return (
@@ -49,7 +44,7 @@ export default function Home() {
               }}
             />
           </Container>{" "}
-          <ScrollButton visible={show} onClick={handleOnClick} />
+          <ScrollButton onClick={handleOnClick} />
         </>
       ) : (
         <></>

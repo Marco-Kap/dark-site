@@ -69,7 +69,12 @@ span {
   z-index: 2;
   background-color: red;
   align-items: center;
-  translate: 44vw -24.6vw;
+  translate: 44vw -26vw;
+}
+.scrollimg {
+  width: 120px;
+  height: auto;
+  opacity: 30%;
 }
 
 @media all and (display-mode: fullscreen) {
