@@ -3,7 +3,9 @@ Die TODO Liste wird zuerst angezeigt, aber für eine kurze Dokumentation bitte r
 
 ## TODO LISTE
 
--Die Startseite für das Coporate Logo umbauen. auf navbar achten 
+-Den Scrollbutton auf der Startseite immer in der Mitte anzeigen
+
+-Ein Dropdown für Öffnungszeiten anzeigen und onhover öffnen
 
 -Footer immer am unterem Ende der Seite anzeigen!!!!!!!!
 
@@ -12,6 +14,8 @@ Die TODO Liste wird zuerst angezeigt, aber für eine kurze Dokumentation bitte r
 -überflüssige Bilder aus dem images Ordner entfernen
 
 -Alle Bilder verkleinern sowohl die Dateigröße als auch das Format
+
+-unterdrückte typescriptfehler überprüfen
 
 -momentanen Text der Startseite überarbeiteten
 
@@ -51,9 +55,9 @@ notdienst: einfach margin
 
 Diese Seite basiert auf Next.js. Schau bei Problemen in die Dokumentation.
 
-Nicht notwendige "Abhägkeiten" sind Bootstrap und React Calendar
+Nicht notwendige "Abhägkeiten" sind Bootstrap, Leaflet und React Calendar
 Boostrap 5.3 ist ein CSS Framework und wurde hier zum teil für das styling eingesetzt. Der Großteil des Stylings beruht allerdings auf inline Sass und dem custom stylesheet
-React Calendar wird im Notdienst Screen eingesetzt. Der React Calendar hat out-of-the-box eine Menge Funktion, die selber zu schreiben, zeitaufwendig wäre.
+React Calendar wird im Notdienst Screen eingesetzt. Leaftlet ist eine Javascriptbibliothek zum einbetten von Karten auf einer Homepage.  Der React Calendar hat out-of-the-box eine Menge Funktion, die selber zu schreiben, zeitaufwendig wäre.
 Beide Abhägkeiten könnte man durch eigenen Code ersetzten.
 
 ### notwendige Befehle

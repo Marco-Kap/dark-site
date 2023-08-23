@@ -6,10 +6,9 @@ import Logo from "./Logo";
 import Phone from "./Phone";
 import Clock from "./Clock";
 import { isOpen } from "../public/utils/time";
-import react from "react";
 import useMediaQuery from "../public/utils/useMediaQuery";
 import Image from "next/image";
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useState } from "react";
 
 export type NavProps = {
   page?: string;
@@ -60,10 +59,70 @@ export default function BSNav(props: NavProps) {
               href="/kontakt"
               suppressHydrationWarning
             >
+              <div
+                id="dropdown-opening-hours__dropdown-menu"
+                className="dropdown-menu dropdown-menu-end p-4 show"
+                aria-labelledby="dropdown-opening-hours__dropdown-toggle"
+                style={{ display: "none" }}
+                data-header-target="menu"
+                data-action="load@window->header#checkHeadersStickyStatus scroll@window->header#checkHeadersStickyStatus"
+                data-bs-popper="static"
+              >
+                <div className="d-grid gap-2 mb-4">
+                  <a
+                    href="/notdienst"
+                    className="btn btn-danger d-flex justify-content-center align-items-center"
+                  >
+                    <i className="theme_icon-emergency-service me-1"></i>
+                    <span>Notdienst-Apotheken anzeigen</span>
+                  </a>
+                </div>
+                <h3 className="text-center">Öffnungszeiten</h3>
+                <div className="oh-table d-flex flex-wrap">
+                  {" "}
+                  <div>Montag</div>
+                  <div>
+                    08:00 - 18:30
+                    <br />
+                    <small></small>
+                  </div>
+                  <div>Dienstag</div>
+                  <div>
+                    08:00 - 18:30
+                    <br />
+                    <small></small>
+                  </div>
+                  <div>Mittwoch</div>
+                  <div>
+                    08:00 - 18:30
+                    <br />
+                    <small></small>
+                  </div>{" "}
+                  <div>Donnerstag</div>
+                  <div>
+                    {" "}
+                    08:00 - 18:30
+                    <br />
+                    <small></small>
+                  </div>
+                  <div>Freitag</div>
+                  <div>
+                    08:00 - 18:30
+                    <br /> <small></small>
+                  </div>
+                  <div>Samstag</div>
+                  <div>
+                    08:00 - 13:30
+                    <br />
+                    <small></small>
+                  </div>
+                </div>
+              </div>
               {isOpen()}
             </a>
           </span>
         </div>
+        <div className="coll"></div>
       </Container>
       <Container className="justify-items-start sticky-top bg-light bg rounded">
         <Navbar collapseOnSelect expand="lg" className="">

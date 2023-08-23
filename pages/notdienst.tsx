@@ -4,6 +4,7 @@ import Footer from "../components/Footer";
 import { useState } from "react";
 import Calendar from "react-calendar";
 import Banner from "../components/Banner";
+import { on } from "events";
 
 export default function notdienst() {
   const [value, onChange] = useState(new Date());
@@ -75,7 +76,7 @@ export default function notdienst() {
                   Klicken sie auf ein Datum um die jeweilige Notdienstapotheke
                   anzeigen zu lassen{" "}
                 </p>
-                <div style={{}}>{getNextEm()}</div>
+                <div>{getNextEm()}</div>
                 <div className="" aria-disabled />
                 <div
                   style={{

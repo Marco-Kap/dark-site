@@ -9,7 +9,7 @@ export default function erezepte() {
   return (
     <>
       <BSNav />
-      <Banner source={src} alt={alt} text="" />
+      <Banner source={src} alt={alt} text="" fieldDisabled />
       <div className="m-4 textcenter">
         <p>
           Sie können bereits jetzt bei uns ein E-Rezept mit ihrer elektronischen

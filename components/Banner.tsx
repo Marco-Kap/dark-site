@@ -6,10 +6,10 @@ export type Props = {
   source: string;
   alt: string;
   text?: string;
+  fieldDisabled?: boolean;
 };
 export default function Banner(props: Props) {
   const breakpoint_1 = useMediaQuery(768);
-  console.log(!breakpoint_1 ? "nicht breakpoint" : "breakpoint erreicht");
   return (
     <Container>
       <div>
@@ -26,15 +26,15 @@ export default function Banner(props: Props) {
             zIndex: 1,
           }}
         />
-        <div
-  className="slider"
-        >
+        <div className={props.fieldDisabled ? "coll" : "slider"}>
           <div
             style={{
               color: "white",
             }}
           >
-            <h2 style={{ opacity: "1", fontSize: "3.6vw", paddingLeft: "0.3em" }}>
+            <h2
+              style={{ opacity: "1", fontSize: "3.6vw", paddingLeft: "0.3em" }}
+            >
               {props.text}
             </h2>
           </div>

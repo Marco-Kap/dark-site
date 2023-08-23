@@ -4,11 +4,7 @@ import { Card } from "react-bootstrap";
 import Image from "next/image";
 
 export default function leistungen() {
-  const images = [
-    "/images/coffee.jpg",
-    "/../public/images/coffee.jpg",
-    "/../public/images/coffee.jpg",
-  ];
+  const images = ["/images/coffee.jpg", "/../public/images/coffee.jpg"];
   return (
     <>
       <BSNav />
@@ -63,7 +59,7 @@ export default function leistungen() {
           </Card>
         </div>
       </main>
-     {/* <div className="services" />*/}
+      {/* <div className="services" />*/}
 
       <Footer />
     </>

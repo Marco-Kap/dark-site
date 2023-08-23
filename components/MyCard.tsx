@@ -17,7 +17,9 @@ export default function MyCard(props: CardProps) {
       <Card style={{ padding: "4em" }}>
         <Card.Header style={{ textAlign: "center" }}>{props.title}</Card.Header>
         <Image
+          //@ts-expect-error
           alt={props.alt}
+          //@ts-expect-error
           src={props.source}
           sizes="100vw"
           width={10}
