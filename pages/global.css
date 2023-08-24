@@ -116,6 +116,7 @@ span {
     margin-top: 8em;
   }
 }
+/*Tablets*/
 @media only screen and (min-width: 1024px) {
   .gtext {
     font-size: 1.2vw;
@@ -127,13 +128,26 @@ span {
     margin-top: 8em;
   }
 }
+/*Laptops*/
+@media only screen and (min-widht: 1366px) {
+}
+
+/*Desktop PCs*/
+@media only screen and (min-widht: 1960px) {
+}
+@media all and (display-mode: fullscreen) {
+  .scrollbutton {
+    visibility: collapse;
+  }
+}
+
 @media print {
   .infobox {
     visibility: collapse;
   }
 }
-/* ------------------ React Calendar -------------- */
 
+/* React Calendar  */
 .react-calendar {
   width: 350px;
   max-width: 100%;

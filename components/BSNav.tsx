@@ -52,74 +52,11 @@ export default function BSNav(props: NavProps) {
               05631 4040
             </a>
           </span>{" "}
-          <span style={{ whiteSpace: "nowrap" }}>
+          <span
+            style={{ whiteSpace: "nowrap", color: "grey", marginLeft: "0.3em" }}
+          >
             <Clock />
-            <a
-              style={{ color: "grey", marginLeft: "0.3em" }}
-              href="/kontakt"
-              suppressHydrationWarning
-            >
-              <div
-                id="dropdown-opening-hours__dropdown-menu"
-                className="dropdown-menu dropdown-menu-end p-4 show"
-                aria-labelledby="dropdown-opening-hours__dropdown-toggle"
-                style={{ display: "none" }}
-                data-header-target="menu"
-                data-action="load@window->header#checkHeadersStickyStatus scroll@window->header#checkHeadersStickyStatus"
-                data-bs-popper="static"
-              >
-                <div className="d-grid gap-2 mb-4">
-                  <a
-                    href="/notdienst"
-                    className="btn btn-danger d-flex justify-content-center align-items-center"
-                  >
-                    <i className="theme_icon-emergency-service me-1"></i>
-                    <span>Notdienst-Apotheken anzeigen</span>
-                  </a>
-                </div>
-                <h3 className="text-center">Öffnungszeiten</h3>
-                <div className="oh-table d-flex flex-wrap">
-                  {" "}
-                  <div>Montag</div>
-                  <div>
-                    08:00 - 18:30
-                    <br />
-                    <small></small>
-                  </div>
-                  <div>Dienstag</div>
-                  <div>
-                    08:00 - 18:30
-                    <br />
-                    <small></small>
-                  </div>
-                  <div>Mittwoch</div>
-                  <div>
-                    08:00 - 18:30
-                    <br />
-                    <small></small>
-                  </div>{" "}
-                  <div>Donnerstag</div>
-                  <div>
-                    {" "}
-                    08:00 - 18:30
-                    <br />
-                    <small></small>
-                  </div>
-                  <div>Freitag</div>
-                  <div>
-                    08:00 - 18:30
-                    <br /> <small></small>
-                  </div>
-                  <div>Samstag</div>
-                  <div>
-                    08:00 - 13:30
-                    <br />
-                    <small></small>
-                  </div>
-                </div>
-              </div>
-              {isOpen()}
-            </a>
+            {isOpen()}
           </span>
         </div>
         <div className="coll"></div>
@@ -186,13 +123,8 @@ export default function BSNav(props: NavProps) {
                   <span style={{ whiteSpace: "nowrap" }}>
                     {" "}
                     <Clock />
-                    <a
-                      style={{ color: "grey", marginLeft: "0.3em" }}
-                      href="/kontakt"
-                      suppressHydrationWarning
-                    >
-                      {isOpen()}
-                    </a>
+                    {"  "}
+                    {isOpen()}
                   </span>
                 </div>
               ) : (

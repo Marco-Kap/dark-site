@@ -29,7 +29,9 @@ export default function Home() {
       {!breakpoint ? (
         <>
           {" "}
-          <Container style={{ justifyContent: "center", display: "flex" }}>
+          <Container
+            style={{ justifyContent: "center", display: "flex" }}
+          >
             {" "}
             <Image
               src={src}
@@ -44,7 +46,9 @@ export default function Home() {
               }}
             />
           </Container>{" "}
-          <ScrollButton onClick={handleOnClick} />
+          <ScrollButton //@ts-expect-error
+            onClick={handleOnClick}
+          />
         </>
       ) : (
         <></>

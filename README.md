@@ -3,9 +3,11 @@ Die TODO Liste wird zuerst angezeigt, aber für eine kurze Dokumentation bitte r
 
 ## TODO LISTE
 
+-css für qurformate anpassen
+
 -Den Scrollbutton auf der Startseite immer in der Mitte anzeigen
 
--Ein Dropdown für Öffnungszeiten anzeigen und onhover öffnen
+-Ein Dropdown für Öffnungszeiten anzeigen und vllt. onhover öffnen
 
 -Footer immer am unterem Ende der Seite anzeigen!!!!!!!!
 

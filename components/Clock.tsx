@@ -8,7 +8,9 @@ export default function Clock() {
       y="0px"
       width="20.213px"
       height="30.212px"
-      viewBox="0 0 485.213 485.212">
+      viewBox="0 0 485.213 485.212"
+      style={{ marginRight: "0.4em" }}
+    >
       <g>
         <path
           d="M242.607,0C108.629,0,0.001,108.628,0.001,242.606c0,133.976,108.628,242.606,242.606,242.606
