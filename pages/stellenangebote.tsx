@@ -7,7 +7,7 @@ import Footer from "../components/Footer";
 
 export default function stellenangebote() {
   const src = "/../public/images/Laborantinnen-landscape.jpg";
-  const alt = ".";
+  const alt = "°";
 
   return (
     <>
@@ -137,7 +137,7 @@ export default function stellenangebote() {
                 alt={alt}
                 // Importing an image will
                 // automatically set the width and height
-                src="/../public/images/ahornapo haus.png"
+                src="/../public/images/ahornapo haus_zugeschnitten-min.png"
                 sizes="100vw"
                 width={100}
                 height={300}
@@ -147,6 +147,7 @@ export default function stellenangebote() {
                   width: "100%",
                   height: "auto",
                 }}
+                aria-label="Bewirb dich bei uns!"
               />
               <Card className="text-center">
                 <Card.Header>Bewerbungen mit Lichtbild bitte an:</Card.Header>

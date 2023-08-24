@@ -13,8 +13,6 @@ Die TODO Liste wird zuerst angezeigt, aber für eine kurze Dokumentation bitte r
 
 -auf Kontaktseite Openstreet Map überarbeiten damit nicht Weltkarte angezeigt wird
 
--überflüssige Bilder aus dem images Ordner entfernen
-
 -Alle Bilder verkleinern sowohl die Dateigröße als auch das Format
 
 -unterdrückte typescriptfehler überprüfen
@@ -36,8 +34,6 @@ Die TODO Liste wird zuerst angezeigt, aber für eine kurze Dokumentation bitte r
 -kalender bearbeiten / die Position in Desktopansicht ändern und Ahornapo Notdienst hervorheben? 
 
 -alle Bilder verkleinern und tauschen
-
--ungenutzte bilder und Komponenten löschen, Importe aufräumen
 
 -Accessibility checken, aria labels vergeben und so weiter
 

@@ -58,6 +58,11 @@ span {
   align-items: center;
   display: flex;
 }
+.ohours {
+  width: 40em;
+  height: min-content;
+  
+}
 .scrollbutton {
   visibility: visible;
   border-radius: 50%;

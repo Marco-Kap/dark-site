@@ -9,6 +9,8 @@ import { isOpen } from "../public/utils/time";
 import useMediaQuery from "../public/utils/useMediaQuery";
 import Image from "next/image";
 import { useEffect, useState } from "react";
+import { NavItem } from "react-bootstrap";
+import Emergencyico from "./Emergencyico";
 
 export type NavProps = {
   page?: string;
@@ -108,25 +110,82 @@ export default function BSNav(props: NavProps) {
                 </Nav.Link>
               </Nav>
               {!breakpoint ? (
-                <div className="p-2">
-                  <Phone />
-                  {"   "}
-                  <span>
-                    <a
-                      style={{ color: "grey", margin: "0.3em" }}
-                      href="tel:056314040"
-                    >
+                <Nav>
+                  <Nav.Link href="tel:056314040">
+                    <span>
+                      {" "}
+                      <Phone />
+                      {"  "}
                       05631 4040
-                    </a>
-                  </span>
-                  {" | "}{" "}
-                  <span style={{ whiteSpace: "nowrap" }}>
-                    {" "}
+                    </span>
+                  </Nav.Link>
+
+                  <div
+                    style={{
+                      marginTop: "0.4em",
+                      marginRight: "-0.6em",
+                      marginLeft: "0.2em",
+                    }}
+                  >
                     <Clock />
-                    {"  "}
-                    {isOpen()}
-                  </span>
-                </div>
+                  </div>
+                  <NavDropdown title={isOpen()} id="nav-dropdown">
+                    <NavDropdown.Item eventKey="4.1">
+                      <div>
+                        <div style={{}}>
+                          <div className="d-grid gap-2 mb-4">
+                            <a
+                              href="/notdienst"
+                              className="btn btn-danger d-flex justify-content-center align-items-center"
+                            >
+                              <i scr="/../../public/images/staff.svg" />
+                              <span>Notdienst-Apotheken anzeigen</span>
+                            </a>
+                          </div>
+                          <h3 className="text-center">Öffnungszeiten</h3>
+                          <div className="ohours d-flex flex-wrap">
+                            <div>Montag</div>
+                            <div>
+                              08:00 - 18:30
+                              <br/>
+                              <small></small>
+                            </div>
+                            <div>Dienstag</div>
+                            <div>
+                              08:00 - 18:30
+                              <br/>
+                              <small></small>
+                            </div>
+                            <div>Mittwoch</div>
+                            <div>
+                              08:00 - 18:30
+                              <br/>
+                              <small></small>
+                            </div>
+                            <div>Donnerstag</div>
+                            <div>
+                              08:00 - 18:30
+                              <br/>
+                              <small></small>
+                            </div>
+                            <div>Freitag</div>
+                            <div>
+                              08:00 - 18:30
+                              <br/>
+                              <small></small>
+                            </div>
+                            <div>Samstag</div>
+                            <div>
+                              08:00 - 13:30
+                              <br/>
+                              <small></small>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </NavDropdown.Item>
+                  </NavDropdown>
+                </Nav>
               ) : (
                 <></>
               )}{" "}
