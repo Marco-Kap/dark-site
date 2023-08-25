@@ -19,7 +19,12 @@ export type NavProps = {
 export default function BSNav(props: NavProps) {
   const breakpoint = useMediaQuery(996);
   const corporate = "/../public/images/ahornapo haus.png";
-
+  const images = [
+    "/../public/images/coffee.jpg",
+    "/public/images/coffee.jpg",
+    "/images/coffee.jpg",
+    "/coffee.jpg",
+  ];
   const [scrollValue, setScrollValue] = useState(0);
 
   useEffect(() => {
@@ -105,6 +110,9 @@ export default function BSNav(props: NavProps) {
                 <Nav.Link eventKey={"kontakt"} href="/kontakt">
                   Kontakt
                 </Nav.Link>
+                <Nav.Link eventKey={"ratgeber"} href="/ratgeber">
+                  Ratgeber
+                </Nav.Link>
                 <Nav.Link eventKey={"notdienst"} href="/notdienst">
                   Notdienst
                 </Nav.Link>
@@ -129,7 +137,11 @@ export default function BSNav(props: NavProps) {
                   >
                     <Clock />
                   </div>
-                  <NavDropdown title={isOpen()} id="nav-dropdown">
+                  <NavDropdown
+                    supresshydrationwarning
+                    title={isOpen()}
+                    id="nav-dropdown"
+                  >
                     <NavDropdown.Item eventKey="4.1">
                       <div>
                         <div style={{}}>
@@ -138,47 +150,41 @@ export default function BSNav(props: NavProps) {
                               href="/notdienst"
                               className="btn btn-danger d-flex justify-content-center align-items-center"
                             >
-                              <i scr="/../../public/images/staff.svg" />
-                              <span>Notdienst-Apotheken anzeigen</span>
+                              {" "}
+                              <img
+                                scr={images[1]}
+                                width="20px"
+                                height="20px"
+                                alt="."
+                              />
+                              <span> Notdienst-Apotheken anzeigen</span>
                             </a>
                           </div>
                           <h3 className="text-center">Öffnungszeiten</h3>
-                          <div className="ohours d-flex flex-wrap">
-                            <div>Montag</div>
-                            <div>
-                              08:00 - 18:30
-                              <br/>
-                              <small></small>
+                          <div className="ohours  flex-wrap">
+                            <div className="d-flex">
+                              <div>Montag</div>
+                              <div className="ms-auto">08:00 - 18:30</div>
                             </div>
-                            <div>Dienstag</div>
-                            <div>
-                              08:00 - 18:30
-                              <br/>
-                              <small></small>
+                            <div className="d-flex">
+                              <div>Dienstag</div>
+                              <div className="ms-auto">08:00 - 18:30</div>
                             </div>
-                            <div>Mittwoch</div>
-                            <div>
-                              08:00 - 18:30
-                              <br/>
-                              <small></small>
+                            <div className="d-flex">
+                              <div>Mittwoch</div>
+                              <div className="ms-auto">08:00 - 18:30</div>
                             </div>
-                            <div>Donnerstag</div>
-                            <div>
-                              08:00 - 18:30
-                              <br/>
-                              <small></small>
+                            <div className="d-flex">
+                              <div>Donnerstag</div>
+                              <div className="ms-auto">08:00 - 18:30</div>
                             </div>
-                            <div>Freitag</div>
-                            <div>
-                              08:00 - 18:30
-                              <br/>
-                              <small></small>
+                            <div className="d-flex">
+                              <div>Freitag</div>
+                              <div className="ms-auto">08:00 - 18:30</div>
                             </div>
-                            <div>Samstag</div>
-                            <div>
-                              08:00 - 13:30
-                              <br/>
-                              <small></small>
+                            <div className="d-flex">
+                              <div>Samstag</div>
+                              <div className="ms-auto">08:00 - 13:30</div>
                             </div>
                           </div>
                         </div>

@@ -40,9 +40,15 @@ export default function notdienst() {
   }
 
   function getNextEm() {
+    let nIndex;
     let cDate = value.toLocaleDateString("de");
-    //@ts-expect-error
-    let nIndex = Math.ceil((value - startDate) / (1000 * 60 * 60 * 24)) % 8;
+    if (cDate === d.toLocaleDateString("de")) {
+      nIndex = index;
+    } else {
+      //@ts-expect-error
+      nIndex = Math.ceil((value - startDate) / (1000 * 60 * 60 * 24)) % 8;
+    }
+
     return (
       "Notdienstapotheke am " +
       cDate +
@@ -50,7 +56,20 @@ export default function notdienst() {
       (nIndex !== -1 ? pharmacies[nIndex] : pharmacies[7])
     );
   }
+  function getNextAhornEm() {
+    let next1 = d.toLocaleDateString("iso");
+    let next2 = d.toLocaleDateString("US");
+    let em1 = "01.01.1970";
+    let em2 = "19.01.2038";
 
+    console.log(value + "zeit!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
+    return (
+      <>
+        <p>{em1}</p>
+        <p>{em2}</p>
+      </>
+    );
+  }
   //--------------------emergency search------------------------------
 
   return (
@@ -66,7 +85,10 @@ export default function notdienst() {
             <Card.Body>
               <div className="mb-4">
                 <h3>
-                  <a href="https://www.aponet.de/apotheke/notdienstsuche/34497/%20/5">
+                  <a
+                    style={{ color: "grey" }}
+                    href="https://www.aponet.de/apotheke/notdienstsuche/34497/%20/5"
+                  >
                     {getEmergency()}
                   </a>
                 </h3>
@@ -77,16 +99,20 @@ export default function notdienst() {
                   anzeigen zu lassen{" "}
                 </p>
                 <div>{getNextEm()}</div>
-                <div className="" aria-disabled />
+
                 <div
                   style={{
                     justifyContent: "center",
                     display: "flex",
+                    marginTop: "1em",
+                    marginBottom: "1em",
                   }}
                 >
                   <Calendar onChange={onChange} value={value} locale="de" />
                 </div>
               </div>
+              <h4>Unsere nächsten Notdienste:</h4>
+              {getNextAhornEm()}
             </Card.Body>
             <Card.Footer>
               {" "}

@@ -6,6 +6,7 @@ import Image from "next/image";
 import useMediaQuery from "../public/utils/useMediaQuery";
 import { useState } from "react";
 import ScrollButton from "../components/ScrollButton";
+import Banner from "components/Banner";
 
 export default function Home() {
   const breakpoint = useMediaQuery(996);
@@ -29,23 +30,7 @@ export default function Home() {
       {!breakpoint ? (
         <>
           {" "}
-          <Container
-            style={{ justifyContent: "center", display: "flex" }}
-          >
-            {" "}
-            <Image
-              src={src}
-              width={420}
-              height={300}
-              alt="logo"
-              style={{
-                zIndex: "1",
-                width: "90%",
-                height: "auto",
-                paddingBottom: "4em",
-              }}
-            />
-          </Container>{" "}
+          <Banner fieldDisabled source={src} alt={alt} />
           <ScrollButton //@ts-expect-error
             onClick={handleOnClick}
           />

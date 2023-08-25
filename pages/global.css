@@ -59,9 +59,11 @@ span {
   display: flex;
 }
 .ohours {
-  width: 40em;
-  height: min-content;
-  
+  width: 20em;
+  height: max-content;
+  text-transform: uppercase;
+  font-weight: 100;
+  line-height: 32px;
 }
 .scrollbutton {
   visibility: visible;

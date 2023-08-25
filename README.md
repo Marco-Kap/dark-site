@@ -7,6 +7,8 @@ Die TODO Liste wird zuerst angezeigt, aber für eine kurze Dokumentation bitte r
 
 -Den Scrollbutton auf der Startseite immer in der Mitte anzeigen
 
+-im overlay für Öffnungszeiten das Schlange icon einbinden
+
 -Ein Dropdown für Öffnungszeiten anzeigen und vllt. onhover öffnen
 
 -Footer immer am unterem Ende der Seite anzeigen!!!!!!!!
@@ -17,11 +19,7 @@ Die TODO Liste wird zuerst angezeigt, aber für eine kurze Dokumentation bitte r
 
 -unterdrückte typescriptfehler überprüfen
 
--momentanen Text der Startseite überarbeiteten
-
--Leistungen auf einer Seite zusammenfassen
-
--Rechte für mögliche Ratgeberseite abklären. hilfreiche Artikel aus Deutscher Apotheker Zeitung.
+-Leistungen Seite überarbeiten
 
 -das aponet widget auf der Notdienst seite implementieren
 
@@ -29,7 +27,7 @@ Die TODO Liste wird zuerst angezeigt, aber für eine kurze Dokumentation bitte r
 
 -Die Navbar im Firefox Darkmode gut aussehen lassen
 
--Rezepturen Seite bearbeiten und verlinken (in Leistungen enthalten)
+-in Safari und Chrome testen.
 
 -kalender bearbeiten / die Position in Desktopansicht ändern und Ahornapo Notdienst hervorheben? 
 
@@ -46,7 +44,7 @@ Die TODO Liste wird zuerst angezeigt, aber für eine kurze Dokumentation bitte r
 -deployment
 
 ## Liste der Bilder
-erezepte: E-rezept-Handy-min.jpg
+erezepte: E-rezept-Handy-min.jpg 
 notdienst: einfach margin
 
 ## Wie man diese Seite einsetzt

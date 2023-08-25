@@ -7,31 +7,14 @@ interface CardProps {
   alt?: string;
   title?: string;
   content?: string;
-  src?: string | {};
+  footer: string;
   id?: number;
 }
 
 export default function MyCard(props: CardProps) {
   return (
-    <>
-      <Card style={{ padding: "4em" }}>
-        <Card.Header style={{ textAlign: "center" }}>{props.title}</Card.Header>
-        <Image
-          //@ts-expect-error
-          alt={props.alt}
-          //@ts-expect-error
-          src={props.source}
-          sizes="100vw"
-          width={10}
-          height={20}
-          // Make the image display full width
-          style={{
-            width: "20em",
-            height: "auto",
-          }}
-        />
-        <Card.Body>{props.content}</Card.Body>
-      </Card>
-    </>
+    <div style={{ border: "1px solid grey" }}>
+      <p>ha</p>
+    </div>
   );
 }
