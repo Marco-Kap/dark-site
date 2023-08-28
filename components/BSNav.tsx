@@ -61,7 +61,7 @@ export default function BSNav(props: NavProps) {
           <span
             style={{ whiteSpace: "nowrap", color: "grey", marginLeft: "0.3em" }}
           >
-            <Clock />
+            <i class="bi-alarm"></i>
             {isOpen()}
           </span>
         </div>
@@ -71,12 +71,12 @@ export default function BSNav(props: NavProps) {
         <Navbar collapseOnSelect expand="lg" className="">
           <Container>
             <Navbar.Brand href="/">
-              <div>
+              <div style={!breakpoint ? { marginRight: "-10em" } : {}}>
                 {" "}
                 {/*<Image src={"/../corporate"} width={30} height={30} alt="Ahornapotheke Logo"/>*/}
                 <Logo />
-                {!breakpoint && scrollValue <= 1 && props.page !== "index" ? (
-                  <div className="corporateID coll ">
+                {scrollValue <= 1 && props.page !== "index" ? (
+                  <div className="corporateID coll1 ">
                     <Image
                       src={corporate}
                       width={420}
@@ -140,6 +140,7 @@ export default function BSNav(props: NavProps) {
                   >
                     <Clock />
                   </div>
+
                   <NavDropdown title={isOpen()} id="collasible-nav-dropdown">
                     <NavDropdown.Item href="#action/3.1">
                       <div className="d-grid gap-2 mb-4">
@@ -191,7 +192,11 @@ export default function BSNav(props: NavProps) {
                 <></>
               )}{" "}
               <Nav variant="pills" className="bg-info-subtle px-2 rounded">
-                <Nav.Link style={{whiteSpace: "nowrap"}} eventKey={"erezepte"} href="/erezepte">
+                <Nav.Link
+                  style={{ whiteSpace: "nowrap" }}
+                  eventKey={"erezepte"}
+                  href="/erezepte"
+                >
                   Rezept einlösen
                 </Nav.Link>
               </Nav>
