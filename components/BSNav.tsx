@@ -17,7 +17,7 @@ export type NavProps = {
 
 export default function BSNav(props: NavProps) {
   const breakpoint = useMediaQuery(1081);
-  const corporate = "/../public/images/ahornapo haus.png";
+  const corporate = "/../public/images/ahornapo haus_zugeschnitten-min.png";
   const images = [
     "/../public/images/coffee.jpg",
     "/public/images/coffee.jpg",
@@ -61,19 +61,32 @@ export default function BSNav(props: NavProps) {
           <span
             style={{ whiteSpace: "nowrap", color: "grey", marginLeft: "0.3em" }}
           >
-            <i class="bi-alarm"></i>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              viewBox="0 0 16 16"
+            >
+              <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z" />
+            </svg>
             {isOpen()}
           </span>
         </div>
-        <div className="coll1"></div>
       </Container>
       <Container className="justify-items-start sticky-top bg-light bg rounded">
         <Navbar collapseOnSelect expand="lg" className="">
           <Container>
             <Navbar.Brand href="/">
-              <div style={!breakpoint ? { marginRight: "-10em" } : {}}>
+              <div>
                 {" "}
-                {/*<Image src={"/../corporate"} width={30} height={30} alt="Ahornapotheke Logo"/>*/}
+                {/* <Image
+                  style={{ marginRight: "12em" }}
+                  src={corporate}
+                  width={40}
+                  height={38}
+                  alt="Ahornapotheke Logo"
+                /> */}
                 <Logo />
                 {scrollValue <= 1 && props.page !== "index" ? (
                   <div className="corporateID coll1 ">

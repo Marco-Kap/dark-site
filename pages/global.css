@@ -2,8 +2,6 @@ html,
 body {
   height: 100%;
   margin: 0;
-  align-items: baseline;
-  display: flex;
 }
 .wrapper {
   min-height: 100%;
@@ -34,6 +32,9 @@ span {
 .divider {
   margin-bottom: 2em;
 }
+.logo {
+  padding-right: 7.4em;
+}
 .corporateID {
   float: left;
   z-index: 2;
@@ -44,7 +45,6 @@ span {
 }
 .coll1 {
   visibility: collapse;
-  
 }
 .cc {
   background-color: rgba(255, 0, 0, 0.5);
@@ -109,7 +109,7 @@ span {
     height: 0px;
   }
   .gtext {
-    font-size: 1.4vw;
+    font-size: 1.6vw;
   }
   .corporateID {
     float: left;
@@ -129,7 +129,7 @@ span {
 /*Tablets*/
 @media only screen and (min-width: 1024px) {
   .gtext {
-    font-size: 1.2vw;
+    font-size: 1.4vw;
   }
   .services {
     margin-bottom: 12em;
@@ -140,10 +140,16 @@ span {
 }
 /*Laptops*/
 @media only screen and (min-widht: 1366px) {
+  .gtext {
+    font-size: 1.4vw;
+  }
 }
 
 /*Desktop PCs*/
 @media only screen and (min-widht: 1960px) {
+  .gtext {
+    font-size: 1.2vw;
+  }
 }
 @media all and (display-mode: fullscreen) {
   .scrollbutton {

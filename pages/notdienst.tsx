@@ -70,6 +70,15 @@ export default function notdienst() {
       </>
     );
   }
+
+  function addDays(date: Date, days: number) {
+    date.setDate(date.getDate() + days);
+    return date;
+  }
+
+  const date = new Date("2022-05-15T00:00:00.000Z");
+
+  const newDate = addDays(date, 5);
   //--------------------emergency search------------------------------
 
   return (
@@ -108,7 +117,12 @@ export default function notdienst() {
                     marginBottom: "1em",
                   }}
                 >
-                  <Calendar onChange={onChange} value={value} locale="de" />
+                  <Calendar
+                    //@ts-expect-error
+                    onChange={onChange}
+                    value={value}
+                    locale="de"
+                  />
                 </div>
               </div>
               <h4>Unsere nächsten Notdienste:</h4>
