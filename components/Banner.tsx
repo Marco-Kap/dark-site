@@ -26,7 +26,7 @@ export default function Banner(props: Props) {
             zIndex: 1,
           }}
         />
-        <div className={props.fieldDisabled ? "coll" : "slider"}>
+        <div className={props.fieldDisabled ? "coll1" : "slider"}>
           <div
             style={{
               color: "white",

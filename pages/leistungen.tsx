@@ -15,7 +15,7 @@ export default function leistungen() {
 
       <div className="spacer" />
 
-      <MyCard></MyCard>
+
       {/* <main className="row mx-4">
         <div className="col-lg row">
           <Card className="col-md">

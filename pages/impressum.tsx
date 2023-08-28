@@ -14,7 +14,7 @@ export default function impressum() {
             <div className="row">
               <b>
                 <p>
-                  Ahorn-Apotheke, Carl Stede, Inhaberin Sabine Greven
+                  Ahorn-Apotheke, Sabine Greven
                   <br />
                   Bahnstraße 7<br />
                   34497 Korbach

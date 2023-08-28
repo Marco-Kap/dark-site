@@ -2,6 +2,8 @@ html,
 body {
   height: 100%;
   margin: 0;
+  align-items: baseline;
+  display: flex;
 }
 .wrapper {
   min-height: 100%;
@@ -40,8 +42,9 @@ span {
   width: 12em;
   height: auto;
 }
-.coll {
+.coll1 {
   visibility: collapse;
+  
 }
 .cc {
   background-color: rgba(255, 0, 0, 0.5);
@@ -116,7 +119,7 @@ span {
     width: 12em;
     height: auto;
   }
-  .coll {
+  .coll1 {
     visibility: visible;
   }
   .spacer {

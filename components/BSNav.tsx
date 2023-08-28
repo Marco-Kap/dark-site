@@ -10,14 +10,13 @@ import useMediaQuery from "../public/utils/useMediaQuery";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import { NavItem } from "react-bootstrap";
-import Emergencyico from "./Emergencyico";
 
 export type NavProps = {
   page?: string;
 };
 
 export default function BSNav(props: NavProps) {
-  const breakpoint = useMediaQuery(996);
+  const breakpoint = useMediaQuery(1081);
   const corporate = "/../public/images/ahornapo haus.png";
   const images = [
     "/../public/images/coffee.jpg",
@@ -66,7 +65,7 @@ export default function BSNav(props: NavProps) {
             {isOpen()}
           </span>
         </div>
-        <div className="coll"></div>
+        <div className="coll1"></div>
       </Container>
       <Container className="justify-items-start sticky-top bg-light bg rounded">
         <Navbar collapseOnSelect expand="lg" className="">
@@ -110,7 +109,11 @@ export default function BSNav(props: NavProps) {
                 <Nav.Link eventKey={"kontakt"} href="/kontakt">
                   Kontakt
                 </Nav.Link>
-                <Nav.Link eventKey={"ratgeber"} href="/ratgeber">
+                <Nav.Link
+                  className="coll1"
+                  eventKey={"ratgeber"}
+                  href="/ratgeber"
+                >
                   Ratgeber
                 </Nav.Link>
                 <Nav.Link eventKey={"notdienst"} href="/notdienst">
@@ -118,7 +121,7 @@ export default function BSNav(props: NavProps) {
                 </Nav.Link>
               </Nav>
               {!breakpoint ? (
-                <Nav>
+                <Nav className="responsive">
                   <Nav.Link href="tel:056314040">
                     <span>
                       {" "}
@@ -137,56 +140,48 @@ export default function BSNav(props: NavProps) {
                   >
                     <Clock />
                   </div>
-                  <NavDropdown
-                    supresshydrationwarning
-                    title={isOpen()}
-                    id="nav-dropdown"
-                  >
-                    <NavDropdown.Item eventKey="4.1">
-                      <div>
-                        <div style={{}}>
-                          <div className="d-grid gap-2 mb-4">
-                            <a
-                              href="/notdienst"
-                              className="btn btn-danger d-flex justify-content-center align-items-center"
-                            >
-                              {" "}
-                              <img
-                                scr={images[1]}
-                                width="20px"
-                                height="20px"
-                                alt="."
-                              />
-                              <span> Notdienst-Apotheken anzeigen</span>
-                            </a>
-                          </div>
-                          <h3 className="text-center">Öffnungszeiten</h3>
-                          <div className="ohours  flex-wrap">
-                            <div className="d-flex">
-                              <div>Montag</div>
-                              <div className="ms-auto">08:00 - 18:30</div>
-                            </div>
-                            <div className="d-flex">
-                              <div>Dienstag</div>
-                              <div className="ms-auto">08:00 - 18:30</div>
-                            </div>
-                            <div className="d-flex">
-                              <div>Mittwoch</div>
-                              <div className="ms-auto">08:00 - 18:30</div>
-                            </div>
-                            <div className="d-flex">
-                              <div>Donnerstag</div>
-                              <div className="ms-auto">08:00 - 18:30</div>
-                            </div>
-                            <div className="d-flex">
-                              <div>Freitag</div>
-                              <div className="ms-auto">08:00 - 18:30</div>
-                            </div>
-                            <div className="d-flex">
-                              <div>Samstag</div>
-                              <div className="ms-auto">08:00 - 13:30</div>
-                            </div>
-                          </div>
+                  <NavDropdown title={isOpen()} id="collasible-nav-dropdown">
+                    <NavDropdown.Item href="#action/3.1">
+                      <div className="d-grid gap-2 mb-4">
+                        <a
+                          href="/notdienst"
+                          className="btn btn-danger d-flex justify-content-center align-items-center"
+                        >
+                          {" "}
+                          <img
+                            src="/../public/images/ahornapo haus.png"
+                            width="20px"
+                            height="20px"
+                            alt="."
+                          />
+                          <span> Notdienst-Apotheken anzeigen</span>
+                        </a>
+                      </div>
+                      <h3 className="text-center">Öffnungszeiten</h3>
+                      <div className="ohours  flex-wrap">
+                        <div className="d-flex">
+                          <div>Montag</div>
+                          <div className="ms-auto">08:00 - 18:30</div>
+                        </div>
+                        <div className="d-flex">
+                          <div>Dienstag</div>
+                          <div className="ms-auto">08:00 - 18:30</div>
+                        </div>
+                        <div className="d-flex">
+                          <div>Mittwoch</div>
+                          <div className="ms-auto">08:00 - 18:30</div>
+                        </div>
+                        <div className="d-flex">
+                          <div>Donnerstag</div>
+                          <div className="ms-auto">08:00 - 18:30</div>
+                        </div>
+                        <div className="d-flex">
+                          <div>Freitag</div>
+                          <div className="ms-auto">08:00 - 18:30</div>
+                        </div>
+                        <div className="d-flex">
+                          <div>Samstag</div>
+                          <div className="ms-auto">08:00 - 13:30</div>
                         </div>
                       </div>
                     </NavDropdown.Item>
@@ -196,7 +191,7 @@ export default function BSNav(props: NavProps) {
                 <></>
               )}{" "}
               <Nav variant="pills" className="bg-info-subtle px-2 rounded">
-                <Nav.Link eventKey={"erezepte"} href="/erezepte">
+                <Nav.Link style={{whiteSpace: "nowrap"}} eventKey={"erezepte"} href="/erezepte">
                   Rezept einlösen
                 </Nav.Link>
               </Nav>
@@ -204,9 +199,11 @@ export default function BSNav(props: NavProps) {
           </Container>
         </Navbar>
       </Container>
-      <Container className="position-relative top-0 ">
+
+      {/*does  this have a purpose ?*/}
+      {/* <Container className="position-relative top-0 ">
         <div className=" stretch position-absolute end-0 expand bg-light"></div>
-      </Container>
+      </Container>*/}
     </>
   );
 }
