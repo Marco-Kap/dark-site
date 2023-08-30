@@ -5,6 +5,7 @@ import { useState } from "react";
 import Calendar from "react-calendar";
 import Banner from "../components/Banner";
 import { on } from "events";
+import { isHoliday } from "/../public/utils/time";
 
 export default function notdienst() {
   const [value, onChange] = useState(new Date());
@@ -34,7 +35,8 @@ export default function notdienst() {
   const minute = d.getMinutes();
   //@ts-expect-error
   const index = (Math.ceil((d - startDate) / (1000 * 60 * 60 * 24)) % 8) - 1;
-
+  console.log("index ist " + index);
+  console.log(Math.ceil((d - startDate) / (1000 * 60 * 60 * 24)));
   function getEmergency() {
     return index !== -1 ? pharmacies[index] : pharmacies[7];
   }
@@ -57,12 +59,8 @@ export default function notdienst() {
     );
   }
   function getNextAhornEm() {
-    let next1 = d.toLocaleDateString("iso");
-    let next2 = d.toLocaleDateString("US");
     let em1 = "01.01.1970";
     let em2 = "19.01.2038";
-
-    console.log(value + "zeit!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
     return (
       <>
         <p>{em1}</p>
