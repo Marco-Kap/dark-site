@@ -93,6 +93,7 @@ span {
   display: flex;
   align-items: flex-end;
   flex-direction: column;
+  color: grey
 }
 
 @media all and (display-mode: fullscreen) {

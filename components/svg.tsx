@@ -16,9 +16,10 @@
   <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
 </svg>
 
-//color
-let deusex = #FF7A00
+//color palette
+
 let primary = #f81916
 let secondary = #db1417
+let deusex = #FF7A00
 let linkgrey = #808080
 

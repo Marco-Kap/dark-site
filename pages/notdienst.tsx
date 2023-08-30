@@ -50,7 +50,6 @@ export default function notdienst() {
       //@ts-expect-error
       nIndex = Math.ceil((value - startDate) / (1000 * 60 * 60 * 24)) % 8;
     }
-
     return (
       "Notdienstapotheke am " +
       cDate +
@@ -58,6 +57,7 @@ export default function notdienst() {
       (nIndex !== -1 ? pharmacies[nIndex] : pharmacies[7])
     );
   }
+
   function calculateNextDate(currentDate, daysToAdd) {
     const nextDate = new Date(currentDate);
     nextDate.setDate(currentDate.getDate() + daysToAdd);
@@ -68,18 +68,23 @@ export default function notdienst() {
 
   const next1 = calculateNextDate(d, daysToNextMultipleOf8);
   const next2 = calculateNextDate(next1, 8);
-
-  console.log(`Current date: ${d.toDateString()}`);
-  console.log(`Next1: ${next1.toDateString()}`);
-  console.log(`Next2: ${next2.toDateString()}`);
-
+  const weekDays = [
+    "Sonntag",
+    "Montag",
+    "Dienstag",
+    "Mittwoch",
+    "Donnerstag",
+    "Freitag",
+  ];
   function getNextAhornEm() {
-    let em1 = "01.01.1970";
-    let em2 = "19.01.2038";
     return (
       <>
-        <p>{em1}</p>
-        <p>{em2}</p>
+        <p>
+          {weekDays[next1.getDay()]} {next1.toLocaleDateString("de")}
+        </p>
+        <p>
+          {weekDays[next2.getDay()]} {next2.toLocaleDateString("de")}
+        </p>
       </>
     );
   }
@@ -143,12 +148,27 @@ export default function notdienst() {
             </Card.Body>
             <Card.Footer>
               {" "}
-              Wir sind bemüht ihnen rund um Uhr die bestmögliche
+              {/* Wir sind bemüht ihnen rund um Uhr die bestmögliche
               Gesundheitsversorgung zu bieten. Sollten sie nicht in der Nähe
               wohnen oder eine Reise planen können sie ihre Postleitzahl
-              eingeben und eine momentan geöffnete Apotheke finden.
+              eingeben und eine momentan geöffnete Apotheke finden. */}
             </Card.Footer>
           </Card>
+          <div class="gtext text-center mx-4">
+            <p>
+              Bitte beachten Sie, dass sich die Notdienste kurzfristig ändern
+              können. Die Datenbank für die Notdienst- und Apothekensuche wird
+              laufend aktualisiert und geprüft. Die Notdienstpläne sowie
+              Notdienständerungen werden von Apotheken und Apothekenkammern an
+              apotheken.de gemeldet.{" "}
+            </p>
+            <p>
+              Wir weisen darauf hin, dass Informationen zu Leistungen nur
+              aufgenommen werden können, soweit sie uns bekannt sind. Eine
+              Garantie bzw. Haftung für die Richtigkeit, Genauigkeit,
+              Vollständigkeit und Aktualität der Daten übernehmen wir nicht.{" "}
+            </p>
+          </div>
         </main>
         {/* <Form >
       <Form.Group className="mb-3" controlId="formBasicEmail">

@@ -3,13 +3,15 @@ Die TODO Liste wird zuerst angezeigt, aber für eine kurze Dokumentation bitte r
 
 ## TODO LISTE
 
+-mehr kommentieren!!
+
+-vllt ein refactoring an der notdienstseite machen. 
+
 -css für qurformate anpassen
 
 -Den Scrollbutton auf der Startseite immer in der Mitte anzeigen
 
 -im overlay für Öffnungszeiten das Schlange icon einbinden
-
--Ein Dropdown für Öffnungszeiten anzeigen und vllt. onhover öffnen
 
 -Footer immer am unterem Ende der Seite anzeigen!!!!!!!!
 
