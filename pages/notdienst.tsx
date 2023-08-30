@@ -58,6 +58,21 @@ export default function notdienst() {
       (nIndex !== -1 ? pharmacies[nIndex] : pharmacies[7])
     );
   }
+  function calculateNextDate(currentDate, daysToAdd) {
+    const nextDate = new Date(currentDate);
+    nextDate.setDate(currentDate.getDate() + daysToAdd);
+    return nextDate;
+  }
+  const daysSinceStart = Math.ceil((d - startDate) / (1000 * 60 * 60 * 24));
+  const daysToNextMultipleOf8 = 8 - (daysSinceStart % 8);
+
+  const next1 = calculateNextDate(d, daysToNextMultipleOf8);
+  const next2 = calculateNextDate(next1, 8);
+
+  console.log(`Current date: ${d.toDateString()}`);
+  console.log(`Next1: ${next1.toDateString()}`);
+  console.log(`Next2: ${next2.toDateString()}`);
+
   function getNextAhornEm() {
     let em1 = "01.01.1970";
     let em2 = "19.01.2038";

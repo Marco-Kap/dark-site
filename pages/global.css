@@ -86,6 +86,14 @@ span {
   height: auto;
   opacity: 30%;
 }
+.infobox {
+  margin-left: 5em;
+  padding-left: 5em;
+  align-self: center;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+}
 
 @media all and (display-mode: fullscreen) {
   .scrollbutton {
