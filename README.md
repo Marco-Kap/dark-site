@@ -3,6 +3,12 @@ Die TODO Liste wird zuerst angezeigt, aber für eine kurze Dokumentation bitte r
 
 ## TODO LISTE
 
+-Leistungenseite feritstellen
+
+-Ratgeberseiter fertigstellen
+
+-e-rezepte Seite fertigstellen
+
 -mehr kommentieren!!
 
 -vllt ein refactoring an der notdienstseite machen. 

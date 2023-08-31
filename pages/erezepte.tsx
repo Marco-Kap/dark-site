@@ -10,7 +10,7 @@ export default function erezepte() {
     <>
       <BSNav />
       <Banner source={src} alt={alt} text="" fieldDisabled />
-      <div className="m-4 textcenter">
+      <div className="m-4 textcenter" aria-disabled="true">
         <p>
           Sie können bereits jetzt bei uns ein E-Rezept mit ihrer elektronischen
           Gesundheitskarte oder der App der Gematik einlösen.

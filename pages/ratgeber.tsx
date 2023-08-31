@@ -9,7 +9,7 @@ export default function Ratgeber() {
     <>
       <BSNav />
       <Banner text="" alt="banner" source={src} />
-      <div className="spacer" />
+      <div className="spacer" aria-disabled="true"/>
 
       <Footer />
     </>

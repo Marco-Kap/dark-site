@@ -9,15 +9,12 @@ body {
   flex-direction: column;
 }
 main {
+  display: flex;
   flex: 1;
 }
 footer {
   margin-top: auto;
 }
-span {
-  white-space: nowrap;
-}
-
 .maincontent {
   min-height: 80%;
   position: relative;
@@ -34,6 +31,9 @@ span {
 }
 .logo {
   padding-right: 7.4em;
+}
+.nowrap {
+  white-space: nowrap;
 }
 .corporateID {
   float: left;
@@ -93,7 +93,7 @@ span {
   display: flex;
   align-items: flex-end;
   flex-direction: column;
-  color: grey
+  color: grey;
 }
 
 @media all and (display-mode: fullscreen) {
