@@ -35,8 +35,6 @@ export default function notdienst() {
   const minute = d.getMinutes();
   //@ts-expect-error
   const index = (Math.ceil((d - startDate) / (1000 * 60 * 60 * 24)) % 8) - 1;
-  console.log("index ist " + index);
-  console.log(Math.ceil((d - startDate) / (1000 * 60 * 60 * 24)));
   function getEmergency() {
     return index !== -1 ? pharmacies[index] : pharmacies[7];
   }

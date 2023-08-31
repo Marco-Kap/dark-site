@@ -45,6 +45,7 @@ function calculateEaster(year) {
 }
 
 export function isGermanHoliday(date) {
+  //static holidays in hessen, not many
   const germanHolidays = {
     "01-01": "New Year's Day",
     "05-01": "Labour Day",
@@ -67,7 +68,6 @@ export function isGermanHoliday(date) {
   //Ascension of Christ is 39 days after eastern
   const ascension = new Date(easterSunday);
   ascension.setDate(d.getDate() + 39);
-  console.log(pentecost);
   const easterMonth = easterSunday.getMonth();
   const easterDay = easterSunday.getDate();
 
