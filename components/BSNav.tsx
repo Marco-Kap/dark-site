@@ -65,7 +65,7 @@ export default function BSNav(props: NavProps) {
               width="16"
               height="16"
               fill="grey"
-              class="bi bi-geo-alt-fill"
+              className="bi bi-geo-alt-fill"
               viewBox="0 0 16 16"
             >
               <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
@@ -78,7 +78,7 @@ export default function BSNav(props: NavProps) {
               width="16"
               height="16"
               fill="grey"
-              class="bi bi-telephone-fill"
+              className="bi bi-telephone-fill"
               viewBox="0 0 16 16"
               style={{ marginLeft: ".4em", marginRight: ".2em" }}
             >
@@ -96,7 +96,7 @@ export default function BSNav(props: NavProps) {
               05631 4040
             </a>
           </span>{" "}
-          <span style={{ whiteSpace: "nowrap" }}>
+          <span className="nowrap">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="16"
@@ -186,7 +186,7 @@ export default function BSNav(props: NavProps) {
                       width="16"
                       height="16"
                       fill="grey"
-                      class="bi bi-clock-fill"
+                      className="bi bi-clock-fill"
                       viewBox="0 0 16 16"
                     >
                       <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z" />

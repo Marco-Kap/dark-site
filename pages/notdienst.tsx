@@ -3,9 +3,6 @@ import { Card, Form, Container } from "react-bootstrap";
 import Footer from "../components/Footer";
 import { useState } from "react";
 import Calendar from "react-calendar";
-import Banner from "../components/Banner";
-import { on } from "events";
-import { isHoliday } from "/../public/utils/time";
 
 export default function notdienst() {
   const [value, onChange] = useState(new Date());
@@ -55,12 +52,13 @@ export default function notdienst() {
       (nIndex !== -1 ? pharmacies[nIndex] : pharmacies[7])
     );
   }
-
+  //@ts-expect-error
   function calculateNextDate(currentDate, daysToAdd) {
     const nextDate = new Date(currentDate);
     nextDate.setDate(currentDate.getDate() + daysToAdd);
     return nextDate;
   }
+  //@ts-expect-error
   const daysSinceStart = Math.ceil((d - startDate) / (1000 * 60 * 60 * 24));
   const daysToNextMultipleOf8 = 8 - (daysSinceStart % 8);
 
@@ -152,7 +150,7 @@ export default function notdienst() {
               eingeben und eine momentan geöffnete Apotheke finden. */}
             </Card.Footer>
           </Card>
-          <div class="gtext text-center mx-4">
+          <div className="gtext text-center mx-4">
             <p>
               Bitte beachten Sie, dass sich die Notdienste kurzfristig ändern
               können. Die Datenbank für die Notdienst- und Apothekensuche wird
