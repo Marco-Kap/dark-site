@@ -151,7 +151,12 @@ export default function BSNav(props: NavProps) {
             >
               <Offcanvas.Header closeButton>
                 <Offcanvas.Title id={`offcanvasNavbarLabel-expand-xl`}>
-                  Ahorn-Apotheke
+                 <div>
+                  <Image  src={corporate} alt="" width={135} height={100}>
+                    </Image>
+                    <span className="nowrap col"></span>
+                    <span className="nowrap"></span>
+                 </div>
                 </Offcanvas.Title>
               </Offcanvas.Header>
               <Offcanvas.Body>
@@ -175,7 +180,7 @@ export default function BSNav(props: NavProps) {
                   <Nav.Link eventKey={"kontakt"} href="/kontakt">
                     Kontakt
                   </Nav.Link>
-                  <Nav.Link eventKey={"ratgeber"} href="/ratgeber/index">
+                  <Nav.Link eventKey={"ratgeber"} href="/ratgeber">
                     Ratgeber
                   </Nav.Link>
                   <Nav.Link
@@ -220,7 +225,6 @@ export default function BSNav(props: NavProps) {
                     </svg>
                     {/*------------------------Start Overlay-------------------------*/}
                     <NavDropdown
-                      supressHydrationWarning
                       title={isOpen()}
                       id="collasible-nav-dropdown"
                     >
