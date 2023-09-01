@@ -97,7 +97,7 @@ export default function leistungen() {
           </Card>
           <Card>
             {" "}
-            <Card.Header>Schwerpunkt Haut</Card.Header>
+            <Card.Header>Eigenherstellung</Card.Header>
             <Card.Img variant="top" src={images[2]} />
             <Card.Body>
               <Card.Text>

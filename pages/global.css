@@ -89,7 +89,7 @@ footer {
   align-self: center;
   display: flex;
   align-items: flex-end;
-  flex-direction: column;
+  flex-direction: row;
   color: grey;
 }
 

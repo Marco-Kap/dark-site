@@ -3,7 +3,7 @@ Die TODO Liste wird zuerst angezeigt, aber für eine kurze Dokumentation bitte r
 
 ## TODO LISTE
 
--Leistungenseite feritstellen
+-Leistungenseite fertistellen
 
 -Ratgeberseiter fertigstellen
 
@@ -12,6 +12,8 @@ Die TODO Liste wird zuerst angezeigt, aber für eine kurze Dokumentation bitte r
 -mehr kommentieren!!
 
 -vllt ein refactoring an der notdienstseite machen. 
+
+-style objekte wenn möglich durch css ersetzen, weil performance?
 
 -css für qurformate anpassen
 
