@@ -149,17 +149,36 @@ export default function BSNav(props: NavProps) {
               aria-labelledby={`offcanvasNavbarLabel-expand-xl`}
               placement="end"
             >
-              <Offcanvas.Header closeButton>
-                <Offcanvas.Title id={`offcanvasNavbarLabel-expand-xl`}>
-                 <div>
-                  <Image  src={corporate} alt="" width={135} height={100}>
-                    </Image>
-                    <span className="nowrap col"></span>
-                    <span className="nowrap"></span>
-                 </div>
-                </Offcanvas.Title>
+              <Offcanvas.Header style={{ marginBottom: "-3em" }} closeButton>
+                <Offcanvas.Title></Offcanvas.Title>
               </Offcanvas.Header>
+
               <Offcanvas.Body>
+                <div
+                  className="offcanvas-header"
+                  style={{ display: "flex", alignItems: "normal" }}
+                >
+                  <Image
+                    style={{}}
+                    src={corporate}
+                    alt=""
+                    width={120}
+                    height={80}
+                  ></Image>
+                  <div
+                    style={{
+                      display: "flex",
+                      flexDirection: "column",
+                    }}
+                  >
+                    <span style={{}} className="nowrap">
+                      {isOpen()}
+                    </span>
+                    <span className="nowrap">
+                      Bahnhof Straße 7, 34497 Korbach
+                    </span>
+                  </div>
+                </div>
                 <Nav
                   variant="tabs"
                   defaultActiveKey="/"
@@ -224,10 +243,7 @@ export default function BSNav(props: NavProps) {
                       <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z" />
                     </svg>
                     {/*------------------------Start Overlay-------------------------*/}
-                    <NavDropdown
-                      title={isOpen()}
-                      id="collasible-nav-dropdown"
-                    >
+                    <NavDropdown title={isOpen()} id="collasible-nav-dropdown">
                       <NavDropdown.Item href="#action/3.1">
                         <div className="d-grid gap-2 mb-4">
                           <a

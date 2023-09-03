@@ -40,6 +40,9 @@ footer {
   width: 12em;
   height: auto;
 }
+.offcanvas-header {
+  font-size: smaller;
+}
 .coll1 {
   visibility: collapse;
 }
