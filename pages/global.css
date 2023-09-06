@@ -45,6 +45,7 @@ footer {
   visibility: visible;
    display: flex;
     align-items: normal;
+
 }
 .coll1 {
   visibility: collapse;
