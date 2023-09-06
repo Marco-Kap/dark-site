@@ -53,7 +53,7 @@ export default function BSNav(props: NavProps) {
             marginTop: "0.5em",
           }}
         />
-        <div
+        <div suppressHydrationWarning
           style={{
             paddingTop: ".8em",
             paddingBottom: ".8em",
@@ -149,14 +149,10 @@ export default function BSNav(props: NavProps) {
               aria-labelledby={`offcanvasNavbarLabel-expand-xl`}
               placement="end"
             >
-              <Offcanvas.Header style={{ marginBottom: "-3em" }} closeButton>
-                <Offcanvas.Title></Offcanvas.Title>
-              </Offcanvas.Header>
-
-              <Offcanvas.Body>
-                <div
+              <Offcanvas.Header closeButton>
+              <div
                   className="offcanvas-header"
-                  style={{ display: "flex", alignItems: "normal" }}
+                  style={{  alignItems: "normal", marginTop: "" }}
                 >
                   <Image
                     style={{}}
@@ -179,6 +175,11 @@ export default function BSNav(props: NavProps) {
                     </span>
                   </div>
                 </div>
+                <Offcanvas.Title></Offcanvas.Title>
+              </Offcanvas.Header>
+
+              <Offcanvas.Body>
+
                 <Nav
                   variant="tabs"
                   defaultActiveKey="/"

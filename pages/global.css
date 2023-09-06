@@ -42,6 +42,9 @@ footer {
 }
 .offcanvas-header {
   font-size: smaller;
+  visibility: visible;
+   display: flex;
+    align-items: normal;
 }
 .coll1 {
   visibility: collapse;
@@ -117,6 +120,12 @@ footer {
     width: 0px;
     height: 0px;
   }
+  .offcanvas-header {
+    font-size: smaller;
+    visibility: visible;
+     display: flex;
+      align-items: normal;
+  }
   .gtext {
     font-size: 1.6vw;
   }
@@ -143,6 +152,9 @@ footer {
   .services {
     margin-bottom: 12em;
   }
+  .offcanvas-header {
+    visibility: collapse;
+  }
   spacer {
     margin-top: 8em;
   }
@@ -152,12 +164,18 @@ footer {
   .gtext {
     font-size: 1.4vw;
   }
+  .offcanvas-header {
+    visibility: collapse;
+  }
 }
 
 /*Desktop PCs*/
 @media only screen and (min-widht: 1960px) {
   .gtext {
     font-size: 1.2vw;
+  }
+  .offcanvas-header {
+    visibility: collapse;
   }
 }
 @media all and (display-mode: fullscreen) {
