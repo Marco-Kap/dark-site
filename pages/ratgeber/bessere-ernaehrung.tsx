@@ -1,6 +1,6 @@
-import Banner from "/../../components/Banner"
-import BSNav from "/../../componets/BSNav"
-import Footer from "/../../components/Footer"
+import Banner from "../../components/Banner"
+import BSNav from "../../components/BSNav"
+import Footer from "../../components/Footer"
 
 export default function BErnaerung () {
 const src = ""

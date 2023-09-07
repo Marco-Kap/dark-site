@@ -1,0 +1,27 @@
+import Banner from "../../components/Banner"
+import BSNav from "../../components/BSNav"
+import Footer from "../../components/Footer"
+import {Container } from "react-bootstrap"
+
+export default function meditation() {
+  const src = "/../public/images/relaxing.women-640x420.jpg";
+  return (
+    <>
+      <BSNav />
+      <Banner source={src} alt="" text="Das bringt Meditation wirklich" />
+     
+     <Container className="gtext "> <main>
+        <article>
+       
+Von <a href="https://www.mylife.de/autoren/">Bertina Kaiser</a>
+, Redakteurin der myLife<br/>
+<p className="text">31. März 2022</p>
+ <div>
+<p>Sie soll die Konzentration fördern sowie Körper und Geist in Einklang bringen: Meditation wird seit Jahrhunderten praktiziert. Lesen Sie hier, welche verschiedenen Arten des mentalen Trainings es gibt, welche Effekte es hat und wie Sie es erlernen können.</p>
+        </div>
+<div><h4>Was ist Meditation?</h4><p>Das Wort Meditation leitet sich vom lateinischen „meditari“ ab und bedeutet so viel wie fürsorgend, an etwas denken, etwas aussinnen. Laut Definition fallen unter den Begriff eine Reihe von Achtsamkeits- und Konzentrationsübungen, deren Ziel es ist, einen Zustand innerer Ruhe zu erreichen.</p><p>Grundgedanke jeder Form der Meditation ist die Bündelung der Aufmerksamkeit. Dafür kann es hilfreich sein, sich auf einzelne Sachen zu konzentrieren. Beispielsweise auf die Atmung, körperliche Empfindungen, Emotionen, Gerüche, Geräusche oder ein Bild vor dem geistigen Auge.</p><p>Wichtig ist, dass Sie dabei den Geist fokussieren und beruhigen. Außerdem steigern Sie damit auf Dauer Ihre Konzentrationsfähigkeit und Kreativität. Auch die körperliche Gesundheit profitiert davon.</p></div>
+   <h4>Meditation lernen: Tipps für Anfänger</h4><p>Sie möchten es mit Meditation probieren? Einsteiger können auf Apps, Bücher oder geführte Meditationen im Internet zurückgreifen. Lesen Sie hier außerdem einige Tipps, die Ihnen den Einstieg erleichtern.</p><h5>Richten Sie sich einen Platz ein</h5><p>Finden Sie einen geeigneten Ort, an dem Sie regelmäßig meditieren können. Dafür eignet sich am besten ein Platz, der wenig Ablenkung bietet und der Ihnen gefällt.</p><p>Sind Sie unterwegs, ist ein Meditations-Kissen oder eine Decke praktisch: Sie werden dann zum Meditationsplatz.</p><h5>Finden Sie eine bequeme Haltung</h5><p>Die klassische Körperhaltung beim Meditieren ist der Lotussitz, eine Art Schneidersitz. Das ist aber nicht zwingend notwendig. Wichtig ist, dass Sie sich entspannen können: Setzen Sie sich auch auf einen Stuhl setzen oder benutzen Sie ein Meditationskissen. Auch im Liegen können Sie meditieren.</p><p>Im Sitzen sollte der Rücken in jedem Fall aufrecht sein. Zu Beginn können Sie sich hierfür gegen eine Wand lehnen.</p><p>Wichtig ist auch bequeme Kleidung. Sie sollten entspannt darin sitzen oder liegen können. Gleichzeitig sollte die Kleidung den Temperaturen angepasst sein. Sie sollten nicht frieren oder schwitzen während der Meditation.</p><h5>Ablenkunken vermeiden</h5><p>Vermeiden Sie potenzielle Störfaktoren: Schalten Sie das Handy aus oder Benachrichtigungen stumm. Geben Sie Familie, Freunden oder Mitbewohnenden Bescheid, dass Sie Ruhe brauchen.</p> <p>Wer möchte, kann sich von spezieller Meditations-Musik begleiten lassen. Beispiele finden Sie im Internet oder bei Streaming-Diensten. Eine musikalische Untermalung ist aber kein Muss.</p><h5>Routine entwickeln</h5><p>Regelmäßigkeit ist ein wichtiger Faktor bei der Meditation. Dafür sind keine langen Sessions notwendig, um eine Wirkung zu spüren. Versuchen Sie, feste Zeiträume zu blocken und halten Sie diese auch ein.</p><h5>Klein anfangen</h5><p>Stundenlange Meditationen sind als Anfänger meist nicht möglich. Beschränken Sie sich zu Beginn auf eine Dauer von fünf bis zehn Minuten. Nutzen Sie eine App oder machen Sie eine geführte Meditation mit Video, halten Sie sich an die vorgegebene Zeit. Meditieren Sie ohne Führung, ist es sinnvoll, einen Wecker zu stellen.</p><h5>Machen sie sich keinen Druck</h5><p>Stecken Sie Ihre Erwartungen an sich selbst nicht zu hoch: Entspannung stellt sich dann nur schwer ein. Gerade am Anfang ist es schwer, Gedanken loszulassen. Ertappen Sie sich dabei, dass Sie doch wieder Ihre To-Do-Liste durchgehen, lenken Sie Ihren Gedanken wieder zurück. Mit der Zeit wird es Ihnen immer leichter fallen.</p><h4>Diese Effekte hat Meditation</h4><p>Die psychische und körperliche Gesundheit sind eng miteinander verbunden. Seelische Leiden können Krankheiten im Körper verursachen und körperliche Erkrankungen haben oft psychische Probleme zu Folge.</p><p>Meditation hat einen positiven Effekt auf die Psyche und damit indirekt auch auf die körperliche Gesundheit – es ist von einer sogenannten Selbstheilung die Rede. Neurowissenschaftler haben die Wirkung in verschiedenen Studien untersucht und gemessen. So kann Meditation auf verschiedene Weise Wirkung zeigen:</p><h5>Verbessertes Stressempfinden</h5><p>Durch Meditation wird das Stresshormon Cortisol nachweislich gesenkt. Wissenschaftlich erwiesen wurde zudem ein Zusammenhang zwischen vermindertem Stresserleben durch Meditation.</p><p>Auch die Fähigkeit wird gestärkt, Angst und Sorgen zu kontrollieren. Wer beispielsweise unter Panikattacken leidet, kann Meditation unterstützend zu einer Therapie versuchen.</p><h5>Emotionale Stabilität und positives Denken</h5><p></p></article> </main></Container>
+      <Footer />
+    </>
+  );
+}

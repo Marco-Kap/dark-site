@@ -11,7 +11,7 @@ export type Props = {
 export default function Banner(props: Props) {
   const breakpoint_1 = useMediaQuery(768);
   return (
-    <Container>
+    <Container aria-disabled>
       <div>
         <Image
           alt={props.alt}

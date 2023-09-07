@@ -1,22 +1,21 @@
-import Banner from "/components/Banner";
-import BSNav from "/components/BSNav";
-import Footer from "/components/Footer";
-import Image from "next/image"
+import Banner from "../../components/Banner"
+import BSNav from "../../components/BSNav"
+import Footer from "../../components/Footer"
+import {Container} from "react-bootstrap"
+
 
 export default function GesunderSchlaf() {
   const src = "";
-  const alt = ""
-
   return (
     <>
       <BSNav />
-      <Banner source={src} alt="" text="" />
+      <Banner source={src} alt="" fieldDisabled />
+  <Container>
       <main>
-        <div>
 
-        </div>
-        <Image width={400}  height={320} alt={alt} src={src}/>
+
       </main>
+      </Container>
       <Footer />
     </>
   );

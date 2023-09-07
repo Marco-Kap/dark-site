@@ -229,7 +229,7 @@ export default function BSNav(props: NavProps) {
                   defaultActiveKey="/"
                   className="me-auto px-2"
                 >
-                  <Nav.Link eventKey={"verlosung"} href="/verlosung">
+                  <Nav.Link className="coll1" eventKey={"verlosung"} href="/verlosung">
                     Verlosung
                   </Nav.Link>
                   <Nav.Link
@@ -248,7 +248,6 @@ export default function BSNav(props: NavProps) {
                     Ratgeber
                   </Nav.Link>
                   <Nav.Link
-                    className="coll1"
                     eventKey={"notdienst"}
                     href="/notdienst"
                   >
