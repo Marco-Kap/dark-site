@@ -4,9 +4,8 @@ import Section from "../components/Section";
 import Footer from "../components/Footer";
 import Image from "next/image";
 import useMediaQuery from "../public/utils/useMediaQuery";
-import { useState } from "react";
 import ScrollButton from "../components/ScrollButton";
-import Banner from "components/Banner";
+import Banner from "../components/Banner";
 
 export default function Home() {
   const breakpoint = useMediaQuery(996);

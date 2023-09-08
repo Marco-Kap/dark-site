@@ -3,14 +3,13 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import Logo from "./Logo";
-import Phone from "./Phone";
-import Clock from "./Clock";
 import { isOpen } from "../public/utils/time";
 import useMediaQuery from "../public/utils/useMediaQuery";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import { NavItem } from "react-bootstrap";
 import Offcanvas from "react-bootstrap/Offcanvas";
+import Link from "next/link"
 
 export type NavProps = {
   page?: string;
@@ -40,77 +39,7 @@ export default function BSNav(props: NavProps) {
 
   return (
     <>
-      <Container className="infobox">
-        <Image
-          src={corporate}
-          width={220}
-          height={220}
-          alt="bild"
-          style={{
-            alignSelf: "start",
-            width: "10em",
-            height: "auto",
-            marginTop: "0.5em",
-          }}
-        />
-        <div suppressHydrationWarning
-          style={{
-            paddingTop: ".8em",
-            paddingBottom: ".8em",
-            alignSelf: "start",
-          }}
-        >
-          <span>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
-              fill="grey"
-              className="bi bi-geo-alt-fill"
-              viewBox="0 0 16 16"
-            >
-              <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
-            </svg>
-            Bahnhof Straße 7, 34497 Korbach
-          </span>
-          <span style={{whiteSpace:"nowrap"}}>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
-              fill="grey"
-              className="bi bi-telephone-fill"
-              viewBox="0 0 16 16"
-              style={{ marginLeft: ".4em", marginRight: ".2em" }}
-            >
-              <path
-                fill-rule="evenodd"
-                d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"
-              />
-            </svg>
-            <a
-              style={{
-                color: "grey",
-                marginRight: ".5em"
-              }}
-              href="tel:056314040"
-            >
-              05631 4040
-            </a>
-          </span>{" "}<span style={{whiteSpace: "nowrap"}}>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="16"
-            height="16"
-            fill="grey"
-            viewBox="0 0 16 16"
-            style={{ marginRight: ".3em" }}
-          >
-            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z" />
-          </svg>
-          {isOpen()}</span>
-        </div>
-      </Container>
+             
       <Container className="justify-items-start sticky-top bg-light bg rounded">
         <Navbar collapseOnSelect expand="lg" className="">
           <Container>
@@ -120,11 +49,11 @@ export default function BSNav(props: NavProps) {
                 {/* <Image
                   style={{ marginRight: "12em" }}
                   src={corporate}
-                  width={40}
+                  width={48}
                   height={38}
                   alt="Ahornapotheke Logo"
                 /> */}
-                <Logo />
+<Logo/>
                 {scrollValue <= 1 && props.page !== "index" ? (
                   <div className="corporateID coll1 ">
                     <Image
@@ -150,21 +79,21 @@ export default function BSNav(props: NavProps) {
               aria-labelledby={`offcanvasNavbarLabel-expand-xl`}
               placement="end"
             >
-              <Offcanvas.Header >
+              <Offcanvas.Header closeButton>
               <div
                   className="offcanvas-header"
 
-                >
+                ><Link href="/">
                   <Image
                     style={{marginRight: "2em"}}
                     src={corporate}
                     alt=""
                     width={140}
                     height={100}
-                  ></Image>
+                  ></Image></Link>
                   <div
                     style={{
-
+lineHeight:"24px",
                       display: "flex",
                       flexDirection: "column",
                     }}
@@ -174,9 +103,9 @@ export default function BSNav(props: NavProps) {
             xmlns="http://www.w3.org/2000/svg"
             width="16"
             height="16"
-            fill="grey"
             viewBox="0 0 16 16"
-            style={{ marginRight: ".3em" }}
+            className="bi"
+            fill="currentColor"
           >
             <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z" />
           </svg>
@@ -187,31 +116,31 @@ export default function BSNav(props: NavProps) {
               xmlns="http://www.w3.org/2000/svg"
               width="16"
               height="16"
-              fill="grey"
               className="bi bi-geo-alt-fill"
               viewBox="0 0 16 16"
+              fill="currentColor"
             >
               <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
             </svg>
                       Bahnhof Straße 7, 34497 Korbach
                     </span>
                     <span className="nowrap">
-                        {" "}
+                     
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           width="16"
                           height="16"
-                          fill="grey"
                           className="bi bi-telephone-fill"
                           viewBox="0 0 16 16"
+                          fill="currentColor"
                         >
                           <path
-                            fill-rule="evenodd"
+                            fillRule="evenodd"
                             d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"
                           />
                         </svg>
-                        {"  "}
-                        05631 4040
+                        <a href="tel:056314040">
+                        05631 4040</a>
                       </span>
                       <span>
                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-envelope-fill" viewBox="0 0 16 16">
@@ -255,7 +184,7 @@ export default function BSNav(props: NavProps) {
                   </Nav.Link>
                 </Nav>
                 {!breakpoint ? (
-                  <Nav className="responsive">
+                  <Nav className="responsive" suppressHydrationWarning>
                     <Nav.Link href="tel:056314040">
                       <span className="nowrap">
                         {" "}
@@ -268,7 +197,7 @@ export default function BSNav(props: NavProps) {
                           viewBox="0 0 16 16"
                         >
                           <path
-                            fill-rule="evenodd"
+                            fillRule="evenodd"
                             d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"
                           />
                         </svg>

@@ -54,6 +54,10 @@ footer {
   background-color: rgba(255, 0, 0, 0.5);
   border-radius: 5%;
 }
+.bi{
+  margin-right: .3em;
+  color: #ff0e01
+}
 .slider {
   height: 16vw;
   width: 46vw;

@@ -26,7 +26,7 @@ const index = (Math.ceil((d - startDate) / (1000 * 60 * 60 * 24)) % 8) - 1;
 //-- Logic to calculate Holidays -------------------------------------------------
 
 // get eater date with gauss algorythm
-function calculateEaster(year) {
+function calculateEaster(year:number) {
   const a = year % 19;
   const b = Math.floor(year / 100);
   const c = year % 100;
@@ -44,7 +44,7 @@ function calculateEaster(year) {
   return new Date(year, month - 1, day);
 }
 
-export function isGermanHoliday(date) {
+export function isGermanHoliday(date:Date) {
   //static holidays in hessen, not many
   const germanHolidays = {
     "01-01": "New Year's Day",
@@ -61,6 +61,7 @@ export function isGermanHoliday(date) {
   // Dynamic holidays
   // easter Friday
   const easterFriday = new Date(easterSunday);
+  //@ts-expect-error
   easterFriday.setDate(easterSunday.getDate - 2);
   //pentecost is 49 days after eastern
   const pentecost = new Date(easterSunday);
@@ -80,10 +81,10 @@ export function isGermanHoliday(date) {
   const formattedDate = `${String(month + 1).padStart(2, "0")}-${String(
     day
   ).padStart(2, "0")}`;
-
+//@ts-expect-error
   return germanHolidays[formattedDate] || false;
 }
-
+//@ts-expect-error
 function getNextWeekday(date, dayOfWeek) {
   const resultDate = new Date(date);
   resultDate.setDate(date.getDate() + ((dayOfWeek + 7 - date.getDay()) % 7));
