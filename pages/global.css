@@ -46,6 +46,7 @@ footer {
    display: flex;
     align-items: normal;
 
+
 }
 .coll1 {
   visibility: collapse;
@@ -194,6 +195,9 @@ footer {
     visibility: collapse;
   }
 }
+
+/*Colors */
+
 
 /* React Calendar  */
 .react-calendar {

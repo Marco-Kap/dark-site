@@ -7,7 +7,7 @@ import { isOpen } from "../public/utils/time";
 import useMediaQuery from "../public/utils/useMediaQuery";
 import Image from "next/image";
 import { useEffect, useState } from "react";
-import { NavItem } from "react-bootstrap";
+import { Button, NavItem } from "react-bootstrap";
 import Offcanvas from "react-bootstrap/Offcanvas";
 import Link from "next/link"
 
@@ -25,7 +25,7 @@ export default function BSNav(props: NavProps) {
     "/coffee.jpg",
   ];
   const [scrollValue, setScrollValue] = useState(0);
-
+  const [show, setShow] = useState(false);
   useEffect(() => {
     //@ts-expect-error
     const onScroll = (e) => {
@@ -36,6 +36,9 @@ export default function BSNav(props: NavProps) {
 
     return () => window.removeEventListener("scroll", onScroll);
   }, [scrollValue]);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
 
   return (
     <>
@@ -73,19 +76,19 @@ export default function BSNav(props: NavProps) {
                 )}
               </div>
             </Navbar.Brand>
-            <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-xl`} />
-            <Navbar.Offcanvas
+            <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-xl`} onClick={handleShow} />
+            <Navbar.Offcanvas 
               id={`offcanvasNavbar-expand-xl`}
               aria-labelledby={`offcanvasNavbarLabel-expand-xl`}
               placement="end"
             >
-              <Offcanvas.Header closeButton>
-              <div
-                  className="offcanvas-header"
-
-                ><Link href="/">
+              <Offcanvas.Header  closeButton >
+             <Offcanvas.Title> </Offcanvas.Title>      
+              </Offcanvas.Header>
+                <Offcanvas.Body> 
+                <div className="offcanvas-header"><Link href="/">
                   <Image
-                    style={{marginRight: "2em"}}
+                    style={{marginRight: ".4em"}}
                     src={corporate}
                     alt=""
                     width={140}
@@ -93,7 +96,7 @@ export default function BSNav(props: NavProps) {
                   ></Image></Link>
                   <div
                     style={{
-lineHeight:"24px",
+                      lineHeight:"24px",
                       display: "flex",
                       flexDirection: "column",
                     }}
@@ -121,12 +124,12 @@ lineHeight:"24px",
               fill="currentColor"
             >
               <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
-            </svg>
-                      Bahnhof Straße 7, 34497 Korbach
-                    </span>
+            </svg>Bahnhof Straße 7,</span>
+                       <span>34497 Korbach</span>
+                    
                     <span className="nowrap">
                      
-                        <svg
+                    <div>  <svg
                           xmlns="http://www.w3.org/2000/svg"
                           width="16"
                           height="16"
@@ -139,20 +142,17 @@ lineHeight:"24px",
                             d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"
                           />
                         </svg>
+                        
                         <a href="tel:056314040">
                         05631 4040</a>
-                      </span>
+                      </div></span>
                       <span>
                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-envelope-fill" viewBox="0 0 16 16">
   <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"/>
 </svg><a href="mailto:email@ahornapo.de">email@ahornapo.de</a></span>
                   </div>
                 </div>
-
-              </Offcanvas.Header>
-
-              <Offcanvas.Body>
-
+  
                 <Nav
                   variant="tabs"
                   defaultActiveKey="/"
@@ -225,37 +225,37 @@ lineHeight:"24px",
                           >
                             {" "}
                             <img
-                              src="/images/ahornapo haus.png"
-                              width="20px"
-                              height="20px"
+                              src="/images/staff-snake-solid.svg"
+                              width="24px"
+                              height="24px"
                               alt="."
                             />
                             <span> Notdienst-Apotheken anzeigen</span>
                           </a>
                         </div>
                         <h3 className="text-center">Öffnungszeiten</h3>
-                        <div className="ohours  flex-wrap">
+                        <div className="ohours mt-2 flex-wrap">
                           <div className="d-flex">
                             <div>Montag</div>
                             <div className="ms-auto">08:00 - 18:30</div>
                           </div>
-                          <div className="d-flex">
+                          <div className="d-flex mt-2">
                             <div>Dienstag</div>
                             <div className="ms-auto">08:00 - 18:30</div>
                           </div>
-                          <div className="d-flex">
+                          <div className="d-flex mt-2">
                             <div>Mittwoch</div>
                             <div className="ms-auto">08:00 - 18:30</div>
                           </div>
-                          <div className="d-flex">
+                          <div className="d-flex mt-2">
                             <div>Donnerstag</div>
                             <div className="ms-auto">08:00 - 18:30</div>
                           </div>
-                          <div className="d-flex">
+                          <div className="d-flex mt-2">
                             <div>Freitag</div>
                             <div className="ms-auto">08:00 - 18:30</div>
                           </div>
-                          <div className="d-flex">
+                          <div className="d-flex mt-2">
                             <div>Samstag</div>
                             <div className="ms-auto">08:00 - 13:30</div>
                           </div>

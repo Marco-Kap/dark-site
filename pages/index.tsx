@@ -43,7 +43,6 @@ export default function Home() {
         </Card.Header>
       </Card>
       <Section children={section2} />
-
       {breakpoint ? (
         <Carousel style={{ margin: "2em" }} slide={false} fade>
           <Carousel.Item
