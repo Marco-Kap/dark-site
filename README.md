@@ -1,44 +1,79 @@
-# Material UI - Next.js example in TypeScript
+# Readme
+Die TODO Liste soll zuerst angezeigt werden, für eine kurze Dokumentation bitte runterscrollen zu "wie man die Seite einsetzt"
 
-## How to use
+## TODO LISTE
 
-Download the example [or clone the repo](https://github.com/mui/material-ui):
+-momentanen Text der Startseite überarbeiteten
 
-<!-- #default-branch-switch -->
+-das aponet widget auf der Notdienst seite implementieren
+
+-e-rezepte Seite überarbeiten
+
+-Die Navbar im Darkmode gut aussehen lassen
+
+-Rezepturen Seite bearbeiten und verlinken
+
+-kalender bearbeiten / die Position in Desktopansicht ändern und Ahornapo Notdienst hervorheben? 
+
+-alle Bilder verkleinern und tauschen
+
+-Accessibility checken, aria labels vergeben und so weiter
+
+-vielleicht auf der Kontaktseite google maps einbetten oder openstreetmaps
+
+-alle sichtbaren Texte noch mal durchlesen und auf typos überprüfen
+
+-datenschutzerklärung prüfen
+
+-SEO verbesserungen durchführen
+
+-An Wordpress API anbinden
+
+-Nach der Berufhaftpflichtversicherung fragen
+
+-openstreetmaps auf Kontaktseite einbauen
+
+-deployment
+
+
+## Wie man diese Seite einsetzt
+
+Diese Seite basiert auf Next.js. Schau bei Problemen in die Dokumentation.
+
+Nicht notwendige "Abhägkeiten" sind Bootstrap und React Calendar
+Boostrap 5.3 ist ein CSS Framework und wurde hier zum teil für das styling eingesetzt. Der Großteil des Stylings beruht allerdings auf inline Sass und dem custom stylesheet
+React Calendar wird im Notdienst Screen eingesetzt. Der React Calendar hat out-of-the-box eine Menge Funktion, die selber zu schreiben, zeitaufwendig wäre.
+Beide Abhägkeiten könnte man durch eigenen Code ersetzten.
+
+### notwendige Befehle
+
+wenn das repository noch nicht lokal vorliegt muss es erst importiert werden.
+Alternativ kannst du einen Online Editor nutzen. Codesandbox und Stackblitz sind empfelenswert.
 
 ```sh
-curl https://codeload.github.com/mui/material-ui/tar.gz/master | tar -xz --strip=2  material-ui-master/examples/material-next-ts
-cd material-next-ts
+git clone [repository url]
+cd dark-site
+npm install --save
 ```
 
-Install it and run:
+Um den Entwicklungsserver zu starten geh mit der cmd in das Verzeichnis /dark-site und gib den folgenden Befehl ein
 
 ```sh
-npm install
 npm run dev
 ```
 
-or:
+Bei Sicherheitsbedenken gib ein:
 
-<!-- #default-branch-switch -->
+```sh
+npm audit
+```
 
-[![Edit on StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/mui/material-ui/tree/master/examples/material-next-ts)
+Das wird dir eventuell eine Liste veralteter Abhängigkeiten oder anfälliger Packete anzeigen. Zusammen mit Reperaturmöglichkeiten.
 
-[![Edit on CodeSandbox](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github/mui/material-ui/tree/master/examples/material-next-ts)
+Wenn du den Quellcode geändert hast und die Änderungen veröffentlichen willst. Nutze
 
-## The idea behind the example
+```sh
+npm run build
+```
 
-The project uses [Next.js](https://github.com/vercel/next.js), which is a framework for server-rendered React apps.
-It includes `@mui/material` and its peer dependencies, including [Emotion](https://emotion.sh/docs/introduction), the default style engine in Material UI v5. If you prefer, you can [use styled-components instead](https://mui.com/material-ui/guides/interoperability/#styled-components).
-
-## The link component
-
-The [example folder](https://github.com/mui/material-ui/tree/HEAD/examples/material-next-ts) provides an adapter for the use of [Next.js's Link component](https://nextjs.org/docs/api-reference/next/link) with MUI.
-More information [in the documentation](https://mui.com/material-ui/guides/routing/#next-js).
-
-## What's next?
-
-<!-- #default-branch-switch -->
-
-You now have a working example project.
-You can head back to the documentation and continue by browsing the [templates](https://mui.com/material-ui/getting-started/templates/) section.
+Das wird einen Ordner mit css ,js und html Dateien für den Server aus dem Typescriptcode erstellen.
